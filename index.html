@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,
+          initial-scale=1,
+          maximum-scale=1,
+          user-scalable=no">
+    <meta name="description" content="ElasticParsley">
+    <meta name="author" content="Phil Reynolds">
+    <meta name="theme-color" content="#006000">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96"/>
+
+    <title>Summoner</title>
+
+    <!--  Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--  Bootstrap JS -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"-->
+    <!--integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"-->
+    <!--crossorigin="anonymous"></script>-->
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"-->
+    <!--integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"-->
+    <!--crossorigin="anonymous"></script>-->
+
+    <!--jQuery-->
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <!--  Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- Font Family-->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Krub:400,700|" rel="stylesheet">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="main.css">
+    <noscript>
+        <link rel="stylesheet" href="noscript.css"/>
+    </noscript>
+</head>
+<body id="overboot" class="is-preload">
+
+<!-- Header -->
+<header class="masthead">
+    <section class="container text-center">
+            <!-- Title -->
+            <h1 class="text-uppercase row">
+                The Summoner
+            </h1>
+            <!--<h2 id="location"></h2>-->
+
+            <div id="form-Container" class="vs-form">
+                <form id="summon-form" name="summon-form"> <!--method="post" action="https://czanhrxz97.execute-api.eu-west-1.amazonaws.com/default/summoner"-->
+                    <div class="form-group floating-label">
+                        <input class="form-control" placeholder="Who are you?" type="text" id="summoner" name="summoner-name" required>
+                        <label for="summoner"> Who are you?</label>
+                    </div>
+                    <div class="form-group floating-label">
+                        <input class="form-control" placeholder="Who do you want to summon?" type="text" id="summonee" name="summonee-name" required>
+                        <label for="summonee"> Who do you want to summon?</label>
+                    </div>
+                    <div class="form-group floating-label">
+                        <input class="form-control" placeholder="What's their number?" type="number" id="number" name="summonee-number" required>
+                        <label id="number-label" for="number"> What's their number?</label>
+                    </div>
+                    <div class="form-row d-none">
+                        <div class="form-group col-sm-6  floating-label">
+                            <input id="userLat" class="form-control" pattern="^(\+|-)?(?:90(?:(?:\.0{1,6})?)|(?:[0-9]|[1-8][0-9])(?:(?:\.[0-9]{1,16})?))$" placeholder="Latitude E.g. 51.605411" type="text" name="lat">
+                            <label for="userLat"> Latitude</label>
+                        </div>
+                        <div class="form-group col-sm-6  floating-label">
+                            <input id="userLng" class="form-control" pattern="^(\+|-)?(?:180(?:(?:\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\.[0-9]{1,16})?))$" placeholder="Longitude E.g. -3.983570" type="text" name="lng" >
+                            <label for="userLng"> Longitude</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    </div>
+                </form>
+                <button id="summon-button" class="btn btn-danger" onclick="summonThem()">Summon Them!</button>
+                <!--<button class="btn btn-secondary" onclick="testSummon()">test button</button>-->
+            </div>
+
+        <div id="success-message" class="d-none">
+            <h1>Success! </h1>
+            <h2>You have summoned</h2>
+        </div>
+
+    </section>
+</header>
+<!-- Scripts -->
+
+<script>
+    if ('addEventListener' in window) {
+        window.addEventListener('load', function () {
+            document.body.className = document.body.className.replace(/\bis-preload\b/, '');
+        });
+        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    }
+</script>
+<script src="get-user-location.js"></script>
+<script src="summon.js"></script>
+</body>
+</html>
