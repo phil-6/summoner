@@ -16,7 +16,7 @@ if (navigator.geolocation) {
 } else {
     // Browser doesn't support Geolocation
     defaultPos = {lat: 51.600000, lng: -4.150000};
-    handleLocationError(false,  defaultPosPos);
+    handleLocationError(false,  defaultPos);
 }
 
 function handleLocationError(browserHasGeolocation, pos) {

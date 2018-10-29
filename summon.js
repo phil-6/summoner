@@ -21,6 +21,10 @@ function summonThem() {
             document.getElementById("number").classList.add("form-error");
             validForm = false;
         }
+        if ((document.getElementById("userLat").value == "")||(document.getElementById("userLng").value == "")){
+            document.getElementById("location-error").classList.remove("d-none");
+            document.getElementById("form-Container").classList.add("d-none");
+        }
         if (validForm == true){
             document.getElementById("form-Container").classList.add("d-none");
             validSummon();
