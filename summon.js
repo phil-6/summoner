@@ -24,6 +24,9 @@ function summonThem() {
         if ((document.getElementById("userLat").value == "")||(document.getElementById("userLng").value == "")){
             document.getElementById("location-error").classList.remove("d-none");
             document.getElementById("form-Container").classList.add("d-none");
+            // document.body.classList.remove("is-main");
+            // document.body.classList.add("is-failure");
+            validForm = false;
         }
         if (validForm == true){
             document.getElementById("form-Container").classList.add("d-none");
@@ -62,8 +65,9 @@ function summonThem() {
             contentType: "application/json",
             url: API_GATEWAY_LOGIN_URL,
             success: function (data) {
-                alert(JSON.stringify(data));
+                document.getElementById("success-content").innerHTML = (JSON.stringify(data).replace(/['"]+/g, ''));
                 document.getElementById("success-message").classList.remove("d-none");
+                document.body.classList.add("is-success");
                 return;
             },
             error: function (xhr) {

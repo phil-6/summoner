@@ -91,7 +91,7 @@
 
         <div id="success-message" class="d-none">
             <h1>Success! </h1>
-            <h2>You have summoned</h2>
+            <h2><span id="success-content"></span></h2>
         </div>
 
         <div id="location-error" class="d-none">
@@ -107,7 +107,8 @@
 <script>
     if ('addEventListener' in window) {
         window.addEventListener('load', function () {
-            document.body.className = document.body.className.replace(/\bis-preload\b/, '');
+            document.body.classList.remove("is-preload");
+            // document.body.classList.add("is-main");
         });
         document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
     }

@@ -27,7 +27,6 @@ body {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    /*#0088ee ,#ee6600,#ff8f3c, #ee6600 ,#663399*/
 }
 body:after {
     content: '';
@@ -39,7 +38,7 @@ body:after {
     height: inherit;
     opacity: 0;
     z-index: 1;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     background-image: -moz-linear-gradient(120deg, #009B72,#009DDC,#6761A8,#663399);
     background-image: -webkit-linear-gradient(120deg, #009B72,#009DDC,#6761A8,#663399);
     background-image: -ms-linear-gradient(120deg,#009B72,#009DDC,#6761A8,#663399);
@@ -53,6 +52,20 @@ body:after {
     transition: opacity 26s ease;
 }
 body.is-preload:after {
+    opacity: 1;
+}
+body.is-main {
+    /*background-image: -moz-linear-gradient(190deg, #ee6600, #2AFADF, #4C83FF, #B210FF);*/
+    /*background-image: -webkit-linear-gradient(190deg, #ee6600, #2AFADF, #4C83FF, #B210FF);*/
+    /*background-image: -ms-linear-gradient(190deg, #ee6600, #2AFADF, #4C83FF, #B210FF);*/
+    /*background-image: linear-gradient(190deg, #ee6600, #2AFADF, #4C83FF, #B210FF);*/
+    /*transition: opacity 6s ease;*/
+}
+body.is-success{
+
+}
+body.is-failure{
+    /*background-color:lightcoral;*/
     opacity: 1;
 }
 .elastic {
@@ -99,23 +112,6 @@ body.is-preload:after {
         font-size: 6.5rem;
     }
 }
-/*a{
-    !*transform: scale(1.01, 1.01);*!
-    !*box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);*!
-    box-shadow: 6px 4px 8px 0px rgba(0,0,0,0.4);
-    z-index:2;
-    color: #022B3A;
-}
- a:hover{
-    !*transform: scale(1, 1);*!
-    box-shadow: none;
-    z-index:2;
-    transition: all 0.2s;
-    color: #022B3A;
-}
-a:hover i{
-    color: #006000;
-}*/
 
 .social a {
     text-align: center;
