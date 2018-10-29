@@ -48,7 +48,7 @@ function summonThem() {
         //console.log(jsonFormData);
         // alert(jsonFormData);
 
-        const API_GATEWAY_LOGIN_URL = "https://czanhrxz97.execute-api.eu-west-1.amazonaws.com/default";
+        const API_GATEWAY_LOGIN_URL = "https://4ohtthv7a9.execute-api.eu-west-1.amazonaws.com/default";
         var restful_action = "POST";
 
         $.ajax({
