@@ -15,14 +15,16 @@ body {
     font-family: 'Krub', sans-serif;;
     letter-spacing: 0.0625em;
     color: #022B3A;
-    position: relative;
+    /*position: relative;*/
     width: 100%;
     height: 100%;
-    background-color: #EEF6EE;
-    background-image: -moz-linear-gradient(190deg, #ee6600 10%,#B210FF 40%, #4C83FF );
-    background-image: -webkit-linear-gradient(190deg, #ee6600 10%,#B210FF 40%, #4C83FF );
-    background-image: -ms-linear-gradient(190deg, #ee6600 10%,#B210FF 40%, #4C83FF );
-    background-image: linear-gradient(190deg, #ee6600 10%,#B210FF 40%, #4C83FF ) ;
+    display: block;
+    position: absolute;
+    background-color: #e4aaff;
+    background: -moz-linear-gradient(190deg, #ee6600 10%,#B210FF 40%, #4C83FF );
+    background: -webkit-linear-gradient(190deg, #ee6600 10%,#B210FF 40%, #4C83FF );
+    background: -ms-linear-gradient(190deg, #ee6600 10%,#B210FF 40%, #4C83FF );
+    background: linear-gradient(190deg, #ee6600 10%,#B210FF 40%, #4C83FF ) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -35,16 +37,17 @@ body:after {
     top: 0;
     left: 0;
     width: 100%;
-    height: inherit;
+    height: 100%;
     opacity: 0;
     z-index: 1;
-    /*background-color: #ffffff;*/
+    background-color: #6761A8;
     background-image: -moz-linear-gradient(120deg,#04E824,#009DDC,#6761A8,#663399);
     background-image: -webkit-linear-gradient(120deg, #04E824,#009DDC,#6761A8,#663399);
     background-image: -ms-linear-gradient(120deg,#04E824,#009DDC,#6761A8,#663399);
     background-image: linear-gradient(120deg, #04E824,#009DDC,#6761A8,#663399);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     background-position: center center;
     -moz-transition: opacity 26s ease;
     -webkit-transition: opacity 26s ease;
@@ -68,68 +71,9 @@ body.is-failure{
     /*background-color:lightcoral;*/
     opacity: 1;
 }
-.elastic {
-    color: #022B3A;
-    padding: 0!important;
-    margin: 0!important;
-}
-.parsley {
-    color: #006000;
-    padding: 0!important;
-    margin: 0!important;
-}
-.masthead h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 600;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    letter-spacing: 0.8rem;
-}
-
-@media (min-width: 768px) {
-    .masthead {
-        padding: 10rem 0;
-    }
-    .masthead h1 {
-        font-size: 4rem;
-        line-height: 4rem;
-    }
-}
-@media (min-width: 992px) {
-    .masthead {
-        height: 100vh;
-        /*padding: 0;*/
-    }
-    .masthead h1 {
-        font-size: 6rem;
-        line-height: 6.5rem;
-        letter-spacing: 0.8rem;
-    }
-}
-@media (min-width: 1200px) {
-    .masthead h1 {
-        letter-spacing: 1.2rem;
-        font-size: 6.5rem;
-    }
-}
-
-.social a {
-    text-align: center;
-    height: 3rem;
-    width: 3rem;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 100%;
-    line-height: 3rem;
-    color: #022B3A;
-}
-.social a:hover {
-    color: #006000;
-    background: rgba(255, 255, 255, 1);
-    transition: all 0.3s;
-}
-
 /* masthead */
 .masthead {
+    padding-top: 2rem;
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -160,11 +104,44 @@ body.is-failure{
 
 
 body.is-ie .masthead {
-    height: 100%;
+    height: 80%;
+}
+.masthead h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+}
+
+@media (min-width: 768px) {
+    .masthead {
+        padding-top: 10rem ;
+    }
+    .masthead h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+@media (min-width: 992px) {
+    .masthead {
+        height: 80%;
+        /*padding: 0;*/
+    }
+    .masthead h1 {
+        font-size: 6rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.8rem;
+    }
+}
+@media (min-width: 1200px) {
+    .masthead h1 {
+        letter-spacing: 1.2rem;
+        font-size: 6.5rem;
+    }
 }
 
 /* Form */
-
 .vs-form {
     text-align: center;
     max-width: 460px;
@@ -276,4 +253,11 @@ body.is-ie .masthead {
     color:orangered;
 }
 
+.footer {
+    width:100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    z-index: 2;
+}
 
