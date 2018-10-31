@@ -58,7 +58,14 @@
             </h1>
             <!--<h2 id="location"></h2>-->
 
-            <div id="form-Container" class="vs-form">
+
+
+            <div id="form-container" class="vs-form">
+                <div id="form-error-message" class="d-none">
+                    <i class="fas fa-exclamation-circle fa-4x"></i>
+                    <h2>Somethings wrong!</h2>
+                    <p>Check the red boxes below!</p>
+                </div>
                 <form id="summon-form" name="summon-form"> <!--method="post" action="https://czanhrxz97.execute-api.eu-west-1.amazonaws.com/default/summoner"-->
                     <div class="form-group floating-label">
                         <input class="form-control" placeholder="Who are you?" type="text" id="summoner" name="summoner-name" required>
@@ -89,15 +96,29 @@
                 <!--<button class="btn btn-secondary" onclick="testSummon()">test button</button>-->
             </div>
 
+        <div id="loading-message" class="d-none">
+            <i class="far fa-compass fa-spin fa-9x"></i>
+            <h1>Loading...</h1>
+        </div>
+
         <div id="success-message" class="d-none">
-            <h1>Success! </h1>
+            <i class="fas fa-route fa-9x"></i>
+            <h1>Success!</h1>
             <h2><span id="success-content"></span></h2>
         </div>
 
         <div id="location-error" class="d-none">
-            <h1>Failure! </h1>
+            <i class="fas fa-exclamation-triangle fa-9x"></i>
+            <h1>Failure!</h1>
             <h2>We can't get your location.</h2>
-            <p>Try refreshing the page and enabling location services. If it still not working drop us an <a href="mailto:thesummoner@elasticparsley.uk?Subject=The%20Summoner%20is%20Broken!">email.</a></p>
+            <p>Try refreshing the page and enabling location services. If it still not working, drop us an <a href="mailto:thesummoner@elasticparsley.uk?Subject=The%20Summoner%20is%20Broken!">email.</a></p>
+        </div>
+
+        <div id="general-error" class="d-none">
+            <i class="fas fa-exclamation-triangle fa-9x"></i>
+            <h1>Failure!</h1>
+            <h2>Something's gone wrong.</h2>
+            <p>Try refreshing the page and enabling location services. If it still not working, drop us an <a href="mailto:thesummoner@elasticparsley.uk?Subject=The%20Summoner%20is%20Broken!">email.</a></p>
         </div>
 
 

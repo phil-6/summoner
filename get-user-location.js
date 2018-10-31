@@ -11,16 +11,17 @@ if (navigator.geolocation) {
         document.getElementById("userLng").value = userPos.lng;
 
     }, function() {
-            handleLocationError(true, userPos );
+            handleLocationError(true );
     });
 } else {
     // Browser doesn't support Geolocation
     defaultPos = {lat: 51.600000, lng: -4.150000};
-    handleLocationError(false,  defaultPos);
+    handleLocationError(false);
 }
 
-function handleLocationError(browserHasGeolocation, pos) {
-
+function handleLocationError(browserHasGeolocation) {
+    document.getElementById("location-error").classList.remove("d-none");
+    document.getElementById("form-container").classList.add("d-none");
     console.log(browserHasGeolocation ?
         'Error: The Geolocation service failed.' :
         'Error: Your browser doesn\'t support geolocation.');

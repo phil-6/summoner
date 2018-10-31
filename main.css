@@ -70,11 +70,8 @@ body.is-main {
     /*transition: opacity 6s ease;*/
 }
 body.is-success{
-
 }
 body.is-failure{
-    /*background-color:lightcoral;*/
-    /*opacity: 1;*/
 }
 /* masthead */
 .masthead {
@@ -106,7 +103,6 @@ body.is-failure{
 .masthead > * {
     z-index: 1;
 }
-
 
 body.is-ie .masthead {
     height: 80%;
@@ -169,20 +165,6 @@ body.is-ie .masthead {
     color: #022B3A;
     opacity: 0.85;
 }
-.vs-form form .form-control.form-error ::placeholder{
-    color: red !important;
-
-
-}
-.vs-form form .form-control.form-error{
-    border:red;
-    background-color: indianred;
-}
-.vs-form form select {
-    width: 60%;
-    margin: auto;
-    height: 55px;
-}
 .vs-form form .select-div {
     height: 50px;
 }
@@ -234,37 +216,55 @@ body.is-ie .masthead {
     transform: translateY(-14px);
     opacity: 0.7;
 }
-.vs-form form .floating-label textarea:not(:placeholder-shown) {
-    padding-top: 28px;
-    padding-bottom: 12px;
-}
-.vs-form form .floating-label textarea:not(:placeholder-shown) + label {
-    transform: translateY(-30px);
-    opacity: 0.7;
-}
-.vs-form form .floating-label .field_with_errors label {
-    transform: translateY(-14px);
-    opacity: 0.7;
-    color: darkred;
-    font-weight: 600;
-}
-.vs-form form .floating-label .field_with_errors ::placeholder {
-    opacity: 0;
-}
+.vs-form form .form-control.form-error{
+    background-color: #E26D5A;
 
+}
+.vs-form form .form-control.form-error::placeholder{
+    color: ghostwhite;
+    opacity: 1;
+    font-weight: 700;
+}
+.vs-form form .floating-label input:not(:placeholder-shown).form-error + label {
+    color: whitesmoke;
+    opacity: 1;
+    font-weight: 700;
+}
+i {
+    text-shadow:6px 6px 6px rgba(0,0,0,0.4);
+}
+#summon-button{
+    box-shadow: 6px 4px 8px 0px rgba(0,0,0,0.4);
+}
+#summon-button:hover{
+    box-shadow: none;
+}
+#location-error  i, #general-error i{
+    color:orangered;
+}
 #location-error a{
     color:darkred;
     font-weight: 700;
 }
-
 #location-error a:hover{
     color:orangered;
 }
-
+#form-error-message i{
+    color:indianred;
+}
+#loading-message{
+    color:whitesmoke;
+    text-shadow:none;
+}
+#loading-message i{
+    text-shadow:none;
+}
+#success-message i{
+    color:#ee6600;
+}
 .footer {
     width:100%;
     bottom: 0;
     text-align: center;
     z-index: 2;
 }
-
