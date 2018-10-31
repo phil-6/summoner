@@ -169,11 +169,14 @@ body.is-ie .masthead {
     color: #022B3A;
     opacity: 0.85;
 }
-.vs-form form .form-error ::placeholder{
-    color: red;
+.vs-form form .form-control.form-error ::placeholder{
+    color: red !important;
+
+
 }
-.vs-form form .form-control .form-error{
+.vs-form form .form-control.form-error{
     border:red;
+    background-color: indianred;
 }
 .vs-form form select {
     width: 60%;

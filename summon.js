@@ -5,21 +5,24 @@ function summonThem() {
         var phoneregex = /^(447\d{9})$/;
         if (document.getElementById("summoner").value == ""){
             document.getElementById("summoner").focus();
-            document.getElementById("summoner").placeholder += ' Error Check this field';
             document.getElementById("summoner").classList.add("form-error");
             validForm = false;
+        }else{
+            document.getElementById("summoner").classList.remove("form-error");
         }
         if (document.getElementById("summonee").value == ""){
             document.getElementById("summonee").focus();
-            document.getElementById("summonee").placeholder += ' Error Check this field';
             document.getElementById("summonee").classList.add("form-error");
             validForm = false;
+        }else{
+            document.getElementById("summonee").classList.remove("form-error");
         }
         if (!phoneregex.test(document.getElementById("number").value)){
             document.getElementById("number").focus();
-            document.getElementById("number-label").innerHTML += ' Error Must be in format: 447123123123';
             document.getElementById("number").classList.add("form-error");
             validForm = false;
+        }else{
+            document.getElementById("number").classList.remove("form-error");
         }
         if ((document.getElementById("userLat").value == "")||(document.getElementById("userLng").value == "")){
             document.getElementById("location-error").classList.remove("d-none");
