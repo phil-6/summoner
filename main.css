@@ -11,15 +11,19 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 a:focus, a:hover {
     text-decoration: none;
 }
+html {
+    height: 100%;
+}
+body #overboot{
+    height:100% !important;
+}
 body {
     font-family: 'Krub', sans-serif;;
     letter-spacing: 0.0625em;
     color: #022B3A;
-    /*position: relative;*/
     width: 100%;
-    height: 100%;
+    height: 100%!important;
     display: block;
-    position: absolute;
     background-color: #e4aaff;
     background: -moz-linear-gradient(190deg, #ee6600 10%,#B210FF 40%, #4C83FF );
     background: -webkit-linear-gradient(190deg, #ee6600 10%,#B210FF 40%, #4C83FF );
@@ -54,6 +58,7 @@ body:after {
     -ms-transition: opacity 26s ease;
     transition: opacity 26s ease;
 }
+
 body.is-preload:after {
     opacity: 1;
 }
@@ -69,7 +74,7 @@ body.is-success{
 }
 body.is-failure{
     /*background-color:lightcoral;*/
-    opacity: 1;
+    /*opacity: 1;*/
 }
 /* masthead */
 .masthead {
@@ -255,7 +260,6 @@ body.is-ie .masthead {
 
 .footer {
     width:100%;
-    position: fixed;
     bottom: 0;
     text-align: center;
     z-index: 2;
