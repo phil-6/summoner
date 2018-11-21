@@ -14,9 +14,9 @@ a:focus, a:hover {
 html {
     height: 100%;
 }
-body #overboot{
+/*body #overboot{
     height:100% !important;
-}
+}*/
 body {
     font-family: 'Krub', sans-serif;;
     letter-spacing: 0.0625em;
@@ -43,7 +43,7 @@ body:after {
     width: 100%;
     height: 100%;
     opacity: 0;
-    z-index: 1;
+    /*z-index: 1;*/
     background-color: #6761A8;
     background-image: -moz-linear-gradient(120deg,#04E824,#009DDC,#6761A8,#663399);
     background-image: -webkit-linear-gradient(120deg, #04E824,#009DDC,#6761A8,#663399);
@@ -265,6 +265,16 @@ i {
 .footer {
     width:100%;
     bottom: 0;
+    opacity: 1;
+    z-index: 2;
     text-align: center;
-    /*z-index: 4;*/
+    position: relative;
+    -moz-transition: opacity 26s ease;
+    -webkit-transition: opacity 26s ease;
+    -ms-transition: opacity 26s ease;
+    transition: opacity 26s ease;
+}
+
+.invisible {
+    opacity: 0;
 }

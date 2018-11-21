@@ -137,7 +137,7 @@
     </section>
 
 </header>
-<div class="footer">
+<div id="footer" class="footer invisible">
     <p class="text-center">Just so you know, no information is stored at all. The summoner is an entirely serverless app powered by AWS.</p>
     <br />
     <div class="row mx-auto justify-content-md-center">
@@ -169,6 +169,7 @@
     if ('addEventListener' in window) {
         window.addEventListener('load', function () {
             document.body.classList.remove("is-preload");
+            document.getElementById("footer").classList.remove("invisible");
             // document.body.classList.add("is-main");
         });
         document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
