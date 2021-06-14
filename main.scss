@@ -1,0 +1,72 @@
+$heading-font: 'Carter One', Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+$subheading-font: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+$body-font: 'Montserrat', Verdana, Geneva, sans-serif;
+
+
+$dark-blue: #0a2540;
+$light-blue: #00d4ff;
+
+//** Theme **//
+body {
+  &.light {
+    &.blue{
+      color: $dark-blue;
+      background-color: $light-blue;
+    }
+  }
+  &.dark{
+    &.blue {
+      background-color: $dark-blue;
+      color: $light-blue;
+      .choice a{
+        color: $light-blue;
+        border-color: $light-blue;
+        &:hover{
+          background-color: $light-blue;
+          color: $dark-blue;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+
+body {
+
+  font-family: $body-font;
+
+
+  .center {
+    text-align: center;
+  }
+  header {
+    h1 {
+      font-family:  $heading-font;
+      font-size: 4rem;
+      text-align: center;
+    }
+    .subheading {
+      font-family: $subheading-font;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+    .small {
+      font-size: 0.8rem
+    }
+  }
+  main {
+    .choice {
+      a {
+        text-decoration: none;
+        padding: 1rem;
+        border: 2px solid;
+        border-radius: 1.1rem;
+        &:hover {
+
+        }
+      }
+    }
+
+  }
+}
