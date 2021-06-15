@@ -3,33 +3,7 @@ $subheading-font: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 $body-font: 'Montserrat', Verdana, Geneva, sans-serif;
 
 
-$dark-blue: #0a2540;
-$light-blue: #00d4ff;
 
-//** Theme **//
-body {
-  &.light {
-    &.blue{
-      color: $dark-blue;
-      background-color: $light-blue;
-    }
-  }
-  &.dark{
-    &.blue {
-      background-color: $dark-blue;
-      color: $light-blue;
-      .choice a{
-        color: $light-blue;
-        border-color: $light-blue;
-        &:hover{
-          background-color: $light-blue;
-          color: $dark-blue;
-          font-weight: 500;
-        }
-      }
-    }
-  }
-}
 
 
 body {
