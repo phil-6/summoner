@@ -1,0 +1,189 @@
+//dark blue
+//light blue
+
+$dark-blue: #0a2540;
+$light-blue: #00d4ff;
+
+//dark red
+$dark-red-ink: #c3073f;
+$dark-red-background: #1a1a1d;
+$dark-red-gray: #4e4e50;
+$dark-red-dark: #6f2232;
+
+//light red
+$light-red-ink: #e98074;
+$light-red-background: #eae7dc;
+$light-red-darker: #e85a4f;
+
+//dark orange
+
+//light orange
+
+//dark yellow
+
+//light yellow
+
+//dark green
+$dark-green-ink: #def2f1;
+$dark-green-background: #3aafa9;
+
+//light green
+$light-green-ink: #05386B;
+$light-green-white: #edf5e1;
+$light-green-background: #5cdb95;
+
+//dark purple
+$dark-purple-ink: #3500D3;
+$dark-purple-background: #190061;
+$dark-purple-dark: #0c0032;
+$dark-purple-black: #282828;
+//light purple
+$light-purple-ink: #8860d0;
+$light-purple-background: #c1c8e4;
+$light-purple-button: #5680e9;
+$light-purple-button-ink: #84ceeb;
+
+
+
+
+//** Theme **//
+body {
+  &.light {
+    &.red {
+      color: $light-red-ink;
+      background: $light-red-background;
+      .choice a{
+        color: $light-red-ink;
+        background: $light-red-background;
+        border-color: $light-red-ink;
+        &:hover{
+          color: $light-red-background;
+          background: $light-red-ink;
+        }
+      }
+    }
+    &.orange {
+      .choice a{
+        &:hover{
+
+        }
+      }
+    }
+    &.yellow {
+      .choice a{
+        &:hover{
+
+        }
+      }
+    }
+    &.green {
+      color: $light-green-ink;
+      background: $light-green-background;
+      .choice a{
+        color: $light-green-ink;
+        background: $light-green-background;
+        border-color: $light-green-ink;
+        &:hover{
+          color: $light-green-background;
+          background: $light-green-ink;
+        }
+      }
+    }
+    &.blue{
+      color: $dark-blue;
+      background-color: $light-blue;
+      .choice a{
+        color: $dark-blue;
+        border-color: $dark-blue;
+        &:hover{
+          background-color: $dark-blue;
+          color: $light-blue;
+          font-weight: 500;
+        }
+      }
+    }
+    &.purple {
+      color: $light-purple-ink;
+      background: $light-purple-background;
+      .choice a{
+        color: $light-purple-button-ink;
+        background: $light-purple-button;
+        &:hover{
+          background: $light-purple-button-ink;
+          color: $light-purple-button;
+
+        }
+      }
+    }
+  }
+
+  //dark mode
+  &.dark{
+    &.red {
+      color: $dark-red-ink;
+      background: $dark-red-background;
+      .choice a{
+        color: $dark-red-gray;
+        background: $dark-red-dark;
+        &:hover{
+          color: $dark-red-dark;
+          background: $dark-red-gray;
+
+        }
+      }
+    }
+    &.orange {
+      .choice a{
+        &:hover{
+
+        }
+      }
+    }
+    &.yellow {
+      .choice a{
+        &:hover{
+
+        }
+      }
+    }
+    &.green {
+      color: $dark-green-ink;
+      background: $dark-green-background;
+      .choice a{
+        color: $dark-green-ink;
+        background: $dark-green-background;
+        &:hover{
+          color: $dark-green-background;
+          background: $dark-green-ink;
+
+        }
+      }
+    }
+    &.blue {
+      background-color: $dark-blue;
+      color: $light-blue;
+      .choice a{
+        color: $light-blue;
+        border-color: $light-blue;
+        &:hover{
+          background-color: $light-blue;
+          color: $dark-blue;
+          font-weight: 500;
+        }
+      }
+    }
+    &.purple {
+      color: $dark-purple-ink;
+      background: $dark-purple-background;
+      .choice a{
+        color: $dark-purple-ink;
+        background: $dark-purple-dark;
+        &:hover{
+          color: $dark-purple-dark;
+          background: $dark-purple-ink;
+
+        }
+      }
+    }
+  }
+}
