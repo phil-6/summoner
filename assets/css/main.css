@@ -1,4 +1,5 @@
 body {
+  min-height: 100vh;
   font-family: "Montserrat", Verdana, Geneva, sans-serif;
 }
 body .center {

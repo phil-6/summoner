@@ -24,9 +24,11 @@ function setTheme() {
     } else if (currentTheme === "dark") {
         document.body.classList.remove("light");
         document.body.classList.add("dark");
+        themeBtn.innerHTML = "Theme: Dark";
     } else if (currentTheme === "light") {
         document.body.classList.remove("dark");
         document.body.classList.add("light");
+        themeBtn.innerHTML = "Theme: Light";
     }
 }
 
@@ -34,26 +36,32 @@ function setColor() {
     if (currentColor === "red") {
         document.body.classList.remove(...colors)
         document.body.classList.add("red");
+        colorBtn.innerHTML = "Colour: Red";
     }
     if (currentColor === "orange") {
         document.body.classList.remove(...colors)
         document.body.classList.add("orange");
+        colorBtn.innerHTML = "Colour: Orange";
     }
     if (currentColor === "yellow") {
         document.body.classList.remove(...colors)
         document.body.classList.add("yellow");
+        colorBtn.innerHTML = "Colour: Yellow";
     }
     if (currentColor === "green") {
         document.body.classList.remove(...colors)
         document.body.classList.add("green");
+        colorBtn.innerHTML = "Colour: Green";
     }
     if (currentColor === "blue") {
         document.body.classList.remove(...colors)
         document.body.classList.add("blue");
+        colorBtn.innerHTML = "Colour: Blue";
     }
     if (currentColor === "purple") {
         document.body.classList.remove(...colors)
         document.body.classList.add("purple");
+        colorBtn.innerHTML = "Colour: Purple";
     }
 }
 

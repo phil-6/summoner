@@ -1,36 +1,136 @@
+
+// red
+$red: #DC042A;
+$red-light-2: #F9B3BF;
+$red-light-1: #EF5671;
+$red-dark-1: #9C001C;
+$red-dark-2: #42000C;
+
+$red-secondary-1-0: #EB9304;
+$red-secondary-1-1: #FFE4B7;
+$red-secondary-1-2: #FFC15C;
+$red-secondary-1-3: #A66700;
+$red-secondary-1-4: #472C00;
+
+$red-secondary-2-0: #590E9E;
+$red-secondary-2-1: #C3A5DF;
+$red-secondary-2-2: #7B46AC;
+$red-secondary-2-3: #3D0670;
+$red-secondary-2-4: #190130;
+
+$red-complement-0: #3FCA04;
+$red-complement-1: #C2F1AE;
+$red-complement-2: #79DB4F;
+$red-complement-3: #2B8F00;
+$red-complement-4: #123D00;
+
+//dark red
+$red-dark-ink: $red-light-2;
+$red-dark-heading-ink: $red;
+$red-dark-background: $red-dark-2;
+$red-dark-background-grad: linear-gradient( 185deg, $red-secondary-1-4, $red-dark-2, $red-secondary-2-4) ;
+$red-dark-button-ink: $red-secondary-1-0;
+$red-dark-button-background: $red-dark-2;
+$red-dark-hover-ink: $red-secondary-1-0 ;
+$red-dark-hover-background: $red-secondary-2-0;
+
+//light red
+$red-light-ink: $red-dark-1;
+$red-light-background: $red-secondary-1-1;
+$red-light-background-grad: linear-gradient( 185deg, $red-secondary-1-1, $red-light-2, $red-secondary-2-1) ;
+$red-light-darker: $red-dark-2;
+
+//orange
+$orange: #FF6C00;
+$orange-light-2: #FFE9D9;
+$orange-light-1: #FFA767;
+$orange-dark-1: #AA4800;
+$orange-dark-2: #361700;
+
+$orange-secondary-1-0: #1047A9;
+$orange-secondary-1-1: #CEDAEE;
+$orange-secondary-1-2: #5376B5;
+$orange-secondary-1-3: #072D71;
+$orange-secondary-1-4: #010D24;
+
+$orange-secondary-2-0: #1DD300;
+$orange-secondary-2-1: #D7F6D2;
+$orange-secondary-2-2: #69D957;
+$orange-secondary-2-3: #138C00;
+$orange-secondary-2-4: #062D00;
+
+$orange-complement-0: #009E8E;
+$orange-complement-1: #C9ECE8;
+$orange-complement-2: #45ABA1;
+$orange-complement-3: #00695E;
+$orange-complement-4: #00221E;
+//dark orange
+$orange-dark-heading-ink: $orange-secondary-1-0;
+$orange-dark-ink: $orange-secondary-1-1;
+$orange-dark-background: $orange;
+$orange-dark-background-grad: linear-gradient( 170deg, $orange-dark-2, $orange-dark-1/*, $orange-dark-1, $orange-dark-2*/);
+
+$orange-dark-button-background: $orange-secondary-2-0;
+$orange-dark-button-ink: $orange-dark-1;
+$orange-dark-button-hover-background: $orange-secondary-2-3;
+$orange-dark-button-hover-ink: $orange-light-1;
+//light orange
+
+$orange-light-heading-ink: $orange-dark-1;
+$orange-light-ink: $orange-secondary-1-4;
+$orange-light-background: $orange;
+$orange-light-background-grad: linear-gradient( 170deg, $orange-light-2, $orange-light-1, $orange );
+
+$orange-light-button-background: $orange;
+$orange-light-button-ink: $orange-light-2;
+$orange-light-button-hover-background: $orange;
+$orange-light-button-hover-ink: $orange-secondary-1-0;
+
+//dark yellow
+
+//light yellow
+$light-yellow-background: #ffbd54;
+$light-yellow-background-grad: linear-gradient( to bottom,$light-yellow-background 0%,#fec458 50%,#ffbc3a 100% );
+$light-yellow-ink: #2D4059;
+
+//green
+
+$green: #4AB944;
+$green-light-2: #D7FCD5;
+$green-light-1: #85E181;
+$green-dark-1: #21851C;
+$green-dark-2: #032D01;
+
+$green-secondary-1-0: #425E99;
+$green-secondary-1-1: #D7E2F9;
+$green-secondary-1-2: #7D95CA;
+$green-secondary-1-3: #20396E;
+$green-secondary-1-4: #050F25;
+
+$green-complement-0: #E25357;
+$green-complement-1: #FFD7D8;
+$green-complement-2: #FE9194;
+$green-complement-3: #A32225;
+$green-complement-4: #370103;
+
+//dark green
+$green-dark-ink: $green-secondary-1-1;
+$green-dark-background: $green-dark-2 ;
+$green-dark-background-grad: linear-gradient( 160deg, $green-dark-2, $green-dark-1);
+$green-dark-ink-hover: $green;
+$green-dark-background-hover: $green-secondary-1-0;
+
+//light green
+$green-light-ink: $green-secondary-1-3;
+$green-light-white: #edf5e1;
+$green-light-background: #5cdb95;
+$green-light-background-grad: linear-gradient( 160deg, $green-light-background, $green-light-1);
+
 //dark blue
 //light blue
 
 $dark-blue: #0a2540;
 $light-blue: #00d4ff;
-
-//dark red
-$dark-red-ink: #c3073f;
-$dark-red-background: #1a1a1d;
-$dark-red-gray: #4e4e50;
-$dark-red-dark: #6f2232;
-
-//light red
-$light-red-ink: #e98074;
-$light-red-background: #eae7dc;
-$light-red-darker: #e85a4f;
-
-//dark orange
-
-//light orange
-
-//dark yellow
-
-//light yellow
-
-//dark green
-$dark-green-ink: #def2f1;
-$dark-green-background: #3aafa9;
-
-//light green
-$light-green-ink: #05386B;
-$light-green-white: #edf5e1;
-$light-green-background: #5cdb95;
 
 //dark purple
 $dark-purple-ink: #3500D3;
@@ -42,30 +142,39 @@ $light-purple-ink: #8860d0;
 $light-purple-background: #c1c8e4;
 $light-purple-button: #5680e9;
 $light-purple-button-ink: #84ceeb;
+//8506A9
 
 
 
-
-//** Theme **//
+//** Themes **//
 body {
   &.light {
     &.red {
-      color: $light-red-ink;
-      background: $light-red-background;
+      color: $red-light-ink;
+      background: $red-light-background-grad;
       .choice a{
-        color: $light-red-ink;
-        background: $light-red-background;
-        border-color: $light-red-ink;
+        color: $red-light-ink;
+        border-color: $red-light-ink;
         &:hover{
-          color: $light-red-background;
-          background: $light-red-ink;
+          color: $red-light-background;
+          background: $red-light-ink;
         }
       }
     }
     &.orange {
-      .choice a{
-        &:hover{
+      color: $orange-light-ink;
+      background: $orange-light-background-grad;
+      h1, h2{
+        color: $orange-light-heading-ink;
+      }
+      .choice a {
+        color: $orange-light-button-ink;
+        background: $orange-light-button-background;
+        font-weight: 500;
 
+        &:hover {
+          color: $orange-light-button-hover-ink;
+          background: $orange-light-button-hover-background;
         }
       }
     }
@@ -77,15 +186,15 @@ body {
       }
     }
     &.green {
-      color: $light-green-ink;
-      background: $light-green-background;
+      color: $green-light-ink;
+      background: $green-light-background-grad;
       .choice a{
-        color: $light-green-ink;
-        background: $light-green-background;
-        border-color: $light-green-ink;
+        color: $green-light-ink;
+        background: $green-light-background;
+        border-color: $green-light-ink;
         &:hover{
-          color: $light-green-background;
-          background: $light-green-ink;
+          color: $green-light-background;
+          background: $green-light-ink;
         }
       }
     }
@@ -120,22 +229,35 @@ body {
   //dark mode
   &.dark{
     &.red {
-      color: $dark-red-ink;
-      background: $dark-red-background;
+      color: $red-dark-ink;
+      background: $red-dark-background-grad;
+      h1, h2{
+        color: $red-dark-heading-ink;
+      }
       .choice a{
-        color: $dark-red-gray;
-        background: $dark-red-dark;
+        color: $red-dark-button-ink;
+        background: $red-dark-button-background;
         &:hover{
-          color: $dark-red-dark;
-          background: $dark-red-gray;
+          color: $red-dark-hover-ink;
+          background: $red-dark-hover-background;
+          border-color: $red-dark-hover-background;
 
         }
       }
     }
     &.orange {
+      color: $orange-dark-ink;
+      background: $orange-dark-background-grad;
+      h1, h2{
+        color: $orange-dark-heading-ink;
+      }
       .choice a{
+        color: $orange-dark-button-ink;
+        background: $orange-dark-button-background;
+        font-weight: 500;
         &:hover{
-
+          color: $orange-dark-button-hover-ink;
+          background: $orange-dark-button-hover-background;
         }
       }
     }
@@ -147,14 +269,14 @@ body {
       }
     }
     &.green {
-      color: $dark-green-ink;
-      background: $dark-green-background;
+      color: $green-dark-ink;
+      background: $green-dark-background-grad;
       .choice a{
-        color: $dark-green-ink;
-        background: $dark-green-background;
+        color: $green-dark-ink;
+        background: $green-dark-background;
         &:hover{
-          color: $dark-green-background;
-          background: $dark-green-ink;
+          color: $green-dark-background-hover;
+          background: $green-dark-ink-hover;
 
         }
       }

@@ -1,28 +1,43 @@
 body.light.red {
-  color: #e98074;
-  background: #eae7dc;
+  color: #9C001C;
+  background: linear-gradient(185deg, #FFE4B7, #F9B3BF, #C3A5DF);
 }
 body.light.red .choice a {
-  color: #e98074;
-  background: #eae7dc;
-  border-color: #e98074;
+  color: #9C001C;
+  border-color: #9C001C;
 }
 body.light.red .choice a:hover {
-  color: #eae7dc;
-  background: #e98074;
+  color: #FFE4B7;
+  background: #9C001C;
+}
+body.light.orange {
+  color: #010D24;
+  background: linear-gradient(170deg, #FFE9D9, #FFA767, #FF6C00);
+}
+body.light.orange h1, body.light.orange h2 {
+  color: #AA4800;
+}
+body.light.orange .choice a {
+  color: #FFE9D9;
+  background: #FF6C00;
+  font-weight: 500;
+}
+body.light.orange .choice a:hover {
+  color: #1047A9;
+  background: #FF6C00;
 }
 body.light.green {
-  color: #05386B;
-  background: #5cdb95;
+  color: #20396E;
+  background: linear-gradient(160deg, #5cdb95, #85E181);
 }
 body.light.green .choice a {
-  color: #05386B;
+  color: #20396E;
   background: #5cdb95;
-  border-color: #05386B;
+  border-color: #20396E;
 }
 body.light.green .choice a:hover {
   color: #5cdb95;
-  background: #05386B;
+  background: #20396E;
 }
 body.light.blue {
   color: #0a2540;
@@ -50,28 +65,48 @@ body.light.purple .choice a:hover {
   color: #5680e9;
 }
 body.dark.red {
-  color: #c3073f;
-  background: #1a1a1d;
+  color: #F9B3BF;
+  background: linear-gradient(185deg, #472C00, #42000C, #190130);
+}
+body.dark.red h1, body.dark.red h2 {
+  color: #DC042A;
 }
 body.dark.red .choice a {
-  color: #4e4e50;
-  background: #6f2232;
+  color: #EB9304;
+  background: #42000C;
 }
 body.dark.red .choice a:hover {
-  color: #6f2232;
-  background: #4e4e50;
+  color: #EB9304;
+  background: #590E9E;
+  border-color: #590E9E;
+}
+body.dark.orange {
+  color: #CEDAEE;
+  background: linear-gradient(170deg, #361700, #AA4800);
+}
+body.dark.orange h1, body.dark.orange h2 {
+  color: #1047A9;
+}
+body.dark.orange .choice a {
+  color: #AA4800;
+  background: #1DD300;
+  font-weight: 500;
+}
+body.dark.orange .choice a:hover {
+  color: #FFA767;
+  background: #138C00;
 }
 body.dark.green {
-  color: #def2f1;
-  background: #3aafa9;
+  color: #D7E2F9;
+  background: linear-gradient(160deg, #032D01, #21851C);
 }
 body.dark.green .choice a {
-  color: #def2f1;
-  background: #3aafa9;
+  color: #D7E2F9;
+  background: #032D01;
 }
 body.dark.green .choice a:hover {
-  color: #3aafa9;
-  background: #def2f1;
+  color: #425E99;
+  background: #4AB944;
 }
 body.dark.blue {
   background-color: #0a2540;
