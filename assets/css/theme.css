@@ -89,12 +89,12 @@ body.dark.orange h1, body.dark.orange h2 {
 }
 body.dark.orange .choice a {
   color: #AA4800;
-  background: #1DD300;
-  font-weight: 500;
+  background: #1047A9;
+  font-weight: 600;
 }
 body.dark.orange .choice a:hover {
   color: #FFA767;
-  background: #138C00;
+  background: #072D71;
 }
 body.dark.green {
   color: #D7E2F9;
