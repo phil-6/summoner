@@ -7,7 +7,8 @@ const twilio = require('twilio')(accountSid, authToken);
 
 // use twilio SDK to send text message https://www.twilio.com/docs/libraries/node
 exports.handler = (event, context, callback) => {
-    const data = JSON.parse(event.body.payload.data)
+    const body = JSON.parse(event.body)
+    const data = body.payload.data
     console.log(event.body.payload)
     console.log("=============== after event.body.payload")
     console.log(event.body.payload.data)
