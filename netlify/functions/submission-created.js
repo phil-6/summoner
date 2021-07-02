@@ -9,11 +9,11 @@ const twilio = require('twilio')(accountSid, authToken);
 exports.handler = (event, context, callback) => {
     const body = JSON.parse(event.body)
     console.log(event)
-    console.log("==================")
-    console.log(body)
-    console.log("==================")
-    console.log(body.data)
-    console.log("==================")
+    console.log("================== after event")
+    console.log(body.payload.data)
+    console.log("================== after body payload data")
+    console.log(body.payload.data.phone)
+    console.log("================== after body payload data phone")
     let message = `Hi ${body.data.summonee}. ${body.data.summoner} has shared their location with you. You can get to them here: https://www.google.com/maps/dir/?api=1&destination=${body.data.lat},${body.data.lng}`
 
     const sms = {
