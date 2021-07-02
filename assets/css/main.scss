@@ -15,6 +15,9 @@ body {
       font-size: 4rem;
       text-align: center;
     }
+    h2 {
+      text-align: center;
+    }
     .subheading {
       font-family: $subheading-font;
       font-size: 1.4rem;
@@ -40,6 +43,9 @@ body {
 
         }
       }
+    }
+    .text-center{
+      text-align: center;
     }
 
   }

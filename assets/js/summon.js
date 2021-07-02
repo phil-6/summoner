@@ -37,61 +37,50 @@ function summonThem() {
             // document.getElementById("form-error-message").classList.add("d-none");
             document.getElementById("form-container").classList.add("hide");
             document.getElementById("loading-message").classList.remove("hide");
-            validSummon();
+            // validSummon();
         }
     }
 
 
 
-    function validSummon() {
-        const jsonFormData = toJSONString(document.getElementById("summon-form"));
-        const API_GATEWAY_LOGIN_URL = "https://4ohtthv7a9.execute-api.eu-west-1.amazonaws.com/default";
-        const restful_action = "POST";
-
-        $.ajax({
-            type: restful_action,
-            cache: false,
-            data: jsonFormData,
-            contentType: "application/json",
-            url: API_GATEWAY_LOGIN_URL,
-            success: function (data) {
-                document.getElementById("loading-message").classList.add("d-none");
-                document.getElementById("success-content").innerHTML = (JSON.stringify(data).replace(/['"]+/g, ''));
-                document.getElementById("success-message").classList.remove("d-none");
-                document.body.classList.add("is-success");
-                return;
-            },
-            error: function (xhr) {
-                document.getElementById("general-error").classList.remove("d-none");
-                alert("An error occured: " + xhr.status + " " + xhr.statusText)
-            }
-        });
-    }
+    // function validSummon() {
+    //     const jsonFormData = toJSONString(document.getElementById("summon-form"));
+    //     const API_GATEWAY_LOGIN_URL = "https://4ohtthv7a9.execute-api.eu-west-1.amazonaws.com/default";
+    //     const restful_action = "POST";
+    //
+    //     $.ajax({
+    //         type: restful_action,
+    //         cache: false,
+    //         data: jsonFormData,
+    //         contentType: "application/json",
+    //         url: API_GATEWAY_LOGIN_URL,
+    //         success: function (data) {
+    //             document.getElementById("loading-message").classList.add("d-none");
+    //             document.getElementById("success-content").innerHTML = (JSON.stringify(data).replace(/['"]+/g, ''));
+    //             document.getElementById("success-message").classList.remove("d-none");
+    //             document.body.classList.add("is-success");
+    //             return;
+    //         },
+    //         error: function (xhr) {
+    //             document.getElementById("general-error").classList.remove("d-none");
+    //             alert("An error occured: " + xhr.status + " " + xhr.statusText)
+    //         }
+    //     });
+    // }
     formValidation();
 }
 
+const testForm = document.querySelector("#test-form")
+testForm.addEventListener("submit", handleSubmit);
 
-
-function testSummon() {
-    var philsData = JSON.stringify({"summoner-name":"testhardcodedsummoner","summonee-name":"testhardcoded","summonee-number":"447828170428","lat":"51.6639986","lng":"-3.9181857"});
-    // alert(philsData);
-    //console.log(philsData);
-    const API_GATEWAY_LOGIN_URL = "https://czanhrxz97.execute-api.eu-west-1.amazonaws.com/default";
-    var restful_action = "POST";
-
-    $.ajax({
-        type     : restful_action,
-        cache    : false,
-        data     : philsData,
-        contentType: "application/json",
-        url      : API_GATEWAY_LOGIN_URL,
-        success: function(data) {
-            alert(JSON.stringify(data));
-            return;
-        },
-        error    : function(xhr) {
-            alert("An error occured: " + xhr.status + " " + xhr.statusText)
-        }
-    });
-    // alert("after ajax" + philsData);
+const handleSubmit = (e) => {
+    e.preventDefault()
+    let testForm = document.getElementById('test-form');
+    let formData = new FormData(testForm)
+    fetch('/', {
+        method: 'POST',
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+    }).then(() => console.log('Form successfully submitted')).catch((error) =>
+        alert(error))
 }
