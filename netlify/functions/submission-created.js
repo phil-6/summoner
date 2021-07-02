@@ -1,7 +1,6 @@
-// Your Account SID from www.twilio.com/console
 const accountSid = process.env.TWILIO_ACCOUNT_SID
-// Your Auth Token from www.twilio.com/console
 const authToken = process.env.TWILIO_AUTH_TOKEN
+const fromNumber = process.env.TWILIO_PHONE_NUMBER
 
 const twilio = require('twilio')(accountSid, authToken);
 
@@ -20,7 +19,7 @@ exports.handler = (event, context, callback) => {
     const sms = {
         to: phone,
         body: content || '',
-        from: "The Summoner",
+        from: fromNumber,
     }
     console.log(sms)
 
