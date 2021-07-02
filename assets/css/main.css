@@ -29,5 +29,8 @@ body main .choice a {
   border: 2px solid;
   border-radius: 1.1rem;
 }
+body .hide {
+  display: none;
+}
 
 /*# sourceMappingURL=main.css.map */
