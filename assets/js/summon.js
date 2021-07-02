@@ -71,16 +71,47 @@ function summonThem() {
 }
 
 const testForm = document.querySelector("#test-form")
-testForm.addEventListener("submit", handleSubmit);
+testForm.addEventListener('submit', async event => {
+    event.preventDefault();
 
-const handleSubmit = (e) => {
-    e.preventDefault()
-    let testForm = document.getElementById('test-form');
-    let formData = new FormData(testForm)
-    fetch('/', {
-        method: 'POST',
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString()
-    }).then(() => console.log('Form successfully submitted')).catch((error) =>
-        alert(error))
-}
+    // disable button to prevent multiple submissions
+    testForm.querySelector('button').disabled = true;
+
+    // make the request to submit the form
+    try {
+        const response = await fetch('/', {
+            method: 'post',
+            headers: {
+                'Content-type': 'application/x-www-form-urlencoded; charset=UTF-8'
+            },
+            // parse and submit all included form data
+            body: new URLSearchParams(new FormData(testForm)).toString()
+        });
+
+        // if it was successful show success message
+        if (response.status === 200) {
+            document.querySelector('.successMsg').hidden = false;
+        } else {
+            document.querySelector('.errorMsg').hidden = false;
+        }
+    } catch (e) {
+        console.error(e);
+    }
+});
+
+// The Twilio Way
+
+
+// The netlify way
+// testForm.addEventListener("submit", handleSubmit);
+// const handleSubmit = (e) => {
+//     e.preventDefault()
+//     let testForm = document.getElementById('test-form');
+//     let formData = new FormData(testForm)
+//     fetch('/', {
+//         method: 'POST',
+//         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+//         body: new URLSearchParams(formData).toString()
+//     }).then(() => console.log('Form successfully submitted')).catch((error) =>
+//         alert(error))
+// }
