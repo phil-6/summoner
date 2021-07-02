@@ -71,6 +71,7 @@ function summonThem() {
 }
 
 const testForm = document.querySelector("#test-form")
+// The Twilio Way
 testForm.addEventListener('submit', async event => {
     event.preventDefault();
 
@@ -99,7 +100,7 @@ testForm.addEventListener('submit', async event => {
     }
 });
 
-// The Twilio Way
+
 
 
 // The netlify way
