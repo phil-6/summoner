@@ -1,7 +1,7 @@
 function summonThem() {
     function formValidation(){
         let validForm = true;
-        const phoneregex = /^(447\d{9})$/;
+        const phoneregex = /^(07\d{9})$/;
         if (document.getElementById("summoner").value === ""){
             document.getElementById("summoner").focus();
             document.getElementById("summoner").classList.add("form-error");
