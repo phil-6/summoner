@@ -1,12 +1,14 @@
 const themeBtn = document.querySelector("#theme-toggle");
 const colorBtn = document.querySelector("#color-switch");
+const gradBtn = document.querySelector("#grad-toggle");
 // check to see if OS preferences for light or dark mode
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 const prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
 
 // check to see if local storage has a theme preference
 let currentTheme = localStorage.getItem("theme");
-let currentColor = localStorage.getItem( "color")
+let currentColor = localStorage.getItem("color")
+let currentGrad = localStorage.getItem("grad")
 let colors = ["orange", "red", "purple", "yellow", "green", "blue"]
 
 function setTheme() {
@@ -65,6 +67,17 @@ function setColor() {
     }
 }
 
+function setGrad() {
+    //if no local storage check against system preferences
+    if (currentGrad === "grad") {
+        document.body.classList.remove("no-grad");
+        document.body.classList.add("grad");
+    } else if (currentGrad === "no-grad") {
+        document.body.classList.remove("grad");
+        document.body.classList.add("no-grad");
+    }
+}
+
 themeBtn.addEventListener("click", function () {
     if (currentTheme === "dark") {
         currentTheme = "light"
@@ -77,7 +90,7 @@ themeBtn.addEventListener("click", function () {
     localStorage.setItem("theme", currentTheme);
 });
 
-themeBtn.addEventListener("mouseover", function(){
+themeBtn.addEventListener("mouseover", function () {
     if (currentTheme === "light") {
         themeBtn.innerHTML = "Theme ➟ Dark";
     } else if (currentTheme === "dark") {
@@ -86,7 +99,10 @@ themeBtn.addEventListener("mouseover", function(){
         themeBtn.innerHTML = "Change Theme";
     }
 });
-themeBtn.addEventListener("mouseleave", function(){
+
+
+
+themeBtn.addEventListener("mouseleave", function () {
     if (currentTheme === "light") {
         themeBtn.innerHTML = "Theme: Light";
     } else if (currentTheme === "dark") {
@@ -119,11 +135,11 @@ colorBtn.addEventListener("click", function () {
         currentColor = "blue"
         setColor()
     }
-    console.log(currentTheme, currentColor)
+    console.log(currentTheme, currentColor, currentGrad)
     localStorage.setItem("color", currentColor);
 });
 
-colorBtn.addEventListener("mouseover", function(){
+colorBtn.addEventListener("mouseover", function () {
     if (currentColor === "red") {
         colorBtn.innerHTML = "Colour ➟ Orange";
     } else if (currentColor === "orange") {
@@ -140,7 +156,7 @@ colorBtn.addEventListener("mouseover", function(){
         colorBtn.innerHTML = "Change Colour";
     }
 });
-colorBtn.addEventListener("mouseout", function(){
+colorBtn.addEventListener("mouseout", function () {
     if (currentColor === "red") {
         colorBtn.innerHTML = "Colour: Red";
     } else if (currentColor === "orange") {
@@ -158,6 +174,19 @@ colorBtn.addEventListener("mouseout", function(){
     }
 });
 
-console.log(currentTheme, currentColor)
+gradBtn.addEventListener("click", function () {
+    if (currentGrad === "grad") {
+        currentGrad = "no-grad"
+        setGrad()
+    } else {
+        currentGrad = "grad";
+        setGrad()
+    }
+    console.log(currentTheme, currentColor, currentGrad)
+    localStorage.setItem("grad", currentGrad);
+});
+
+console.log(currentTheme, currentColor, currentGrad)
 setColor()
 setTheme()
+setGrad()

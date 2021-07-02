@@ -18,7 +18,7 @@ body header .subheading {
 body header .small {
   font-size: 0.8rem;
 }
-body header button.theme-button, body header button.color-button {
+body header button {
   border-radius: 0.6rem;
   padding: 0.6rem;
   font-size: 0.8rem;

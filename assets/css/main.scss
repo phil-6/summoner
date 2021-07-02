@@ -24,11 +24,10 @@ body {
       font-size: 0.8rem
     }
     button{
-    &.theme-button, &.color-button {
       border-radius: 0.6rem;
       padding: 0.6rem;
       font-size: 0.8rem;
-    }}
+    }
   }
   main {
     .choice {

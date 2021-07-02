@@ -1,6 +1,11 @@
 body.light.red {
   color: #9C001C;
+}
+body.light.red.grad {
   background: linear-gradient(185deg, #FFE4B7, #F9B3BF, #C3A5DF);
+}
+body.light.red.no-grad {
+  background: #FFE4B7;
 }
 body.light.red header button {
   color: #9C001C;
@@ -26,7 +31,12 @@ body.light.red .choice a:hover {
 }
 body.light.orange {
   color: #010D24;
+}
+body.light.orange.grad {
   background: linear-gradient(182deg, #CEDAEE, #FFE9D9, #FFE9D9);
+}
+body.light.orange.no-grad {
+  background: #FFE9D9;
 }
 body.light.orange header button {
   color: #010D24;
@@ -56,7 +66,12 @@ body.light.orange .choice a:hover {
 }
 body.light.yellow {
   color: #140008;
+}
+body.light.yellow.grad {
   background: linear-gradient(180deg, #ACD9EE, #F9B1CD, #FFF6B5, #FFF6B5, #FFEB58);
+}
+body.light.yellow.no-grad {
+  background: #FFF6B5;
 }
 body.light.yellow header button {
   color: #140008;
@@ -65,7 +80,7 @@ body.light.yellow header button {
 }
 body.light.yellow header button.theme-button:hover {
   color: #ACD9EE;
-  background-color: #140008;
+  background-color: #000A0F;
 }
 body.light.yellow header button.color-button:hover {
   color: #20396E;
@@ -86,7 +101,12 @@ body.light.yellow .choice a:hover {
 }
 body.light.green {
   color: #20396E;
+}
+body.light.green.grad {
   background: linear-gradient(160deg, #5cdb95, #85E181);
+}
+body.light.green.no-grad {
+  background: #5cdb95;
 }
 body.light.green header button {
   color: #20396E;
@@ -113,7 +133,12 @@ body.light.green .choice a:hover {
 }
 body.light.blue {
   color: #0a2540;
-  background-color: #00d4ff;
+}
+body.light.blue.grad {
+  background: linear-gradient(to bottom, #00d4ff 60%, #0a2540);
+}
+body.light.blue.no-grad {
+  background: #00d4ff;
 }
 body.light.blue header button {
   color: #0a2540;
@@ -140,6 +165,11 @@ body.light.blue .choice a:hover {
 }
 body.light.purple {
   color: #210575;
+}
+body.light.purple.grad {
+  background: linear-gradient(to bottom, #F5F3FB, #FFFEF6);
+}
+body.light.purple.no-grad {
   background: #F5F3FB;
 }
 body.light.purple header button {
@@ -166,7 +196,12 @@ body.light.purple .choice a:hover {
 }
 body.dark.red {
   color: #F9B3BF;
+}
+body.dark.red.grad {
   background: linear-gradient(185deg, #472C00, #42000C, #190130);
+}
+body.dark.red.no-grad {
+  background: #42000C;
 }
 body.dark.red header button {
   color: #F9B3BF;
@@ -196,7 +231,12 @@ body.dark.red .choice a:hover {
 }
 body.dark.orange {
   color: #CEDAEE;
+}
+body.dark.orange.grad {
   background: linear-gradient(170deg, #010D24, #361700);
+}
+body.dark.orange.no-grad {
+  background: #010D24;
 }
 body.dark.orange header button {
   color: #CEDAEE;
@@ -209,7 +249,7 @@ body.dark.orange header button.theme-button:hover {
 }
 body.dark.orange header button.color-button:hover {
   color: #FADE0A;
-  background-color: #140008;
+  background-color: #000A0F;
   border-color: #FADE0A;
 }
 body.dark.orange h1, body.dark.orange h2 {
@@ -226,7 +266,12 @@ body.dark.orange .choice a:hover {
 }
 body.dark.yellow {
   color: #ACD9EE;
-  background: linear-gradient(180deg, #000A0F, #000A0F, #181500, #FADE0A);
+}
+body.dark.yellow.grad {
+  background: linear-gradient(180deg, #000A0F, #000A0F, #181500 80%, #FADE0A);
+}
+body.dark.yellow.no-grad {
+  background: #000A0F;
 }
 body.dark.yellow header button {
   color: #ACD9EE;
@@ -257,7 +302,12 @@ body.dark.yellow .choice a:hover {
 }
 body.dark.green {
   color: #D7E2F9;
+}
+body.dark.green.grad {
   background: linear-gradient(160deg, #032D01, #21851C);
+}
+body.dark.green.no-grad {
+  background: #032D01;
 }
 body.dark.green header button {
   color: #D7E2F9;
@@ -282,8 +332,13 @@ body.dark.green .choice a:hover {
   background: #4AB944;
 }
 body.dark.blue {
-  background-color: #0a2540;
   color: #00d4ff;
+}
+body.dark.blue.grad {
+  background: linear-gradient(to bottom, #0a2540 60%, #00d4ff);
+}
+body.dark.blue.no-grad {
+  background: #0a2540;
 }
 body.dark.blue header button {
   color: #00d4ff;
@@ -310,7 +365,12 @@ body.dark.blue .choice a:hover {
 }
 body.dark.purple {
   color: #F5F3FB;
+}
+body.dark.purple.grad {
   background: linear-gradient(to bottom, #0E0137, #AA4F00);
+}
+body.dark.purple.no-grad {
+  background: #0E0137;
 }
 body.dark.purple header button {
   color: #F5F3FB;

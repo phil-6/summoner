@@ -113,8 +113,8 @@ $yellow-complement-4: #060010;
 //dark yellow
 $yellow-dark-heading-ink: $yellow;
 $yellow-dark-ink: $yellow-secondary-2-1;
-$yellow-dark-background: $yellow-secondary-1-4;
-$yellow-dark-background-grad: linear-gradient(180deg, $yellow-secondary-2-4, $yellow-secondary-2-4, $yellow-dark-2, $yellow);
+$yellow-dark-background: $yellow-secondary-2-4;
+$yellow-dark-background-grad: linear-gradient(180deg, $yellow-secondary-2-4, $yellow-secondary-2-4, $yellow-dark-2 80%, $yellow);
 
 $yellow-dark-button-background: $yellow-secondary-2-0;
 $yellow-dark-button-ink: $yellow;
@@ -170,6 +170,8 @@ $green-light-background-grad: linear-gradient(160deg, $green-light-background, $
 
 $dark-blue: #0a2540;
 $light-blue: #00d4ff;
+$blue-light-background-grad: linear-gradient(to bottom, $light-blue 60%, $dark-blue);
+$blue-dark-background-grad: linear-gradient(to bottom, $dark-blue 60%, $light-blue);
 
 //purple
 $purple: #3E0ECB;
@@ -217,7 +219,14 @@ body {
   &.light {
     &.red {
       color: $red-light-ink;
-      background: $red-light-background-grad;
+
+      &.grad {
+        background: $red-light-background-grad;
+      }
+
+      &.no-grad {
+        background: $red-light-background;
+      }
 
       header button {
         color: $red-light-ink;
@@ -249,7 +258,14 @@ body {
 
     &.orange {
       color: $orange-light-ink;
-      background: $orange-light-background-grad;
+
+      &.grad {
+        background: $orange-light-background-grad;
+      }
+
+      &.no-grad {
+        background: $orange-light-background;
+      }
 
       header button {
         color: $orange-light-ink;
@@ -286,7 +302,14 @@ body {
 
     &.yellow {
       color: $yellow-light-ink;
-      background: $yellow-light-background-grad;
+
+      &.grad {
+        background: $yellow-light-background-grad;
+      }
+
+      &.no-grad {
+        background: $yellow-light-background;
+      }
 
       header button {
         color: $yellow-light-ink;
@@ -323,7 +346,14 @@ body {
 
     &.green {
       color: $green-light-ink;
-      background: $green-light-background-grad;
+
+      &.grad {
+        background: $green-light-background-grad;
+      }
+
+      &.no-grad {
+        background: $green-light-background;
+      }
 
       header button {
         color: $green-light-ink;
@@ -356,7 +386,14 @@ body {
 
     &.blue {
       color: $dark-blue;
-      background-color: $light-blue;
+
+      &.grad {
+        background: $blue-light-background-grad;
+      }
+
+      &.no-grad {
+        background: $light-blue;
+      }
 
       header button {
         color: $dark-blue;
@@ -389,7 +426,14 @@ body {
 
     &.purple {
       color: $purple-light-ink;
-      background: $purple-light-background;
+
+      &.grad {
+        background: $purple-light-background-grad;
+      }
+
+      &.no-grad {
+        background: $purple-light-background;
+      }
 
       header button {
         color: $purple-light-ink;
@@ -425,7 +469,14 @@ body {
   &.dark {
     &.red {
       color: $red-dark-ink;
-      background: $red-dark-background-grad;
+
+      &.grad {
+        background: $red-dark-background-grad;
+      }
+
+      &.no-grad {
+        background: $red-dark-background;
+      }
 
       header button {
         color: $red-dark-ink;
@@ -463,7 +514,14 @@ body {
 
     &.orange {
       color: $orange-dark-ink;
-      background: $orange-dark-background-grad;
+
+      &.grad {
+        background: $orange-dark-background-grad;
+      }
+
+      &.no-grad {
+        background: $orange-dark-background;
+      }
 
       header button {
         color: $orange-dark-ink;
@@ -500,7 +558,14 @@ body {
 
     &.yellow {
       color: $yellow-dark-ink;
-      background: $yellow-dark-background-grad;
+
+      &.grad {
+        background: $yellow-dark-background-grad;
+      }
+
+      &.no-grad {
+        background: $yellow-dark-background;
+      }
 
       header button {
         color: $yellow-dark-ink;
@@ -538,7 +603,14 @@ body {
 
     &.green {
       color: $green-dark-ink;
-      background: $green-dark-background-grad;
+
+      &.grad {
+        background: $green-dark-background-grad;
+      }
+
+      &.no-grad {
+        background: $green-dark-background;
+      }
 
       header button {
         color: $green-dark-ink;
@@ -570,8 +642,15 @@ body {
     }
 
     &.blue {
-      background-color: $dark-blue;
       color: $light-blue;
+
+      &.grad {
+        background: $blue-dark-background-grad;
+      }
+
+      &.no-grad {
+        background: $dark-blue;
+      }
 
       header button {
         color: $light-blue;
@@ -604,7 +683,14 @@ body {
 
     &.purple {
       color: $purple-dark-ink;
-      background: $purple-dark-background-grad;
+
+      &.grad {
+        background: $purple-dark-background-grad;
+      }
+
+      &.no-grad {
+        background: $purple-dark-background;
+      }
 
       header button {
         color: $purple-dark-ink;
