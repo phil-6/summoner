@@ -77,6 +77,25 @@ themeBtn.addEventListener("click", function () {
     localStorage.setItem("theme", currentTheme);
 });
 
+themeBtn.addEventListener("mouseover", function(){
+    if (currentTheme === "light") {
+        themeBtn.innerHTML = "Theme ➟ Dark";
+    } else if (currentTheme === "dark") {
+        themeBtn.innerHTML = "Theme ➟ Light";
+    } else {
+        themeBtn.innerHTML = "Change Theme";
+    }
+});
+themeBtn.addEventListener("mouseleave", function(){
+    if (currentTheme === "light") {
+        themeBtn.innerHTML = "Theme: Light";
+    } else if (currentTheme === "dark") {
+        themeBtn.innerHTML = "Theme: Dark";
+    } else {
+        themeBtn.innerHTML = "Change Theme";
+    }
+});
+
 colorBtn.addEventListener("click", function () {
     if (currentColor === "red") {
         currentColor = "orange"
@@ -102,6 +121,41 @@ colorBtn.addEventListener("click", function () {
     }
     console.log(currentTheme, currentColor)
     localStorage.setItem("color", currentColor);
+});
+
+colorBtn.addEventListener("mouseover", function(){
+    if (currentColor === "red") {
+        colorBtn.innerHTML = "Colour ➟ Orange";
+    } else if (currentColor === "orange") {
+        colorBtn.innerHTML = "Colour ➟ Yellow";
+    } else if (currentColor === "yellow") {
+        colorBtn.innerHTML = "Colour ➟ Green";
+    } else if (currentColor === "green") {
+        colorBtn.innerHTML = "Colour ➟ Blue";
+    } else if (currentColor === "blue") {
+        colorBtn.innerHTML = "Colour ➟ Purple";
+    } else if (currentColor === "purple") {
+        colorBtn.innerHTML = "Colour ➟ Red";
+    } else {
+        colorBtn.innerHTML = "Change Colour";
+    }
+});
+colorBtn.addEventListener("mouseout", function(){
+    if (currentColor === "red") {
+        colorBtn.innerHTML = "Colour: Red";
+    } else if (currentColor === "orange") {
+        colorBtn.innerHTML = "Colour: Orange";
+    } else if (currentColor === "yellow") {
+        colorBtn.innerHTML = "Colour: Yellow";
+    } else if (currentColor === "green") {
+        colorBtn.innerHTML = "Colour: Green";
+    } else if (currentColor === "blue") {
+        colorBtn.innerHTML = "Colour: Blue";
+    } else if (currentColor === "purple") {
+        colorBtn.innerHTML = "Colour: Purple";
+    } else {
+        colorBtn.innerHTML = "Change Colour";
+    }
 });
 
 console.log(currentTheme, currentColor)

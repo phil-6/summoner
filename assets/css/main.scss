@@ -2,14 +2,9 @@ $heading-font: 'Carter One', Century Gothic, CenturyGothic, AppleGothic, sans-se
 $subheading-font: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 $body-font: 'Montserrat', Verdana, Geneva, sans-serif;
 
-
-
-
-
 body {
   min-height: 100vh;
   font-family: $body-font;
-
 
   .center {
     text-align: center;
@@ -28,6 +23,12 @@ body {
     .small {
       font-size: 0.8rem
     }
+    button{
+    &.theme-button, &.color-button {
+      border-radius: 0.6rem;
+      padding: 0.6rem;
+      font-size: 0.8rem;
+    }}
   }
   main {
     .choice {

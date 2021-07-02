@@ -1,4 +1,3 @@
-
 // red
 $red: #DC042A;
 $red-light-2: #F9B3BF;
@@ -28,16 +27,16 @@ $red-complement-4: #123D00;
 $red-dark-ink: $red-light-2;
 $red-dark-heading-ink: $red;
 $red-dark-background: $red-dark-2;
-$red-dark-background-grad: linear-gradient( 185deg, $red-secondary-1-4, $red-dark-2, $red-secondary-2-4) ;
+$red-dark-background-grad: linear-gradient(185deg, $red-secondary-1-4, $red-dark-2, $red-secondary-2-4);
 $red-dark-button-ink: $red-secondary-1-0;
 $red-dark-button-background: $red-dark-2;
-$red-dark-hover-ink: $red-secondary-1-0 ;
+$red-dark-hover-ink: $red-secondary-1-0;
 $red-dark-hover-background: $red-secondary-2-0;
 
 //light red
 $red-light-ink: $red-dark-1;
 $red-light-background: $red-secondary-1-1;
-$red-light-background-grad: linear-gradient( 185deg, $red-secondary-1-1, $red-light-2, $red-secondary-2-1) ;
+$red-light-background-grad: linear-gradient(185deg, $red-secondary-1-1, $red-light-2, $red-secondary-2-1);
 $red-light-darker: $red-dark-2;
 
 //orange
@@ -68,7 +67,7 @@ $orange-complement-4: #00221E;
 $orange-dark-heading-ink: $orange;
 $orange-dark-ink: $orange-secondary-1-1;
 $orange-dark-background: $orange-secondary-1-4;
-$orange-dark-background-grad: linear-gradient( 170deg, $orange-secondary-1-4, $orange-dark-2);
+$orange-dark-background-grad: linear-gradient(170deg, $orange-secondary-1-4, $orange-dark-2);
 
 $orange-dark-button-background: $orange-secondary-1-0;
 $orange-dark-button-ink: $orange;
@@ -79,7 +78,7 @@ $orange-dark-button-hover-ink: $orange;
 $orange-light-heading-ink: $orange-dark-2;
 $orange-light-ink: $orange-secondary-1-4;
 $orange-light-background: $orange-light-2;
-$orange-light-background-grad: linear-gradient( 182deg, $orange-secondary-1-1, $orange-light-2, $orange-light-2 );
+$orange-light-background-grad: linear-gradient(182deg, $orange-secondary-1-1, $orange-light-2, $orange-light-2);
 
 $orange-light-button-background: $orange;
 $orange-light-button-ink: $orange-light-2;
@@ -115,7 +114,7 @@ $yellow-complement-4: #060010;
 $yellow-dark-heading-ink: $yellow;
 $yellow-dark-ink: $yellow-secondary-2-1;
 $yellow-dark-background: $yellow-secondary-1-4;
-$yellow-dark-background-grad: linear-gradient( 180deg, $yellow-secondary-2-4, $yellow-secondary-2-4,  $yellow-dark-2,  $yellow);
+$yellow-dark-background-grad: linear-gradient(180deg, $yellow-secondary-2-4, $yellow-secondary-2-4, $yellow-dark-2, $yellow);
 
 $yellow-dark-button-background: $yellow-secondary-2-0;
 $yellow-dark-button-ink: $yellow;
@@ -126,7 +125,7 @@ $yellow-dark-button-hover-ink: $yellow;
 $yellow-light-heading-ink: $yellow-dark-2;
 $yellow-light-ink: $yellow-secondary-1-4;
 $yellow-light-background: $yellow-light-2;
-$yellow-light-background-grad: linear-gradient( 180deg, $yellow-secondary-2-1,$yellow-secondary-1-1, $yellow-light-2, $yellow-light-2, $yellow-light-1 );
+$yellow-light-background-grad: linear-gradient(180deg, $yellow-secondary-2-1, $yellow-secondary-1-1, $yellow-light-2, $yellow-light-2, $yellow-light-1);
 
 $yellow-light-button-background: $yellow;
 $yellow-light-button-ink: $yellow-complement-0;
@@ -155,8 +154,8 @@ $green-complement-4: #370103;
 
 //dark green
 $green-dark-ink: $green-secondary-1-1;
-$green-dark-background: $green-dark-2 ;
-$green-dark-background-grad: linear-gradient( 160deg, $green-dark-2, $green-dark-1);
+$green-dark-background: $green-dark-2;
+$green-dark-background-grad: linear-gradient(160deg, $green-dark-2, $green-dark-1);
 $green-dark-ink-hover: $green;
 $green-dark-background-hover: $green-secondary-1-0;
 
@@ -164,7 +163,7 @@ $green-dark-background-hover: $green-secondary-1-0;
 $green-light-ink: $green-secondary-1-3;
 $green-light-white: #edf5e1;
 $green-light-background: #5cdb95;
-$green-light-background-grad: linear-gradient( 160deg, $green-light-background, $green-light-1);
+$green-light-background-grad: linear-gradient(160deg, $green-light-background, $green-light-1);
 
 //dark blue
 //light blue
@@ -198,19 +197,19 @@ $purple-complement-3: #AA8E00;
 $purple-complement-4: #504300;
 
 //dark purple
-$dark-purple-ink: $purple-light-2;
-$dark-purple-background: $purple-dark-2;
-//$dark-purple-background: linear-gradient( to bottom, $purple-dark-2, $purple-secondary-2-3);
-$dark-purple-dark: #0c0032;
-$dark-purple-black: #282828;
+$purple-dark-ink: $purple-light-2;
+$purple-dark-background: $purple-dark-2;
+$purple-dark-background-grad: linear-gradient(to bottom, $purple-dark-2, $purple-secondary-2-3);
+$purple-dark-dark: #0c0032;
+$purple-dark-black: #282828;
 //light purple
-$light-purple-ink: $purple-dark-1;
-$light-purple-background: linear-gradient( to bottom, $purple-light-2,$purple-complement-1);
-$light-purple-button: $purple-dark-1;
-$light-purple-button-ink: $purple-complement-2;
-$light-purple-button-hover: $purple-secondary-2-2;
+$purple-light-ink: $purple-dark-1;
+$purple-light-background: $purple-light-2;
+$purple-light-background-grad: linear-gradient(to bottom, $purple-light-2, $purple-complement-1);
+$purple-light-button: $purple-dark-1;
+$purple-light-button-ink: $purple-complement-2;
+$purple-light-button-hover: $purple-secondary-2-2;
 //8506A9
-
 
 
 //** Themes **//
@@ -219,21 +218,60 @@ body {
     &.red {
       color: $red-light-ink;
       background: $red-light-background-grad;
-      .choice a{
+
+      header button {
         color: $red-light-ink;
         border-color: $red-light-ink;
-        &:hover{
+        background: none;
+
+        &.theme-button:hover {
+          color: $red-dark-ink;
+          background-color: $red-dark-background;
+        }
+
+        &.color-button:hover {
+          color: $orange-light-ink;
+          background-color: $orange;
+          border-color: $orange-light-ink;
+        }
+      }
+
+      .choice a {
+        color: $red-light-ink;
+        border-color: $red-light-ink;
+
+        &:hover {
           color: $red-light-background;
           background: $red-light-ink;
         }
       }
     }
+
     &.orange {
       color: $orange-light-ink;
       background: $orange-light-background-grad;
-      h1, h2{
+
+      header button {
+        color: $orange-light-ink;
+        border-color: $orange-light-ink;
+        background: none;
+
+        &.theme-button:hover {
+          color: $orange-dark-ink;
+          background-color: $orange-dark-background;
+        }
+
+        &.color-button:hover {
+          color: $yellow-light-ink;
+          background-color: $yellow;
+          border-color: $yellow-light-ink;
+        }
+      }
+
+      h1, h2 {
         color: $orange-light-heading-ink;
       }
+
       .choice a {
         color: $orange-light-button-ink;
         background: $orange-light-button-background;
@@ -245,12 +283,32 @@ body {
         }
       }
     }
+
     &.yellow {
       color: $yellow-light-ink;
       background: $yellow-light-background-grad;
-      h1, h2{
+
+      header button {
+        color: $yellow-light-ink;
+        border-color: $yellow-light-ink;
+        background: none;
+
+        &.theme-button:hover {
+          color: $yellow-dark-ink;
+          background-color: $yellow-dark-background;
+        }
+
+        &.color-button:hover {
+          color: $green-light-ink;
+          background-color: $green;
+          border-color: $green-light-ink;
+        }
+      }
+
+      h1, h2 {
         color: $yellow-light-heading-ink;
       }
+
       .choice a {
         color: $yellow-light-button-ink;
         background: $yellow-light-button-background;
@@ -262,41 +320,101 @@ body {
         }
       }
     }
+
     &.green {
       color: $green-light-ink;
       background: $green-light-background-grad;
-      .choice a{
+
+      header button {
+        color: $green-light-ink;
+        border-color: $green-light-ink;
+        background: none;
+
+        &.theme-button:hover {
+          color: $green-dark-ink;
+          background-color: $green-dark-background;
+        }
+
+        &.color-button:hover {
+          color: $dark-blue;
+          background-color: $light-blue;
+          border-color: $dark-blue;
+        }
+      }
+
+      .choice a {
         color: $green-light-ink;
         background: $green-light-background;
         border-color: $green-light-ink;
-        &:hover{
+
+        &:hover {
           color: $green-light-background;
           background: $green-light-ink;
         }
       }
     }
-    &.blue{
+
+    &.blue {
       color: $dark-blue;
       background-color: $light-blue;
-      .choice a{
+
+      header button {
         color: $dark-blue;
         border-color: $dark-blue;
-        &:hover{
+        background: none;
+
+        &.theme-button:hover {
+          color: $light-blue;
+          background-color: $dark-blue;
+        }
+
+        &.color-button:hover {
+          color: $purple-light-2;
+          background-color: $purple;
+          border-color: $purple-light-ink;
+        }
+      }
+
+      .choice a {
+        color: $dark-blue;
+        border-color: $dark-blue;
+
+        &:hover {
           background-color: $dark-blue;
           color: $light-blue;
           font-weight: 500;
         }
       }
     }
+
     &.purple {
-      color: $light-purple-ink;
-      background: $light-purple-background;
-      .choice a{
-        color: $light-purple-button-ink;
-        background: $light-purple-button;
-        &:hover{
-          background: $light-purple-button-hover;
-          color: $light-purple-button;
+      color: $purple-light-ink;
+      background: $purple-light-background;
+
+      header button {
+        color: $purple-light-ink;
+        border-color: $purple-light-ink;
+        background: none;
+
+        &.theme-button:hover {
+          color: $purple-dark-ink;
+          background-color: $purple-dark-background;
+        }
+
+        &.color-button:hover {
+          color: $red-light-2;
+          background-color: $red-dark-1;
+          border-color: $red-light-ink;
+        }
+      }
+
+      .choice a {
+        color: $purple-light-button-ink;
+        background: $purple-light-button;
+
+        &:hover {
+          background: $purple-light-button-hover;
+          color: $purple-light-button;
 
         }
       }
@@ -304,17 +422,37 @@ body {
   }
 
   //dark mode
-  &.dark{
+  &.dark {
     &.red {
       color: $red-dark-ink;
       background: $red-dark-background-grad;
-      h1, h2{
+
+      header button {
+        color: $red-dark-ink;
+        border-color: $red-dark-ink;
+        background: none;
+
+        &.theme-button:hover {
+          color: $red-light-ink;
+          background-color: $red-light-background;
+        }
+
+        &.color-button:hover {
+          color: $orange;
+          background-color: $orange-dark-background;
+          border-color: $orange;
+        }
+      }
+
+      h1, h2 {
         color: $red-dark-heading-ink;
       }
-      .choice a{
+
+      .choice a {
         color: $red-dark-button-ink;
         background: $red-dark-button-background;
-        &:hover{
+
+        &:hover {
           color: $red-dark-hover-ink;
           background: $red-dark-hover-background;
           border-color: $red-dark-hover-background;
@@ -322,28 +460,70 @@ body {
         }
       }
     }
+
     &.orange {
       color: $orange-dark-ink;
       background: $orange-dark-background-grad;
-      h1, h2{
+
+      header button {
+        color: $orange-dark-ink;
+        border-color: $orange-dark-ink;
+        background: none;
+
+        &.theme-button:hover {
+          color: $orange-light-ink;
+          background-color: $orange-light-background;
+        }
+
+        &.color-button:hover {
+          color: $yellow;
+          background-color: $yellow-dark-background;
+          border-color: $yellow;
+        }
+      }
+
+      h1, h2 {
         color: $orange-dark-heading-ink;
       }
-      .choice a{
+
+      .choice a {
         color: $orange-dark-button-ink;
         background: $orange-dark-button-background;
         font-weight: 600;
-        &:hover{
+
+        &:hover {
           color: $orange-dark-button-hover-ink;
           background: $orange-dark-button-hover-background;
         }
       }
     }
+
     &.yellow {
       color: $yellow-dark-ink;
       background: $yellow-dark-background-grad;
-      h1, h2{
+
+      header button {
+        color: $yellow-dark-ink;
+        border-color: $yellow-dark-ink;
+        background: none;
+
+        &.theme-button:hover {
+          color: $yellow-light-ink;
+          background-color: $yellow-light-background;
+          border-color: $yellow-light-ink;
+        }
+
+        &.color-button:hover {
+          color: $green;
+          background-color: $green-dark-2;
+          border-color: $green;
+        }
+      }
+
+      h1, h2 {
         color: $yellow-dark-heading-ink;
       }
+
       .choice a {
         color: $yellow-dark-button-ink;
         background: $yellow-dark-button-background;
@@ -355,41 +535,101 @@ body {
         }
       }
     }
+
     &.green {
       color: $green-dark-ink;
       background: $green-dark-background-grad;
-      .choice a{
+
+      header button {
+        color: $green-dark-ink;
+        border-color: $green-dark-ink;
+        background: none;
+
+        &.theme-button:hover {
+          color: $green-light-ink;
+          background-color: $green-light-background;
+        }
+
+        &.color-button:hover {
+          color: $light-blue;
+          background-color: $dark-blue;
+          border-color: $light-blue;
+        }
+      }
+
+      .choice a {
         color: $green-dark-ink;
         background: $green-dark-background;
-        &:hover{
+
+        &:hover {
           color: $green-dark-background-hover;
           background: $green-dark-ink-hover;
 
         }
       }
     }
+
     &.blue {
       background-color: $dark-blue;
       color: $light-blue;
-      .choice a{
+
+      header button {
         color: $light-blue;
         border-color: $light-blue;
-        &:hover{
+        background: none;
+
+        &.theme-button:hover {
+          color: $dark-blue;
+          background-color: $light-blue;
+        }
+
+        &.color-button:hover {
+          color: $purple-light-1;
+          background-color: $purple-dark-background;
+          border-color: $purple-light-1;
+        }
+      }
+
+      .choice a {
+        color: $light-blue;
+        border-color: $light-blue;
+
+        &:hover {
           background-color: $light-blue;
           color: $dark-blue;
           font-weight: 500;
         }
       }
     }
+
     &.purple {
-      color: $dark-purple-ink;
-      background: $dark-purple-background;
-      .choice a{
-        color: $dark-purple-ink;
-        background: $dark-purple-dark;
-        &:hover{
-          color: $dark-purple-dark;
-          background: $dark-purple-ink;
+      color: $purple-dark-ink;
+      background: $purple-dark-background-grad;
+
+      header button {
+        color: $purple-dark-ink;
+        border-color: $purple-dark-ink;
+        background: none;
+
+        &.theme-button:hover {
+          color: $purple-light-ink;
+          background-color: $purple-light-background;
+        }
+
+        &.color-button:hover {
+          color: $red-dark-ink;
+          background-color: $red-dark-background;
+          border-color: $red;
+        }
+      }
+
+      .choice a {
+        color: $purple-dark-ink;
+        background: $purple-dark-dark;
+
+        &:hover {
+          color: $purple-dark-dark;
+          background: $purple-dark-ink;
 
         }
       }

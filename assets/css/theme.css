@@ -2,6 +2,20 @@ body.light.red {
   color: #9C001C;
   background: linear-gradient(185deg, #FFE4B7, #F9B3BF, #C3A5DF);
 }
+body.light.red header button {
+  color: #9C001C;
+  border-color: #9C001C;
+  background: none;
+}
+body.light.red header button.theme-button:hover {
+  color: #F9B3BF;
+  background-color: #42000C;
+}
+body.light.red header button.color-button:hover {
+  color: #010D24;
+  background-color: #FF6C00;
+  border-color: #010D24;
+}
 body.light.red .choice a {
   color: #9C001C;
   border-color: #9C001C;
@@ -13,6 +27,20 @@ body.light.red .choice a:hover {
 body.light.orange {
   color: #010D24;
   background: linear-gradient(182deg, #CEDAEE, #FFE9D9, #FFE9D9);
+}
+body.light.orange header button {
+  color: #010D24;
+  border-color: #010D24;
+  background: none;
+}
+body.light.orange header button.theme-button:hover {
+  color: #CEDAEE;
+  background-color: #010D24;
+}
+body.light.orange header button.color-button:hover {
+  color: #140008;
+  background-color: #FADE0A;
+  border-color: #140008;
 }
 body.light.orange h1, body.light.orange h2 {
   color: #361700;
@@ -30,6 +58,20 @@ body.light.yellow {
   color: #140008;
   background: linear-gradient(180deg, #ACD9EE, #F9B1CD, #FFF6B5, #FFF6B5, #FFEB58);
 }
+body.light.yellow header button {
+  color: #140008;
+  border-color: #140008;
+  background: none;
+}
+body.light.yellow header button.theme-button:hover {
+  color: #ACD9EE;
+  background-color: #140008;
+}
+body.light.yellow header button.color-button:hover {
+  color: #20396E;
+  background-color: #4AB944;
+  border-color: #20396E;
+}
 body.light.yellow h1, body.light.yellow h2 {
   color: #181500;
 }
@@ -46,6 +88,20 @@ body.light.green {
   color: #20396E;
   background: linear-gradient(160deg, #5cdb95, #85E181);
 }
+body.light.green header button {
+  color: #20396E;
+  border-color: #20396E;
+  background: none;
+}
+body.light.green header button.theme-button:hover {
+  color: #D7E2F9;
+  background-color: #032D01;
+}
+body.light.green header button.color-button:hover {
+  color: #0a2540;
+  background-color: #00d4ff;
+  border-color: #0a2540;
+}
 body.light.green .choice a {
   color: #20396E;
   background: #5cdb95;
@@ -59,6 +115,20 @@ body.light.blue {
   color: #0a2540;
   background-color: #00d4ff;
 }
+body.light.blue header button {
+  color: #0a2540;
+  border-color: #0a2540;
+  background: none;
+}
+body.light.blue header button.theme-button:hover {
+  color: #00d4ff;
+  background-color: #0a2540;
+}
+body.light.blue header button.color-button:hover {
+  color: #F5F3FB;
+  background-color: #3E0ECB;
+  border-color: #210575;
+}
 body.light.blue .choice a {
   color: #0a2540;
   border-color: #0a2540;
@@ -70,7 +140,21 @@ body.light.blue .choice a:hover {
 }
 body.light.purple {
   color: #210575;
-  background: linear-gradient(to bottom, #F5F3FB, #FFFEF6);
+  background: #F5F3FB;
+}
+body.light.purple header button {
+  color: #210575;
+  border-color: #210575;
+  background: none;
+}
+body.light.purple header button.theme-button:hover {
+  color: #F5F3FB;
+  background-color: #0E0137;
+}
+body.light.purple header button.color-button:hover {
+  color: #F9B3BF;
+  background-color: #9C001C;
+  border-color: #9C001C;
 }
 body.light.purple .choice a {
   color: #FFE24F;
@@ -83,6 +167,20 @@ body.light.purple .choice a:hover {
 body.dark.red {
   color: #F9B3BF;
   background: linear-gradient(185deg, #472C00, #42000C, #190130);
+}
+body.dark.red header button {
+  color: #F9B3BF;
+  border-color: #F9B3BF;
+  background: none;
+}
+body.dark.red header button.theme-button:hover {
+  color: #9C001C;
+  background-color: #FFE4B7;
+}
+body.dark.red header button.color-button:hover {
+  color: #FF6C00;
+  background-color: #010D24;
+  border-color: #FF6C00;
 }
 body.dark.red h1, body.dark.red h2 {
   color: #DC042A;
@@ -100,6 +198,20 @@ body.dark.orange {
   color: #CEDAEE;
   background: linear-gradient(170deg, #010D24, #361700);
 }
+body.dark.orange header button {
+  color: #CEDAEE;
+  border-color: #CEDAEE;
+  background: none;
+}
+body.dark.orange header button.theme-button:hover {
+  color: #010D24;
+  background-color: #FFE9D9;
+}
+body.dark.orange header button.color-button:hover {
+  color: #FADE0A;
+  background-color: #140008;
+  border-color: #FADE0A;
+}
 body.dark.orange h1, body.dark.orange h2 {
   color: #FF6C00;
 }
@@ -115,6 +227,21 @@ body.dark.orange .choice a:hover {
 body.dark.yellow {
   color: #ACD9EE;
   background: linear-gradient(180deg, #000A0F, #000A0F, #181500, #FADE0A);
+}
+body.dark.yellow header button {
+  color: #ACD9EE;
+  border-color: #ACD9EE;
+  background: none;
+}
+body.dark.yellow header button.theme-button:hover {
+  color: #140008;
+  background-color: #FFF6B5;
+  border-color: #140008;
+}
+body.dark.yellow header button.color-button:hover {
+  color: #4AB944;
+  background-color: #032D01;
+  border-color: #4AB944;
 }
 body.dark.yellow h1, body.dark.yellow h2 {
   color: #FADE0A;
@@ -132,6 +259,20 @@ body.dark.green {
   color: #D7E2F9;
   background: linear-gradient(160deg, #032D01, #21851C);
 }
+body.dark.green header button {
+  color: #D7E2F9;
+  border-color: #D7E2F9;
+  background: none;
+}
+body.dark.green header button.theme-button:hover {
+  color: #20396E;
+  background-color: #5cdb95;
+}
+body.dark.green header button.color-button:hover {
+  color: #00d4ff;
+  background-color: #0a2540;
+  border-color: #00d4ff;
+}
 body.dark.green .choice a {
   color: #D7E2F9;
   background: #032D01;
@@ -144,6 +285,20 @@ body.dark.blue {
   background-color: #0a2540;
   color: #00d4ff;
 }
+body.dark.blue header button {
+  color: #00d4ff;
+  border-color: #00d4ff;
+  background: none;
+}
+body.dark.blue header button.theme-button:hover {
+  color: #0a2540;
+  background-color: #00d4ff;
+}
+body.dark.blue header button.color-button:hover {
+  color: #7453D7;
+  background-color: #0E0137;
+  border-color: #7453D7;
+}
 body.dark.blue .choice a {
   color: #00d4ff;
   border-color: #00d4ff;
@@ -155,7 +310,21 @@ body.dark.blue .choice a:hover {
 }
 body.dark.purple {
   color: #F5F3FB;
-  background: #0E0137;
+  background: linear-gradient(to bottom, #0E0137, #AA4F00);
+}
+body.dark.purple header button {
+  color: #F5F3FB;
+  border-color: #F5F3FB;
+  background: none;
+}
+body.dark.purple header button.theme-button:hover {
+  color: #210575;
+  background-color: #F5F3FB;
+}
+body.dark.purple header button.color-button:hover {
+  color: #F9B3BF;
+  background-color: #42000C;
+  border-color: #DC042A;
 }
 body.dark.purple .choice a {
   color: #F5F3FB;
