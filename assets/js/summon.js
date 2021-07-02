@@ -54,8 +54,6 @@ summonForm.addEventListener('submit', async event => {
 
     // disable button to prevent multiple submissions
     summonForm.querySelector('button').disabled = true;
-    document.querySelector('#summon-form').classList.add("hide");
-    document.querySelector('#loading-message').classList.remove("hide");
 
     // make the request to submit the form
     if (formValidation()) {
