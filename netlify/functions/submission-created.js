@@ -8,24 +8,20 @@ const twilio = require('twilio')(accountSid, authToken);
 exports.handler = (event, context, callback) => {
     const body = JSON.parse(event.body)
     let data = body.payload.data
-    console.log(data.phone)
-    console.log("=============== after data.phone")
     let phone = data.phone.replace('0', '+44')
-    console.log(phone)
-    console.log("=============== after phone")
 
-    let content = `Hi ${data.summonee}. ${data.summoner} has shared their location with you. You can get to them here: https://www.google.com/maps/dir/?api=1&destination=${data.lat},${data.lng}`
+    let messageContent = `Hi ${data.summonee}. ${data.summoner} has shared their location with you. You can get to them here: https://www.google.com/maps/dir/?api=1&destination=${data.lat},${data.lng}`
 
     const sms = {
         to: phone,
-        body: content || '',
+        body: messageContent || '',
         from: fromNumber,
     }
     console.log(sms)
 
     twilio.messages.create(sms).then((message) => {
         console.log(`text message sent!`, message.body)
-        console.log(`date_created: ${message.date_created}`)
+        console.log(`date_created: ${message.dateCreated}`)
         return callback(null, {
             statusCode: 200,
             body: JSON.stringify({
