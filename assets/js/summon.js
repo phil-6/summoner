@@ -1,10 +1,3 @@
-function summonThem() {
-    formValidation();
-
-
-
-}
-
 function formValidation(){
     let validForm = true;
     const phoneregex = /^(07\d{9})$/;
