@@ -7,12 +7,13 @@ const twilio = require('twilio')(accountSid, authToken);
 
 // use twilio SDK to send text message https://www.twilio.com/docs/libraries/node
 exports.handler = (event, context, callback) => {
-    const data = JSON.parse(event.body.data)
-    console.log(data)
-    let message = `Hi ${data.summonee}. ${data.summoner} has shared their location with you. You can get to them here: https://www.google.com/maps/dir/?api=1&destination=${data.lat},${data.lng}`
+    const body = JSON.parse(event.body)
+    console.log(body)
+    console.log(body.data)
+    let message = `Hi ${body.data.summonee}. ${body.data.summoner} has shared their location with you. You can get to them here: https://www.google.com/maps/dir/?api=1&destination=${body.data.lat},${body.data.lng}`
 
     const sms = {
-        to: data.phone,
+        to: body.data.phone,
         body: message || '',
         from: "The Summoner",
     }
