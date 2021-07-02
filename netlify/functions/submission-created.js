@@ -9,10 +9,12 @@ const twilio = require('twilio')(accountSid, authToken);
 exports.handler = (event, context, callback) => {
     const body = JSON.parse(event.body)
     const data = body.payload.data
-    console.log(event.body.payload)
-    console.log("=============== after event.body.payload")
-    console.log(event.body.payload.data)
-    console.log("=============== after event.body.payload.data")
+    console.log(event)
+    console.log("=============== after event")
+    console.log(body.payload)
+    console.log("=============== after body.payload")
+    console.log(body.payload.data)
+    console.log("=============== after body.payload.data")
     console.log(data.phone)
     console.log("=============== after data.phone")
 
