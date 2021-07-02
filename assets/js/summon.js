@@ -71,6 +71,8 @@ summonForm.addEventListener('submit', async event => {
         } catch (e) {
             console.error(e);
         }
+    } else {
+        summonForm.querySelector('button').disabled = false;
     }
 });
 
