@@ -15,9 +15,19 @@
 </head>
 <body class="dark purple grad">
 <header>
-    <button class="theme-button" id="theme-toggle">Theme</button>
-    <button class="color-button" id="color-switch">Colour</button>
-    <button class="grad-button" id="grad-toggle">Toggle Gradient</button>
+    <nav>
+        <div class="justify-start">
+            <button class="theme-button" id="theme-toggle">Theme</button>
+            <button class="color-button" id="color-switch">Colour</button>
+            <button class="grad-button" id="grad-toggle">Toggle Gradient</button>
+        </div>
+        <div class="center">
+            <a class="home-link " href="/">Home <i class="fas fa-home"></i></a>
+        </div>
+        <div class="justify-end">
+            <a class="blog-link" href="#">Blog <i class="fas fa-align-justify"></i></a>
+        </div>
+    </nav>
     <h1>The Summoner</h1>
     <h2>Share your location</h2>
     <p class="subheading">Share your location with someone or request someone to share their location with you.</p>
@@ -34,7 +44,7 @@
                 <h2>Somethings wrong!</h2>
                 <p>Check the red boxes below!</p>
             </div>
-            <form id="summon-form" name="summon-form" class="form" method="POST" data-netlify="true">
+            <form id="summon-form" name="summon-form" method="POST" data-netlify="true">
                 <div class="form-group floating-label">
                     <input class="form-control" id="summoner" name="summoner" placeholder="Who are you?"
                            required type="text">

@@ -228,26 +228,29 @@ body {
         background: $red-light-background;
       }
 
-      header button {
-        color: $red-light-ink;
-        border-color: $red-light-ink;
-        background: none;
+      header {
+        button {
+          color: $red-light-ink;
+          border-color: $red-light-ink;
+          background: none;
 
-        &.theme-button:hover {
-          color: $red-dark-ink;
-          background-color: $red-dark-background;
-        }
+          &.theme-button:hover {
+            color: $red-dark-ink;
+            background-color: $red-dark-background;
+          }
 
-        &.color-button:hover {
-          color: $orange-light-ink;
-          background-color: $orange;
-          border-color: $orange-light-ink;
+          &.color-button:hover {
+            color: $orange-light-ink;
+            background-color: $orange;
+            border-color: $orange-light-ink;
+          }
         }
       }
 
-      .choice a {
+      a, form button {
         color: $red-light-ink;
         border-color: $red-light-ink;
+        background: none;
 
         &:hover {
           color: $red-light-background;
@@ -267,20 +270,22 @@ body {
         background: $orange-light-background;
       }
 
-      header button {
-        color: $orange-light-ink;
-        border-color: $orange-light-ink;
-        background: none;
+      header {
+        button {
+          color: $orange-light-ink;
+          border-color: $orange-light-ink;
+          background: none;
 
-        &.theme-button:hover {
-          color: $orange-dark-ink;
-          background-color: $orange-dark-background;
-        }
+          &.theme-button:hover {
+            color: $orange-dark-ink;
+            background-color: $orange-dark-background;
+          }
 
-        &.color-button:hover {
-          color: $yellow-light-ink;
-          background-color: $yellow;
-          border-color: $yellow-light-ink;
+          &.color-button:hover {
+            color: $yellow-light-ink;
+            background-color: $yellow;
+            border-color: $yellow-light-ink;
+          }
         }
       }
 
@@ -288,9 +293,10 @@ body {
         color: $orange-light-heading-ink;
       }
 
-      .choice a {
-        color: $orange-light-button-ink;
-        background: $orange-light-button-background;
+      a, form button {
+        color: $orange-light-ink;
+        border-color: $orange-light-ink;
+        background: none;
         font-weight: 500;
 
         &:hover {
@@ -311,20 +317,22 @@ body {
         background: $yellow-light-background;
       }
 
-      header button {
-        color: $yellow-light-ink;
-        border-color: $yellow-light-ink;
-        background: none;
+      header {
+        button {
+          color: $yellow-light-ink;
+          border-color: $yellow-light-ink;
+          background: none;
 
-        &.theme-button:hover {
-          color: $yellow-dark-ink;
-          background-color: $yellow-dark-background;
-        }
+          &.theme-button:hover {
+            color: $yellow-dark-ink;
+            background-color: $yellow-dark-background;
+          }
 
-        &.color-button:hover {
-          color: $green-light-ink;
-          background-color: $green;
-          border-color: $green-light-ink;
+          &.color-button:hover {
+            color: $green-light-ink;
+            background-color: $green;
+            border-color: $green-light-ink;
+          }
         }
       }
 
@@ -332,10 +340,11 @@ body {
         color: $yellow-light-heading-ink;
       }
 
-      .choice a {
+      a, form button {
         color: $yellow-light-button-ink;
         background: $yellow-light-button-background;
         font-weight: 500;
+        background: none;
 
         &:hover {
           color: $yellow-light-button-hover-ink;
@@ -355,27 +364,30 @@ body {
         background: $green-light-background;
       }
 
-      header button {
-        color: $green-light-ink;
-        border-color: $green-light-ink;
-        background: none;
+      header {
+        button {
+          color: $green-light-ink;
+          border-color: $green-light-ink;
+          background: none;
 
-        &.theme-button:hover {
-          color: $green-dark-ink;
-          background-color: $green-dark-background;
-        }
+          &.theme-button:hover {
+            color: $green-dark-ink;
+            background-color: $green-dark-background;
+          }
 
-        &.color-button:hover {
-          color: $dark-blue;
-          background-color: $light-blue;
-          border-color: $dark-blue;
+          &.color-button:hover {
+            color: $dark-blue;
+            background-color: $light-blue;
+            border-color: $dark-blue;
+          }
         }
       }
 
-      .choice a {
+      a, form button {
         color: $green-light-ink;
         background: $green-light-background;
         border-color: $green-light-ink;
+        background: none;
 
         &:hover {
           color: $green-light-background;
@@ -395,26 +407,29 @@ body {
         background: $light-blue;
       }
 
-      header button {
-        color: $dark-blue;
-        border-color: $dark-blue;
-        background: none;
+      header {
+        button {
+          color: $dark-blue;
+          border-color: $dark-blue;
+          background: none;
 
-        &.theme-button:hover {
-          color: $light-blue;
-          background-color: $dark-blue;
-        }
+          &.theme-button:hover {
+            color: $light-blue;
+            background-color: $dark-blue;
+          }
 
-        &.color-button:hover {
-          color: $purple-light-2;
-          background-color: $purple;
-          border-color: $purple-light-ink;
+          &.color-button:hover {
+            color: $purple-light-2;
+            background-color: $purple;
+            border-color: $purple-light-ink;
+          }
         }
       }
 
-      .choice a {
+      a, form button {
         color: $dark-blue;
         border-color: $dark-blue;
+        background: none;
 
         &:hover {
           background-color: $dark-blue;
@@ -435,34 +450,36 @@ body {
         background: $purple-light-background;
       }
 
-      header button {
-        color: $purple-light-ink;
-        border-color: $purple-light-ink;
-        background: none;
+      header {
+        button {
+          color: $purple-light-ink;
+          border-color: $purple-light-ink;
+          background: none;
 
-        &.theme-button:hover {
-          color: $purple-dark-ink;
-          background-color: $purple-dark-background;
-        }
+          &.theme-button:hover {
+            color: $purple-dark-ink;
+            background-color: $purple-dark-background;
+          }
 
-        &.color-button:hover {
-          color: $red-light-2;
-          background-color: $red-dark-1;
-          border-color: $red-light-ink;
+          &.color-button:hover {
+            color: $red-light-2;
+            background-color: $red-dark-1;
+            border-color: $red-light-ink;
+          }
         }
       }
 
-      .choice a {
+      a, form button {
         color: $purple-light-button-ink;
         background: $purple-light-button;
 
         &:hover {
           background: $purple-light-button-hover;
           color: $purple-light-button;
-
         }
       }
     }
+
   }
 
   //dark mode
@@ -478,20 +495,22 @@ body {
         background: $red-dark-background;
       }
 
-      header button {
-        color: $red-dark-ink;
-        border-color: $red-dark-ink;
-        background: none;
+      header {
+        button {
+          color: $red-dark-ink;
+          border-color: $red-dark-ink;
+          background: none;
 
-        &.theme-button:hover {
-          color: $red-light-ink;
-          background-color: $red-light-background;
-        }
+          &.theme-button:hover {
+            color: $red-light-ink;
+            background-color: $red-light-background;
+          }
 
-        &.color-button:hover {
-          color: $orange;
-          background-color: $orange-dark-background;
-          border-color: $orange;
+          &.color-button:hover {
+            color: $orange;
+            background-color: $orange-dark-background;
+            border-color: $orange;
+          }
         }
       }
 
@@ -499,7 +518,7 @@ body {
         color: $red-dark-heading-ink;
       }
 
-      .choice a {
+      a, form button {
         color: $red-dark-button-ink;
         background: $red-dark-button-background;
 
@@ -507,7 +526,6 @@ body {
           color: $red-dark-hover-ink;
           background: $red-dark-hover-background;
           border-color: $red-dark-hover-background;
-
         }
       }
     }
@@ -523,20 +541,22 @@ body {
         background: $orange-dark-background;
       }
 
-      header button {
-        color: $orange-dark-ink;
-        border-color: $orange-dark-ink;
-        background: none;
+      header {
+        button {
+          color: $orange-dark-ink;
+          border-color: $orange-dark-ink;
+          background: none;
 
-        &.theme-button:hover {
-          color: $orange-light-ink;
-          background-color: $orange-light-background;
-        }
+          &.theme-button:hover {
+            color: $orange-light-ink;
+            background-color: $orange-light-background;
+          }
 
-        &.color-button:hover {
-          color: $yellow;
-          background-color: $yellow-dark-background;
-          border-color: $yellow;
+          &.color-button:hover {
+            color: $yellow;
+            background-color: $yellow-dark-background;
+            border-color: $yellow;
+          }
         }
       }
 
@@ -544,7 +564,7 @@ body {
         color: $orange-dark-heading-ink;
       }
 
-      .choice a {
+      a, form button {
         color: $orange-dark-button-ink;
         background: $orange-dark-button-background;
         font-weight: 600;
@@ -567,21 +587,23 @@ body {
         background: $yellow-dark-background;
       }
 
-      header button {
-        color: $yellow-dark-ink;
-        border-color: $yellow-dark-ink;
-        background: none;
+      header {
+        button {
+          color: $yellow-dark-ink;
+          border-color: $yellow-dark-ink;
+          background: none;
 
-        &.theme-button:hover {
-          color: $yellow-light-ink;
-          background-color: $yellow-light-background;
-          border-color: $yellow-light-ink;
-        }
+          &.theme-button:hover {
+            color: $yellow-light-ink;
+            background-color: $yellow-light-background;
+            border-color: $yellow-light-ink;
+          }
 
-        &.color-button:hover {
-          color: $green;
-          background-color: $green-dark-2;
-          border-color: $green;
+          &.color-button:hover {
+            color: $green;
+            background-color: $green-dark-2;
+            border-color: $green;
+          }
         }
       }
 
@@ -589,7 +611,7 @@ body {
         color: $yellow-dark-heading-ink;
       }
 
-      .choice a {
+      a, form button {
         color: $yellow-dark-button-ink;
         background: $yellow-dark-button-background;
         font-weight: 500;
@@ -612,31 +634,33 @@ body {
         background: $green-dark-background;
       }
 
-      header button {
-        color: $green-dark-ink;
-        border-color: $green-dark-ink;
-        background: none;
+      header {
+        button {
+          color: $green-dark-ink;
+          border-color: $green-dark-ink;
+          background: none;
 
-        &.theme-button:hover {
-          color: $green-light-ink;
-          background-color: $green-light-background;
+          &.theme-button:hover {
+            color: $green-light-ink;
+            background-color: $green-light-background;
+          }
+
+          &.color-button:hover {
+            color: $light-blue;
+            background-color: $dark-blue;
+            border-color: $light-blue;
+          }
         }
 
-        &.color-button:hover {
-          color: $light-blue;
-          background-color: $dark-blue;
-          border-color: $light-blue;
-        }
       }
 
-      .choice a {
+      a, form button {
         color: $green-dark-ink;
         background: $green-dark-background;
 
         &:hover {
           color: $green-dark-background-hover;
           background: $green-dark-ink-hover;
-
         }
       }
     }
@@ -652,26 +676,31 @@ body {
         background: $dark-blue;
       }
 
-      header button {
+      header {
+        button {
+          color: $light-blue;
+          border-color: $light-blue;
+          background: none;
+
+          &.theme-button:hover {
+            color: $dark-blue;
+            background-color: $light-blue;
+          }
+
+          &.color-button:hover {
+            color: $purple-light-1;
+            background-color: $purple-dark-background;
+            border-color: $purple-light-1;
+          }
+        }
+
+      }
+
+
+      a, form button {
         color: $light-blue;
         border-color: $light-blue;
         background: none;
-
-        &.theme-button:hover {
-          color: $dark-blue;
-          background-color: $light-blue;
-        }
-
-        &.color-button:hover {
-          color: $purple-light-1;
-          background-color: $purple-dark-background;
-          border-color: $purple-light-1;
-        }
-      }
-
-      .choice a {
-        color: $light-blue;
-        border-color: $light-blue;
 
         &:hover {
           background-color: $light-blue;
@@ -692,31 +721,33 @@ body {
         background: $purple-dark-background;
       }
 
-      header button {
-        color: $purple-dark-ink;
-        border-color: $purple-dark-ink;
-        background: none;
+      header {
+        button {
 
-        &.theme-button:hover {
-          color: $purple-light-ink;
-          background-color: $purple-light-background;
-        }
+          color: $purple-dark-ink;
+          border-color: $purple-dark-ink;
+          background: none;
 
-        &.color-button:hover {
-          color: $red-dark-ink;
-          background-color: $red-dark-background;
-          border-color: $red;
+          &.theme-button:hover {
+            color: $purple-light-ink;
+            background-color: $purple-light-background;
+          }
+
+          &.color-button:hover {
+            color: $red-dark-ink;
+            background-color: $red-dark-background;
+            border-color: $red;
+          }
         }
       }
 
-      .choice a {
+      a, form button {
         color: $purple-dark-ink;
         background: $purple-dark-dark;
 
         &:hover {
           color: $purple-dark-dark;
           background: $purple-dark-ink;
-
         }
       }
     }

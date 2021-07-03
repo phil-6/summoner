@@ -21,11 +21,12 @@ body.light.red header button.color-button:hover {
   background-color: #FF6C00;
   border-color: #010D24;
 }
-body.light.red .choice a {
+body.light.red a, body.light.red form button {
   color: #9C001C;
   border-color: #9C001C;
+  background: none;
 }
-body.light.red .choice a:hover {
+body.light.red a:hover, body.light.red form button:hover {
   color: #FFE4B7;
   background: #9C001C;
 }
@@ -55,12 +56,13 @@ body.light.orange header button.color-button:hover {
 body.light.orange h1, body.light.orange h2 {
   color: #361700;
 }
-body.light.orange .choice a {
-  color: #FFE9D9;
-  background: #FF6C00;
+body.light.orange a, body.light.orange form button {
+  color: #010D24;
+  border-color: #010D24;
+  background: none;
   font-weight: 500;
 }
-body.light.orange .choice a:hover {
+body.light.orange a:hover, body.light.orange form button:hover {
   color: #1047A9;
   background: #FF6C00;
 }
@@ -90,12 +92,13 @@ body.light.yellow header button.color-button:hover {
 body.light.yellow h1, body.light.yellow h2 {
   color: #181500;
 }
-body.light.yellow .choice a {
+body.light.yellow a, body.light.yellow form button {
   color: #4D16AA;
   background: #FADE0A;
   font-weight: 500;
+  background: none;
 }
-body.light.yellow .choice a:hover {
+body.light.yellow a:hover, body.light.yellow form button:hover {
   color: #D80959;
   background: #FADE0A;
 }
@@ -122,12 +125,13 @@ body.light.green header button.color-button:hover {
   background-color: #00d4ff;
   border-color: #0a2540;
 }
-body.light.green .choice a {
+body.light.green a, body.light.green form button {
   color: #20396E;
   background: #5cdb95;
   border-color: #20396E;
+  background: none;
 }
-body.light.green .choice a:hover {
+body.light.green a:hover, body.light.green form button:hover {
   color: #5cdb95;
   background: #20396E;
 }
@@ -154,11 +158,12 @@ body.light.blue header button.color-button:hover {
   background-color: #3E0ECB;
   border-color: #210575;
 }
-body.light.blue .choice a {
+body.light.blue a, body.light.blue form button {
   color: #0a2540;
   border-color: #0a2540;
+  background: none;
 }
-body.light.blue .choice a:hover {
+body.light.blue a:hover, body.light.blue form button:hover {
   background-color: #0a2540;
   color: #00d4ff;
   font-weight: 500;
@@ -186,11 +191,11 @@ body.light.purple header button.color-button:hover {
   background-color: #9C001C;
   border-color: #9C001C;
 }
-body.light.purple .choice a {
+body.light.purple a, body.light.purple form button {
   color: #FFE24F;
   background: #210575;
 }
-body.light.purple .choice a:hover {
+body.light.purple a:hover, body.light.purple form button:hover {
   background: #FFA04F;
   color: #210575;
 }
@@ -220,11 +225,11 @@ body.dark.red header button.color-button:hover {
 body.dark.red h1, body.dark.red h2 {
   color: #DC042A;
 }
-body.dark.red .choice a {
+body.dark.red a, body.dark.red form button {
   color: #EB9304;
   background: #42000C;
 }
-body.dark.red .choice a:hover {
+body.dark.red a:hover, body.dark.red form button:hover {
   color: #EB9304;
   background: #590E9E;
   border-color: #590E9E;
@@ -255,12 +260,12 @@ body.dark.orange header button.color-button:hover {
 body.dark.orange h1, body.dark.orange h2 {
   color: #FF6C00;
 }
-body.dark.orange .choice a {
+body.dark.orange a, body.dark.orange form button {
   color: #FF6C00;
   background: #1047A9;
   font-weight: 600;
 }
-body.dark.orange .choice a:hover {
+body.dark.orange a:hover, body.dark.orange form button:hover {
   color: #FF6C00;
   background: #072D71;
 }
@@ -291,12 +296,12 @@ body.dark.yellow header button.color-button:hover {
 body.dark.yellow h1, body.dark.yellow h2 {
   color: #FADE0A;
 }
-body.dark.yellow .choice a {
+body.dark.yellow a, body.dark.yellow form button {
   color: #FADE0A;
   background: #0E6F9E;
   font-weight: 500;
 }
-body.dark.yellow .choice a:hover {
+body.dark.yellow a:hover, body.dark.yellow form button:hover {
   color: #FADE0A;
   background: #054565;
 }
@@ -323,11 +328,11 @@ body.dark.green header button.color-button:hover {
   background-color: #0a2540;
   border-color: #00d4ff;
 }
-body.dark.green .choice a {
+body.dark.green a, body.dark.green form button {
   color: #D7E2F9;
   background: #032D01;
 }
-body.dark.green .choice a:hover {
+body.dark.green a:hover, body.dark.green form button:hover {
   color: #425E99;
   background: #4AB944;
 }
@@ -354,11 +359,12 @@ body.dark.blue header button.color-button:hover {
   background-color: #0E0137;
   border-color: #7453D7;
 }
-body.dark.blue .choice a {
+body.dark.blue a, body.dark.blue form button {
   color: #00d4ff;
   border-color: #00d4ff;
+  background: none;
 }
-body.dark.blue .choice a:hover {
+body.dark.blue a:hover, body.dark.blue form button:hover {
   background-color: #00d4ff;
   color: #0a2540;
   font-weight: 500;
@@ -386,11 +392,11 @@ body.dark.purple header button.color-button:hover {
   background-color: #42000C;
   border-color: #DC042A;
 }
-body.dark.purple .choice a {
+body.dark.purple a, body.dark.purple form button {
   color: #F5F3FB;
   background: #0c0032;
 }
-body.dark.purple .choice a:hover {
+body.dark.purple a:hover, body.dark.purple form button:hover {
   color: #0c0032;
   background: #F5F3FB;
 }
