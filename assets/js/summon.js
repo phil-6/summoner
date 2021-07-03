@@ -42,6 +42,7 @@ function formValidation(){
 
 const summonForm = document.querySelector("#summon-form")
 // The Twilio Way
+// Source: https://www.twilio.com/blog/a-how-to-send-text-messages-from-your-static-site-using-netlify-twilio-and-serverless-functions
 summonForm.addEventListener('submit', async event => {
     event.preventDefault();
 
