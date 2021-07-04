@@ -400,5 +400,11 @@ body.dark.purple a:hover, body.dark.purple form button:hover {
   color: #0c0032;
   background: #F5F3FB;
 }
+body.dark.purple #form-container form {
+  color: #0c0032;
+}
+body.dark.purple #form-container form input:focus {
+  border-bottom-color: #3E0ECB;
+}
 
 /*# sourceMappingURL=theme.css.map */

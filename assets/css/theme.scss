@@ -750,6 +750,12 @@ body {
           background: $purple-dark-ink;
         }
       }
+      #form-container form {
+        color: $purple-dark-dark;
+        input:focus{
+          border-bottom-color: $purple;
+        }
+      }
     }
   }
 }
