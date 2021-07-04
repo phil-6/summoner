@@ -12,6 +12,11 @@ body.dark.red header button, body.dark.red header a {
   border-color: #EB9304;
   background: none;
 }
+body.dark.red header button:hover, body.dark.red header a:hover {
+  color: #EB9304;
+  border-color: #EB9304;
+  background: #190130;
+}
 body.dark.red header button.theme-button:hover, body.dark.red header a.theme-button:hover {
   color: #9C001C;
   background-color: #FFE4B7;
@@ -26,7 +31,7 @@ body.dark.red form button {
   border-color: #EB9304;
   background: #42000C;
 }
-body.dark.red form button:hover, body.dark.red a:hover {
+body.dark.red form button:hover {
   color: #EB9304;
   background: #7B46AC;
 }
@@ -44,6 +49,15 @@ body.dark.orange header button, body.dark.orange header a {
   border-color: #FF6C00;
   background: none;
 }
+body.dark.orange header button:hover, body.dark.orange header a:hover {
+  color: #FF6C00;
+  border-color: #FF6C00;
+  background: #072D71;
+}
+body.dark.orange header button.theme-button:hover, body.dark.orange header a.theme-button:hover {
+  color: #010D24;
+  background-color: #FFE9D9;
+}
 body.dark.orange header button.color-button:hover, body.dark.orange header a.color-button:hover {
   color: #140008;
   background-color: #FADE0A;
@@ -54,7 +68,7 @@ body.dark.orange form button {
   border-color: #EB9304;
   background: #1047A9;
 }
-body.dark.orange form button:hover, body.dark.orange a:hover {
+body.dark.orange form button:hover {
   color: #EB9304;
   background: #072D71;
 }
@@ -67,108 +81,144 @@ body.dark.yellow.grad {
 body.dark.yellow.no-grad {
   background: #000A0F;
 }
-body.dark.yellow header button {
+body.dark.yellow header button, body.dark.yellow header a {
   color: #FADE0A;
   border-color: #FADE0A;
   background: none;
 }
-body.dark.yellow header button.color-button:hover {
+body.dark.yellow header button:hover, body.dark.yellow header a:hover {
+  color: #FADE0A;
+  border-color: #FADE0A;
+  background: #054565;
+}
+body.dark.yellow header button.theme-button:hover, body.dark.yellow header a.theme-button:hover {
+  color: #140008;
+  background-color: #FFF6B5;
+}
+body.dark.yellow header button.color-button:hover, body.dark.yellow header a.color-button:hover {
   color: #050F25;
   background-color: #4AB944;
   border-color: #050F25;
 }
-body.dark.yellow a, body.dark.yellow form button {
+body.dark.yellow form button {
   color: #FADE0A;
   border-color: #FADE0A;
   background: #0E6F9E;
 }
-body.dark.yellow a:hover, body.dark.yellow form button:hover {
-  color: #FADE0A;
-  background: #054565;
+body.dark.yellow form button:hover {
+  color: #054565;
+  background: #FADE0A;
 }
 body.dark.green {
-  color: #ACD9EE;
+  color: #D7FCD5;
 }
 body.dark.green.grad {
-  background: linear-gradient(180deg, #000A0F, #000A0F, #181500 80%, #FADE0A);
+  background: linear-gradient(160deg, #032D01, #21851C);
 }
 body.dark.green.no-grad {
-  background: #000A0F;
+  background: #032D01;
 }
-body.dark.green header button {
-  color: #FFE9D9;
-  border-color: #FFE9D9;
-  background: #0E6F9E;
+body.dark.green header button, body.dark.green header a {
+  color: #5cdb95;
+  border-color: #5cdb95;
+  background: none;
 }
-body.dark.green header button.color-button:hover {
-  color: #140008;
-  background-color: #FADE0A;
-  border-color: #140008;
+body.dark.green header button:hover, body.dark.green header a:hover {
+  color: #425E99;
+  border-color: #425E99;
+  background: #4AB944;
 }
-body.dark.green a, body.dark.green form button {
-  color: #1047A9;
-  border-color: #1047A9;
-  background: #0E6F9E;
+body.dark.green header button.theme-button:hover, body.dark.green header a.theme-button:hover {
+  color: #ACD9EE;
+  background-color: #000A0F;
 }
-body.dark.green a:hover, body.dark.green form button:hover {
-  color: #1047A9;
-  background: #FF6C00;
+body.dark.green header button.color-button:hover, body.dark.green header a.color-button:hover {
+  color: #00d4ff;
+  background-color: #0a2540;
+  border-color: #00d4ff;
+}
+body.dark.green form button {
+  color: #D7FCD5;
+  border-color: #D7FCD5;
+  background: none;
+}
+body.dark.green form button:hover {
+  color: #4AB944;
+  background: #032D01;
 }
 body.dark.blue {
-  color: #ACD9EE;
+  color: #00d4ff;
 }
 body.dark.blue.grad {
-  background: linear-gradient(180deg, #000A0F, #000A0F, #181500 80%, #FADE0A);
+  background: linear-gradient(to bottom, #0a2540 60%, #00d4ff);
 }
 body.dark.blue.no-grad {
-  background: #000A0F;
+  background: #0a2540;
 }
-body.dark.blue header button {
-  color: #FFE9D9;
-  border-color: #FFE9D9;
-  background: #0E6F9E;
+body.dark.blue header button, body.dark.blue header a {
+  color: #00d4ff;
+  border-color: #00d4ff;
+  background: none;
 }
-body.dark.blue header button.color-button:hover {
-  color: #140008;
-  background-color: #FADE0A;
-  border-color: #140008;
+body.dark.blue header button:hover, body.dark.blue header a:hover {
+  color: #0a2540;
+  border-color: #0a2540;
+  background: #00d4ff;
 }
-body.dark.blue a, body.dark.blue form button {
-  color: #1047A9;
-  border-color: #1047A9;
-  background: #0E6F9E;
+body.dark.blue header button.theme-button:hover, body.dark.blue header a.theme-button:hover {
+  color: #0a2540;
+  background-color: #00d4ff;
 }
-body.dark.blue a:hover, body.dark.blue form button:hover {
-  color: #1047A9;
-  background: #FF6C00;
+body.dark.blue header button.color-button:hover, body.dark.blue header a.color-button:hover {
+  color: #9FF300;
+  background-color: #3E0ECB;
+  border-color: #9FF300;
+}
+body.dark.blue form button {
+  color: #0a2540;
+  border-color: #0a2540;
+  background: #00d4ff;
+}
+body.dark.blue form button:hover {
+  color: #00d4ff;
+  background: #0a2540;
 }
 body.dark.purple {
-  color: #ACD9EE;
+  color: #F5F3FB;
 }
 body.dark.purple.grad {
-  background: linear-gradient(180deg, #000A0F, #000A0F, #181500 80%, #FADE0A);
+  background: linear-gradient(to bottom, #0E0137, #AA4F00);
 }
 body.dark.purple.no-grad {
-  background: #000A0F;
+  background: #0E0137;
 }
-body.dark.purple header button {
-  color: #FFE9D9;
-  border-color: #FFE9D9;
-  background: #0E6F9E;
+body.dark.purple header button, body.dark.purple header a {
+  color: #F5F3FB;
+  border-color: #F5F3FB;
+  background: none;
 }
-body.dark.purple header button.color-button:hover {
-  color: #140008;
-  background-color: #FADE0A;
-  border-color: #140008;
+body.dark.purple header button:hover, body.dark.purple header a:hover {
+  color: #FBFEF5;
+  border-color: #FBFEF5;
+  background: #3E0ECB;
 }
-body.dark.purple a, body.dark.purple form button {
-  color: #1047A9;
-  border-color: #1047A9;
-  background: #0E6F9E;
+body.dark.purple header button.theme-button:hover, body.dark.purple header a.theme-button:hover {
+  color: #210575;
+  background-color: #F5F3FB;
 }
-body.dark.purple a:hover, body.dark.purple form button:hover {
-  color: #1047A9;
-  background: #FF6C00;
+body.dark.purple header button.color-button:hover, body.dark.purple header a.color-button:hover {
+  color: #F9B3BF;
+  background-color: #42000C;
+  border-color: #F9B3BF;
+}
+body.dark.purple form button {
+  color: #FF7600;
+  border-color: #FF7600;
+  background: #210575;
+}
+body.dark.purple form button:hover {
+  color: #FFA04F;
+  background: #3E0ECB;
 }
 body.light.red {
   color: #9C001C;
@@ -179,27 +229,32 @@ body.light.red.grad {
 body.light.red.no-grad {
   background: #FFE4B7;
 }
-body.light.red header button {
-  color: #EB9304;
-  border-color: #EB9304;
+body.light.red header button, body.light.red header a {
+  color: #A66700;
+  border-color: #A66700;
   background: none;
 }
-body.light.red header button.theme-button:hover {
+body.light.red header button:hover, body.light.red header a:hover {
+  color: #FFE4B7;
+  border-color: #FFE4B7;
+  background: #9C001C;
+}
+body.light.red header button.theme-button:hover, body.light.red header a.theme-button:hover {
   color: #F9B3BF;
   background-color: #42000C;
 }
-body.light.red header button.color-button:hover {
+body.light.red header button.color-button:hover, body.light.red header a.color-button:hover {
   color: #FF6C00;
   background-color: #FFE9D9;
   border-color: #FF6C00;
 }
-body.light.red a, body.light.red form button {
-  color: #42000C;
-  border-color: #42000C;
+body.light.red form button {
+  color: #9C001C;
+  border-color: #9C001C;
   background: none;
 }
-body.light.red a:hover, body.light.red form button:hover {
-  color: #42000C;
+body.light.red form button:hover {
+  color: #F9B3BF;
   background: #590E9E;
 }
 body.light.orange {
@@ -211,22 +266,31 @@ body.light.orange.grad {
 body.light.orange.no-grad {
   background: #FFE9D9;
 }
-body.light.orange header button {
-  color: #FFE9D9;
-  border-color: #FFE9D9;
+body.light.orange header button, body.light.orange header a {
+  color: #072D71;
+  border-color: #072D71;
   background: none;
 }
-body.light.orange header button.color-button:hover {
+body.light.orange header button:hover, body.light.orange header a:hover {
+  color: #010D24;
+  border-color: #010D24;
+  background: #FF6C00;
+}
+body.light.orange header button.theme-button:hover, body.light.orange header a.theme-button:hover {
+  color: #CEDAEE;
+  background-color: #361700;
+}
+body.light.orange header button.color-button:hover, body.light.orange header a.color-button:hover {
   color: #140008;
   background-color: #FADE0A;
   border-color: #140008;
 }
-body.light.orange a, body.light.orange form button {
-  color: #1047A9;
-  border-color: #1047A9;
+body.light.orange form button {
+  color: #FFE9D9;
+  border-color: #FFE9D9;
   background: #FF6C00;
 }
-body.light.orange a:hover, body.light.orange form button:hover {
+body.light.orange form button:hover {
   color: #1047A9;
   background: #FF6C00;
 }
@@ -239,108 +303,144 @@ body.light.yellow.grad {
 body.light.yellow.no-grad {
   background: #FFF6B5;
 }
-body.light.yellow header button {
+body.light.yellow header button, body.light.yellow header a {
+  color: #0E6F9E;
+  border-color: #0E6F9E;
+  background: #F9B1CD;
+}
+body.light.yellow header button:hover, body.light.yellow header a:hover {
+  color: #054565;
+  border-color: #054565;
+  background: #FADE0A;
+}
+body.light.yellow header button.theme-button:hover, body.light.yellow header a.theme-button:hover {
+  color: #ACD9EE;
+  background-color: #000A0F;
+}
+body.light.yellow header button.color-button:hover, body.light.yellow header a.color-button:hover {
+  color: #20396E;
+  background-color: #5cdb95;
+  border-color: #20396E;
+}
+body.light.yellow form button {
   color: #FFE9D9;
   border-color: #FFE9D9;
   background: #0E6F9E;
 }
-body.light.yellow header button.color-button:hover {
-  color: #4AB944;
-  background-color: #050F25;
-  border-color: #4AB944;
-}
-body.light.yellow a, body.light.yellow form button {
+body.light.yellow form button:hover {
   color: #1047A9;
-  border-color: #1047A9;
-  background: #0E6F9E;
-}
-body.light.yellow a:hover, body.light.yellow form button:hover {
-  color: #1047A9;
-  background: #FF6C00;
+  background: #FADE0A;
 }
 body.light.green {
-  color: #ACD9EE;
+  color: #032D01;
 }
 body.light.green.grad {
-  background: linear-gradient(180deg, #000A0F, #000A0F, #181500 80%, #FADE0A);
+  background: linear-gradient(200deg, #5cdb95, #D7FCD5);
 }
 body.light.green.no-grad {
-  background: #000A0F;
+  background: #5cdb95;
 }
-body.light.green header button {
-  color: #FFE9D9;
-  border-color: #FFE9D9;
-  background: #0E6F9E;
+body.light.green header button, body.light.green header a {
+  color: #032D01;
+  border-color: #032D01;
+  background: none;
 }
-body.light.green header button.color-button:hover {
-  color: #140008;
-  background-color: #FADE0A;
-  border-color: #140008;
+body.light.green header button:hover, body.light.green header a:hover {
+  color: #20396E;
+  border-color: #20396E;
+  background: #4AB944;
 }
-body.light.green a, body.light.green form button {
-  color: #1047A9;
-  border-color: #1047A9;
-  background: #0E6F9E;
+body.light.green header button.theme-button:hover, body.light.green header a.theme-button:hover {
+  color: #D7FCD5;
+  background-color: #032D01;
 }
-body.light.green a:hover, body.light.green form button:hover {
-  color: #1047A9;
-  background: #FF6C00;
+body.light.green header button.color-button:hover, body.light.green header a.color-button:hover {
+  color: #0a2540;
+  background-color: #00d4ff;
+  border-color: #0a2540;
+}
+body.light.green form button {
+  color: #5cdb95;
+  border-color: #5cdb95;
+  background: #032D01;
+}
+body.light.green form button:hover {
+  color: #425E99;
+  background: #4AB944;
 }
 body.light.blue {
-  color: #ACD9EE;
+  color: #0a2540;
 }
 body.light.blue.grad {
-  background: linear-gradient(180deg, #000A0F, #000A0F, #181500 80%, #FADE0A);
+  background: linear-gradient(to bottom, #00d4ff 60%, #0a2540);
 }
 body.light.blue.no-grad {
-  background: #000A0F;
+  background: #00d4ff;
 }
-body.light.blue header button {
-  color: #FFE9D9;
-  border-color: #FFE9D9;
-  background: #0E6F9E;
+body.light.blue header button, body.light.blue header a {
+  color: #0a2540;
+  border-color: #0a2540;
+  background: none;
 }
-body.light.blue header button.color-button:hover {
-  color: #140008;
-  background-color: #FADE0A;
-  border-color: #140008;
+body.light.blue header button:hover, body.light.blue header a:hover {
+  color: #00d4ff;
+  border-color: #00d4ff;
+  background: #0a2540;
 }
-body.light.blue a, body.light.blue form button {
-  color: #1047A9;
-  border-color: #1047A9;
-  background: #0E6F9E;
+body.light.blue header button.theme-button:hover, body.light.blue header a.theme-button:hover {
+  color: #00d4ff;
+  background-color: #0a2540;
 }
-body.light.blue a:hover, body.light.blue form button:hover {
-  color: #1047A9;
-  background: #FF6C00;
+body.light.blue header button.color-button:hover, body.light.blue header a.color-button:hover {
+  color: #3E0ECB;
+  background-color: #F5F3FB;
+  border-color: #3E0ECB;
+}
+body.light.blue form button {
+  color: #00d4ff;
+  border-color: #00d4ff;
+  background: #0a2540;
+}
+body.light.blue form button:hover {
+  color: #0a2540;
+  background: #00d4ff;
 }
 body.light.purple {
-  color: #ACD9EE;
+  color: #210575;
 }
 body.light.purple.grad {
-  background: linear-gradient(180deg, #000A0F, #000A0F, #181500 80%, #FADE0A);
+  background: linear-gradient(to bottom, #F5F3FB, #FFFEF6);
 }
 body.light.purple.no-grad {
-  background: #000A0F;
+  background: #F5F3FB;
 }
-body.light.purple header button {
-  color: #FFE9D9;
-  border-color: #FFE9D9;
-  background: #0E6F9E;
+body.light.purple header button, body.light.purple header a {
+  color: #210575;
+  border-color: #210575;
+  background: none;
 }
-body.light.purple header button.color-button:hover {
-  color: #140008;
-  background-color: #FADE0A;
-  border-color: #140008;
+body.light.purple header button:hover, body.light.purple header a:hover {
+  color: #FFFAF6;
+  border-color: #FFFAF6;
+  background: #3E0ECB;
 }
-body.light.purple a, body.light.purple form button {
-  color: #1047A9;
-  border-color: #1047A9;
-  background: #0E6F9E;
+body.light.purple header button.theme-button:hover, body.light.purple header a.theme-button:hover {
+  color: #F5F3FB;
+  background-color: #0E0137;
 }
-body.light.purple a:hover, body.light.purple form button:hover {
-  color: #1047A9;
-  background: #FF6C00;
+body.light.purple header button.color-button:hover, body.light.purple header a.color-button:hover {
+  color: #9C001C;
+  background-color: #FFE4B7;
+  border-color: #9C001C;
+}
+body.light.purple form button {
+  color: #7453D7;
+  border-color: #7453D7;
+  background: #FFFAF6;
+}
+body.light.purple form button:hover {
+  color: #FF7600;
+  background: #3E0ECB;
 }
 
 /*# sourceMappingURL=theme.css.map */
