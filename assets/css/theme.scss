@@ -23,22 +23,6 @@ $red-complement-2: #79DB4F;
 $red-complement-3: #2B8F00;
 $red-complement-4: #123D00;
 
-//dark red
-$red-dark-ink: $red-light-2;
-$red-dark-heading-ink: $red;
-$red-dark-background: $red-dark-2;
-$red-dark-background-grad: linear-gradient(185deg, $red-secondary-1-4, $red-dark-2, $red-secondary-2-4);
-$red-dark-button-ink: $red-secondary-1-0;
-$red-dark-button-background: $red-dark-2;
-$red-dark-hover-ink: $red-secondary-1-0;
-$red-dark-hover-background: $red-secondary-2-0;
-
-//light red
-$red-light-ink: $red-dark-1;
-$red-light-background: $red-secondary-1-1;
-$red-light-background-grad: linear-gradient(185deg, $red-secondary-1-1, $red-light-2, $red-secondary-2-1);
-$red-light-darker: $red-dark-2;
-
 //orange
 $orange: #FF6C00;
 $orange-light-2: #FFE9D9;
@@ -63,27 +47,6 @@ $orange-complement-1: #C9ECE8;
 $orange-complement-2: #45ABA1;
 $orange-complement-3: #00695E;
 $orange-complement-4: #00221E;
-//dark orange
-$orange-dark-heading-ink: $orange;
-$orange-dark-ink: $orange-secondary-1-1;
-$orange-dark-background: $orange-secondary-1-4;
-$orange-dark-background-grad: linear-gradient(170deg, $orange-secondary-1-4, $orange-dark-2);
-
-$orange-dark-button-background: $orange-secondary-1-0;
-$orange-dark-button-ink: $orange;
-$orange-dark-button-hover-background: $orange-secondary-1-3;
-$orange-dark-button-hover-ink: $orange;
-//light orange
-
-$orange-light-heading-ink: $orange-dark-2;
-$orange-light-ink: $orange-secondary-1-4;
-$orange-light-background: $orange-light-2;
-$orange-light-background-grad: linear-gradient(182deg, $orange-secondary-1-1, $orange-light-2, $orange-light-2);
-
-$orange-light-button-background: $orange;
-$orange-light-button-ink: $orange-light-2;
-$orange-light-button-hover-background: $orange;
-$orange-light-button-hover-ink: $orange-secondary-1-0;
 
 //yellow
 $yellow: #FADE0A;
@@ -110,30 +73,7 @@ $yellow-complement-2: #794FC2;
 $yellow-complement-3: #2E096D;
 $yellow-complement-4: #060010;
 
-//dark yellow
-$yellow-dark-heading-ink: $yellow;
-$yellow-dark-ink: $yellow-secondary-2-1;
-$yellow-dark-background: $yellow-secondary-2-4;
-$yellow-dark-background-grad: linear-gradient(180deg, $yellow-secondary-2-4, $yellow-secondary-2-4, $yellow-dark-2 80%, $yellow);
-
-$yellow-dark-button-background: $yellow-secondary-2-0;
-$yellow-dark-button-ink: $yellow;
-$yellow-dark-button-hover-background: $yellow-secondary-2-3;
-$yellow-dark-button-hover-ink: $yellow;
-//light yellow
-
-$yellow-light-heading-ink: $yellow-dark-2;
-$yellow-light-ink: $yellow-secondary-1-4;
-$yellow-light-background: $yellow-light-2;
-$yellow-light-background-grad: linear-gradient(180deg, $yellow-secondary-2-1, $yellow-secondary-1-1, $yellow-light-2, $yellow-light-2, $yellow-light-1);
-
-$yellow-light-button-background: $yellow;
-$yellow-light-button-ink: $yellow-complement-0;
-$yellow-light-button-hover-background: $yellow;
-$yellow-light-button-hover-ink: $yellow-secondary-1-0;
-
 //green
-
 $green: #4AB944;
 $green-light-2: #D7FCD5;
 $green-light-1: #85E181;
@@ -151,19 +91,6 @@ $green-complement-1: #FFD7D8;
 $green-complement-2: #FE9194;
 $green-complement-3: #A32225;
 $green-complement-4: #370103;
-
-//dark green
-$green-dark-ink: $green-secondary-1-1;
-$green-dark-background: $green-dark-2;
-$green-dark-background-grad: linear-gradient(160deg, $green-dark-2, $green-dark-1);
-$green-dark-ink-hover: $green;
-$green-dark-background-hover: $green-secondary-1-0;
-
-//light green
-$green-light-ink: $green-secondary-1-3;
-$green-light-white: #edf5e1;
-$green-light-background: #5cdb95;
-$green-light-background-grad: linear-gradient(160deg, $green-light-background, $green-light-1);
 
 //dark blue
 //light blue
@@ -198,564 +125,763 @@ $purple-complement-2: #FFE24F;
 $purple-complement-3: #AA8E00;
 $purple-complement-4: #504300;
 
-//dark purple
-$purple-dark-ink: $purple-light-2;
-$purple-dark-background: $purple-dark-2;
-$purple-dark-background-grad: linear-gradient(to bottom, $purple-dark-2, $purple-secondary-2-3);
-$purple-dark-dark: #0c0032;
-$purple-dark-black: #282828;
-//light purple
-$purple-light-ink: $purple-dark-1;
-$purple-light-background: $purple-light-2;
-$purple-light-background-grad: linear-gradient(to bottom, $purple-light-2, $purple-complement-1);
-$purple-light-button: $purple-dark-1;
-$purple-light-button-ink: $purple-complement-2;
-$purple-light-button-hover: $purple-secondary-2-2;
-//8506A9
+
+//dark red
+$red-dark: (
+        ink: $red-light-2,
+        background: $red-dark-2,
+        background-grad: linear-gradient(185deg, $red-secondary-1-4, $red-dark-2, $red-secondary-2-4),
+        heading-ink: $red,
+        header-button-color: $red-secondary-1-0,
+        header-button-background: none,
+        header-button-hover-color:$red-secondary-1-0,
+        header-button-hover-background: $red-secondary-2-4,
+        form-button-color:$red-secondary-1-0,
+        form-button-background:$red-dark-2,
+        form-button-hover-color:$red-secondary-1-0,
+        form-button-hover-background:$red-secondary-2-2,
+        theme-button-ink: $red-dark-1,
+        theme-button-background: $red-secondary-1-1,
+        next-button-ink: $orange,
+        next-button-background:$orange-secondary-1-4,
+);
+
+//light red
+$red-light: (
+        ink: $red-dark-1,
+        background: $red-secondary-1-1,
+        background-grad: linear-gradient(185deg, $red-secondary-1-1, $red-light-2, $red-secondary-2-1),
+        heading-ink: $red,
+        header-button-color: $red-secondary-1-0,
+        header-button-background: none,
+        header-button-hover-color:$red-secondary-1-1,
+        header-button-hover-background:$red-dark-1,
+        form-button-color:$red-dark-1,
+        form-button-background:none,
+        form-button-hover-color:$red-dark-2,
+        form-button-hover-background:$red-secondary-2-0,
+        theme-button-ink: $red-light-2,
+        theme-button-background: $red-dark-2,
+        next-button-ink:$orange,
+        next-button-background:$orange-light-2,
+);
+
+//dark orange
+$orange-dark: (
+        ink: $orange-secondary-1-1,
+        background: $orange-secondary-1-4,
+        background-grad: linear-gradient(170deg, $orange-secondary-1-4, $orange-dark-2),
+        heading-ink: $orange,
+        header-button-color: $orange,
+        header-button-background: none,
+        header-button-hover-color:$orange,
+        header-button-hover-background: $orange-secondary-1-3,
+        form-button-color:$red-secondary-1-0,
+        form-button-background:$orange-secondary-1-0,
+        form-button-hover-color:$red-secondary-1-0,
+        form-button-hover-background:$orange-secondary-1-3,
+        theme-ink: $orange-secondary-1-4,
+        theme-background: $orange-light-2,
+        next-button-ink: $yellow-secondary-1-4,
+        next-button-background: $yellow,
+);
+
+//light orange
+$orange-light: (
+        ink: $orange-secondary-1-4,
+        background: $orange-light-2,
+        background-grad: linear-gradient(182deg, $orange-secondary-1-1, $orange-light-2, $orange-light-2),
+        heading-ink: $orange-dark-2,
+        header-button-color: $orange-light-2,
+        header-button-background: none,
+        header-button-hover-color:$orange-secondary-1-0,
+        header-button-hover-background: $orange,
+        form-button-color:$orange-light-2,
+        form-button-background:$orange,
+        form-button-hover-color:$orange-secondary-1-0,
+        form-button-hover-background:$orange,
+        next-button-ink: $yellow-secondary-1-4,
+        next-button-background: $yellow,
+);
+
+//dark-yellow
+$yellow-dark: (
+        ink: $yellow-secondary-2-1,
+        background: $yellow-secondary-2-4,
+        background-grad: linear-gradient(180deg, $yellow-secondary-2-4, $yellow-secondary-2-4, $yellow-dark-2 80%, $yellow),
+        heading-ink: $yellow,
+        header-button-color: $yellow,
+        header-button-background: none,
+        header-button-hover-color:$yellow,
+        header-button-hover-background: $yellow-secondary-2-3,
+        form-button-color:$yellow,
+        form-button-background:$yellow-secondary-2-0,
+        form-button-hover-color:$yellow,
+        form-button-hover-background:$yellow-secondary-2-3,
+        next-button-ink: $green-secondary-1-4,
+        next-button-background: $green
+);
+
+//light-yellow
+$yellow-light: (
+        ink: $yellow-secondary-1-4,
+        background: $yellow-light-2,
+        background-grad: linear-gradient(180deg, $yellow-secondary-2-1, $yellow-secondary-1-1, $yellow-light-2, $yellow-light-2, $yellow-light-1),
+        heading-ink: $yellow-dark-2,
+        header-button-color: $orange-light-2,
+        header-button-background: $yellow-secondary-2-0,
+        header-button-hover-color:$orange-secondary-1-0,
+        header-button-hover-background: $orange,
+        form-button-color:$orange-light-2,
+        form-button-background:$yellow-secondary-2-0,
+        form-button-hover-color:$orange-secondary-1-0,
+        form-button-hover-background:$orange,
+        next-button-ink: $green,
+        next-button-background: $green-secondary-1-4,
+);
+
+//dark-green
+$green-dark: (
+        ink: $yellow-secondary-2-1,
+        background: $yellow-secondary-2-4,
+        background-grad: linear-gradient(180deg, $yellow-secondary-2-4, $yellow-secondary-2-4, $yellow-dark-2 80%, $yellow),
+        heading-ink: $yellow,
+        header-button-color: $orange-light-2,
+        header-button-background: $yellow-secondary-2-0,
+        header-button-hover-color:$orange-secondary-1-0,
+        header-button-hover-background: $orange,
+        form-button-color:$orange-light-2,
+        form-button-background:$yellow-secondary-2-0,
+        form-button-hover-color:$orange-secondary-1-0,
+        form-button-hover-background:$orange,
+        next-button-ink: $yellow-secondary-1-4,
+        next-button-background: $yellow,
+);
+
+//light-green
+$green-light: (
+        ink: $yellow-secondary-2-1,
+        background: $yellow-secondary-2-4,
+        background-grad: linear-gradient(180deg, $yellow-secondary-2-4, $yellow-secondary-2-4, $yellow-dark-2 80%, $yellow),
+        heading-ink: $yellow,
+        header-button-color: $orange-light-2,
+        header-button-background: $yellow-secondary-2-0,
+        header-button-hover-color:$orange-secondary-1-0,
+        header-button-hover-background: $orange,
+        form-button-color:$orange-light-2,
+        form-button-background:$yellow-secondary-2-0,
+        form-button-hover-color:$orange-secondary-1-0,
+        form-button-hover-background:$orange,
+        next-button-ink: $yellow-secondary-1-4,
+        next-button-background: $yellow,
+);
+
+//dark-blue
+$blue-dark: (
+        ink: $yellow-secondary-2-1,
+        background: $yellow-secondary-2-4,
+        background-grad: linear-gradient(180deg, $yellow-secondary-2-4, $yellow-secondary-2-4, $yellow-dark-2 80%, $yellow),
+        heading-ink: $yellow,
+        header-button-color: $orange-light-2,
+        header-button-background: $yellow-secondary-2-0,
+        header-button-hover-color:$orange-secondary-1-0,
+        header-button-hover-background: $orange,
+        form-button-color:$orange-light-2,
+        form-button-background:$yellow-secondary-2-0,
+        form-button-hover-color:$orange-secondary-1-0,
+        form-button-hover-background:$orange,
+        next-button-ink: $yellow-secondary-1-4,
+        next-button-background: $yellow,
+);
+
+//light-blue
+$blue-light: (
+        ink: $yellow-secondary-2-1,
+        background: $yellow-secondary-2-4,
+        background-grad: linear-gradient(180deg, $yellow-secondary-2-4, $yellow-secondary-2-4, $yellow-dark-2 80%, $yellow),
+        heading-ink: $yellow,
+        header-button-color: $orange-light-2,
+        header-button-background: $yellow-secondary-2-0,
+        header-button-hover-color:$orange-secondary-1-0,
+        header-button-hover-background: $orange,
+        form-button-color:$orange-light-2,
+        form-button-background:$yellow-secondary-2-0,
+        form-button-hover-color:$orange-secondary-1-0,
+        form-button-hover-background:$orange,
+        next-button-ink: $yellow-secondary-1-4,
+        next-button-background: $yellow,
+);
+
+//dark-purple
+$purple-dark: (
+        ink: $yellow-secondary-2-1,
+        background: $yellow-secondary-2-4,
+        background-grad: linear-gradient(180deg, $yellow-secondary-2-4, $yellow-secondary-2-4, $yellow-dark-2 80%, $yellow),
+        heading-ink: $yellow,
+        header-button-color: $orange-light-2,
+        header-button-background: $yellow-secondary-2-0,
+        header-button-hover-color:$orange-secondary-1-0,
+        header-button-hover-background: $orange,
+        form-button-color:$orange-light-2,
+        form-button-background:$yellow-secondary-2-0,
+        form-button-hover-color:$orange-secondary-1-0,
+        form-button-hover-background:$orange,
+        next-button-ink: $yellow-secondary-1-4,
+        next-button-background: $yellow,
+);
+
+//light-purple
+$purple-light: (
+        ink: $yellow-secondary-2-1,
+        background: $yellow-secondary-2-4,
+        background-grad: linear-gradient(180deg, $yellow-secondary-2-4, $yellow-secondary-2-4, $yellow-dark-2 80%, $yellow),
+        heading-ink: $yellow,
+        header-button-color: $orange-light-2,
+        header-button-background: $yellow-secondary-2-0,
+        header-button-hover-color:$orange-secondary-1-0,
+        header-button-hover-background: $orange,
+        form-button-color:$orange-light-2,
+        form-button-background:$yellow-secondary-2-0,
+        form-button-hover-color:$orange-secondary-1-0,
+        form-button-hover-background:$orange,
+        next-button-ink: $yellow-secondary-1-4,
+        next-button-background: $yellow,
+);
 
 
 //** Themes **//
 body {
-  &.light {
-    &.red {
-      color: $red-light-ink;
-
-      &.grad {
-        background: $red-light-background-grad;
-      }
-
-      &.no-grad {
-        background: $red-light-background;
-      }
-
-      header {
-        button {
-          color: $red-light-ink;
-          border-color: $red-light-ink;
-          background: none;
-
-          &.theme-button:hover {
-            color: $red-dark-ink;
-            background-color: $red-dark-background;
-          }
-
-          &.color-button:hover {
-            color: $orange-light-ink;
-            background-color: $orange;
-            border-color: $orange-light-ink;
-          }
-        }
-      }
-
-      a, form button {
-        color: $red-light-ink;
-        border-color: $red-light-ink;
-        background: none;
-
-        &:hover {
-          color: $red-light-background;
-          background: $red-light-ink;
-        }
-      }
-    }
-
-    &.orange {
-      color: $orange-light-ink;
-
-      &.grad {
-        background: $orange-light-background-grad;
-      }
-
-      &.no-grad {
-        background: $orange-light-background;
-      }
-
-      header {
-        button {
-          color: $orange-light-ink;
-          border-color: $orange-light-ink;
-          background: none;
-
-          &.theme-button:hover {
-            color: $orange-dark-ink;
-            background-color: $orange-dark-background;
-          }
-
-          &.color-button:hover {
-            color: $yellow-light-ink;
-            background-color: $yellow;
-            border-color: $yellow-light-ink;
-          }
-        }
-      }
-
-      h1, h2 {
-        color: $orange-light-heading-ink;
-      }
-
-      a, form button {
-        color: $orange-light-ink;
-        border-color: $orange-light-ink;
-        background: none;
-        font-weight: 500;
-
-        &:hover {
-          color: $orange-light-button-hover-ink;
-          background: $orange-light-button-hover-background;
-        }
-      }
-    }
-
-    &.yellow {
-      color: $yellow-light-ink;
-
-      &.grad {
-        background: $yellow-light-background-grad;
-      }
-
-      &.no-grad {
-        background: $yellow-light-background;
-      }
-
-      header {
-        button {
-          color: $yellow-light-ink;
-          border-color: $yellow-light-ink;
-          background: none;
-
-          &.theme-button:hover {
-            color: $yellow-dark-ink;
-            background-color: $yellow-dark-background;
-          }
-
-          &.color-button:hover {
-            color: $green-light-ink;
-            background-color: $green;
-            border-color: $green-light-ink;
-          }
-        }
-      }
-
-      h1, h2 {
-        color: $yellow-light-heading-ink;
-      }
-
-      a, form button {
-        color: $yellow-light-button-ink;
-        background: $yellow-light-button-background;
-        font-weight: 500;
-        background: none;
-
-        &:hover {
-          color: $yellow-light-button-hover-ink;
-          background: $yellow-light-button-hover-background;
-        }
-      }
-    }
-
-    &.green {
-      color: $green-light-ink;
-
-      &.grad {
-        background: $green-light-background-grad;
-      }
-
-      &.no-grad {
-        background: $green-light-background;
-      }
-
-      header {
-        button {
-          color: $green-light-ink;
-          border-color: $green-light-ink;
-          background: none;
-
-          &.theme-button:hover {
-            color: $green-dark-ink;
-            background-color: $green-dark-background;
-          }
-
-          &.color-button:hover {
-            color: $dark-blue;
-            background-color: $light-blue;
-            border-color: $dark-blue;
-          }
-        }
-      }
-
-      a, form button {
-        color: $green-light-ink;
-        background: $green-light-background;
-        border-color: $green-light-ink;
-        background: none;
-
-        &:hover {
-          color: $green-light-background;
-          background: $green-light-ink;
-        }
-      }
-    }
-
-    &.blue {
-      color: $dark-blue;
-
-      &.grad {
-        background: $blue-light-background-grad;
-      }
-
-      &.no-grad {
-        background: $light-blue;
-      }
-
-      header {
-        button {
-          color: $dark-blue;
-          border-color: $dark-blue;
-          background: none;
-
-          &.theme-button:hover {
-            color: $light-blue;
-            background-color: $dark-blue;
-          }
-
-          &.color-button:hover {
-            color: $purple-light-2;
-            background-color: $purple;
-            border-color: $purple-light-ink;
-          }
-        }
-      }
-
-      a, form button {
-        color: $dark-blue;
-        border-color: $dark-blue;
-        background: none;
-
-        &:hover {
-          background-color: $dark-blue;
-          color: $light-blue;
-          font-weight: 500;
-        }
-      }
-    }
-
-    &.purple {
-      color: $purple-light-ink;
-
-      &.grad {
-        background: $purple-light-background-grad;
-      }
-
-      &.no-grad {
-        background: $purple-light-background;
-      }
-
-      header {
-        button {
-          color: $purple-light-ink;
-          border-color: $purple-light-ink;
-          background: none;
-
-          &.theme-button:hover {
-            color: $purple-dark-ink;
-            background-color: $purple-dark-background;
-          }
-
-          &.color-button:hover {
-            color: $red-light-2;
-            background-color: $red-dark-1;
-            border-color: $red-light-ink;
-          }
-        }
-      }
-
-      a, form button {
-        color: $purple-light-button-ink;
-        background: $purple-light-button;
-
-        &:hover {
-          background: $purple-light-button-hover;
-          color: $purple-light-button;
-        }
-      }
-    }
-
-  }
-
-  //dark mode
   &.dark {
     &.red {
-      color: $red-dark-ink;
+      $theme: $red-dark;
+
+      color: map-get($theme, ink);
 
       &.grad {
-        background: $red-dark-background-grad;
+        background: map-get($theme, background-grad);
       }
 
       &.no-grad {
-        background: $red-dark-background;
+        background: map-get($theme, background);
       }
 
       header {
-        button {
-          color: $red-dark-ink;
-          border-color: $red-dark-ink;
-          background: none;
+        button, a {
+          color: map-get($theme, header-button-color);
+          border-color: map-get($theme, header-button-color);
+          background: map-get($theme, header-button-background);
 
           &.theme-button:hover {
-            color: $red-light-ink;
-            background-color: $red-light-background;
+            color: map-get($theme, theme-button-ink);
+            background-color: map-get($theme, theme-button-background);
           }
 
           &.color-button:hover {
-            color: $orange;
-            background-color: $orange-dark-background;
-            border-color: $orange;
+            color: map-get($theme, next-button-ink);
+            background-color: map-get($theme, next-button-background);
+            border-color: map-get($theme, next-button-ink);
           }
         }
       }
 
-      h1, h2 {
-        color: $red-dark-heading-ink;
+      form button {
+        color: map-get($theme, form-button-hover-color);
+        border-color: map-get($theme, form-button-hover-color);
+        background: map-get($theme, form-button-background);
       }
 
-      a, form button {
-        color: $red-dark-button-ink;
-        background: $red-dark-button-background;
-
-        &:hover {
-          color: $red-dark-hover-ink;
-          background: $red-dark-hover-background;
-          border-color: $red-dark-hover-background;
-        }
+      form button:hover, a:hover {
+        color: map-get($theme, form-button-hover-color);
+        background: map-get($theme, form-button-hover-background);
       }
+
     }
 
     &.orange {
-      color: $orange-dark-ink;
+      $theme: $orange-dark;
+
+      color: map-get($theme, ink);
 
       &.grad {
-        background: $orange-dark-background-grad;
+        background: map-get($theme, background-grad);
       }
 
       &.no-grad {
-        background: $orange-dark-background;
+        background: map-get($theme, background);
       }
 
       header {
-        button {
-          color: $orange-dark-ink;
-          border-color: $orange-dark-ink;
-          background: none;
+        button, a {
+          color: map-get($theme, header-button-color);
+          border-color: map-get($theme, header-button-color);
+          background: map-get($theme, header-button-background);
 
           &.theme-button:hover {
-            color: $orange-light-ink;
-            background-color: $orange-light-background;
+            color: map-get($theme, theme-button-ink);
+            background-color: map-get($theme, theme-button-background);
           }
 
           &.color-button:hover {
-            color: $yellow;
-            background-color: $yellow-dark-background;
-            border-color: $yellow;
+            color: map-get($theme, next-button-ink);
+            background-color: map-get($theme, next-button-background);
+            border-color: map-get($theme, next-button-ink);
           }
         }
       }
 
-      h1, h2 {
-        color: $orange-dark-heading-ink;
+      form button {
+        color: map-get($theme, form-button-hover-color);
+        border-color: map-get($theme, form-button-hover-color);
+        background: map-get($theme, form-button-background);
       }
 
-      a, form button {
-        color: $orange-dark-button-ink;
-        background: $orange-dark-button-background;
-        font-weight: 600;
-
-        &:hover {
-          color: $orange-dark-button-hover-ink;
-          background: $orange-dark-button-hover-background;
-        }
+      form button:hover, a:hover {
+        color: map-get($theme, form-button-hover-color);
+        background: map-get($theme, form-button-hover-background);
       }
     }
 
     &.yellow {
-      color: $yellow-dark-ink;
+      $theme: $yellow-dark;
+
+      color: map-get($theme, ink);
 
       &.grad {
-        background: $yellow-dark-background-grad;
+        background: map-get($theme, background-grad);
       }
 
       &.no-grad {
-        background: $yellow-dark-background;
+        background: map-get($theme, background);
       }
 
       header {
         button {
-          color: $yellow-dark-ink;
-          border-color: $yellow-dark-ink;
-          background: none;
+          color: map-get($theme, header-button-color);
+          border-color: map-get($theme, header-button-color);
+          background: map-get($theme, header-button-background);
 
           &.theme-button:hover {
-            color: $yellow-light-ink;
-            background-color: $yellow-light-background;
-            border-color: $yellow-light-ink;
+            color: map-get($theme, theme-button-ink);
+            background-color: map-get($theme, theme-button-background);
           }
 
           &.color-button:hover {
-            color: $green;
-            background-color: $green-dark-2;
-            border-color: $green;
+            color: map-get($theme, next-button-ink);
+            background-color: map-get($theme, next-button-background);
+            border-color: map-get($theme, next-button-ink);
           }
         }
       }
 
-      h1, h2 {
-        color: $yellow-dark-heading-ink;
-      }
-
       a, form button {
-        color: $yellow-dark-button-ink;
-        background: $yellow-dark-button-background;
-        font-weight: 500;
+        color: map-get($theme, form-button-hover-color);
+        border-color: map-get($theme, form-button-hover-color);
+        background: map-get($theme, form-button-background);
 
         &:hover {
-          color: $yellow-dark-button-hover-ink;
-          background: $yellow-dark-button-hover-background;
+          color: map-get($theme, form-button-hover-color);
+          background: map-get($theme, form-button-hover-background);
         }
       }
     }
 
     &.green {
-      color: $green-dark-ink;
+      $theme: $green-dark;
+
+      color: map-get($theme, ink);
 
       &.grad {
-        background: $green-dark-background-grad;
+        background: map-get($theme, background-grad);
       }
 
       &.no-grad {
-        background: $green-dark-background;
+        background: map-get($theme, background);
       }
 
       header {
         button {
-          color: $green-dark-ink;
-          border-color: $green-dark-ink;
-          background: none;
+          color: map-get($theme, header-button-color);
+          border-color: map-get($theme, header-button-color);
+          background: map-get($theme, header-button-background);
 
           &.theme-button:hover {
-            color: $green-light-ink;
-            background-color: $green-light-background;
+            color: map-get($theme, theme-button-ink);
+            background-color: map-get($theme, theme-button-background);
           }
 
           &.color-button:hover {
-            color: $light-blue;
-            background-color: $dark-blue;
-            border-color: $light-blue;
+            color: map-get($theme, next-button-ink);
+            background-color: map-get($theme, next-button-background);
+            border-color: map-get($theme, next-button-ink);
           }
         }
-
       }
 
       a, form button {
-        color: $green-dark-ink;
-        background: $green-dark-background;
+        color: map-get($theme, form-button-hover-color);
+        border-color: map-get($theme, form-button-hover-color);
+        background: map-get($theme, form-button-background);
 
         &:hover {
-          color: $green-dark-background-hover;
-          background: $green-dark-ink-hover;
+          color: map-get($theme, form-button-hover-color);
+          background: map-get($theme, form-button-hover-background);
         }
       }
     }
 
     &.blue {
-      color: $light-blue;
+      $theme: $blue-dark;
+
+      color: map-get($theme, ink);
 
       &.grad {
-        background: $blue-dark-background-grad;
+        background: map-get($theme, background-grad);
       }
 
       &.no-grad {
-        background: $dark-blue;
+        background: map-get($theme, background);
       }
 
       header {
         button {
-          color: $light-blue;
-          border-color: $light-blue;
-          background: none;
+          color: map-get($theme, header-button-color);
+          border-color: map-get($theme, header-button-color);
+          background: map-get($theme, header-button-background);
 
           &.theme-button:hover {
-            color: $dark-blue;
-            background-color: $light-blue;
+            color: map-get($theme, theme-button-ink);
+            background-color: map-get($theme, theme-button-background);
           }
 
           &.color-button:hover {
-            color: $purple-light-1;
-            background-color: $purple-dark-background;
-            border-color: $purple-light-1;
+            color: map-get($theme, next-button-ink);
+            background-color: map-get($theme, next-button-background);
+            border-color: map-get($theme, next-button-ink);
           }
         }
-
       }
 
-
       a, form button {
-        color: $light-blue;
-        border-color: $light-blue;
-        background: none;
+        color: map-get($theme, form-button-hover-color);
+        border-color: map-get($theme, form-button-hover-color);
+        background: map-get($theme, form-button-background);
 
         &:hover {
-          background-color: $light-blue;
-          color: $dark-blue;
-          font-weight: 500;
+          color: map-get($theme, form-button-hover-color);
+          background: map-get($theme, form-button-hover-background);
         }
       }
     }
 
     &.purple {
-      color: $purple-dark-ink;
+      $theme: $purple-dark;
+
+      color: map-get($theme, ink);
 
       &.grad {
-        background: $purple-dark-background-grad;
+        background: map-get($theme, background-grad);
       }
 
       &.no-grad {
-        background: $purple-dark-background;
+        background: map-get($theme, background);
       }
 
       header {
         button {
-
-          color: $purple-dark-ink;
-          border-color: $purple-dark-ink;
-          background: none;
+          color: map-get($theme, header-button-color);
+          border-color: map-get($theme, header-button-color);
+          background: map-get($theme, header-button-background);
 
           &.theme-button:hover {
-            color: $purple-light-ink;
-            background-color: $purple-light-background;
+            color: map-get($theme, theme-button-ink);
+            background-color: map-get($theme, theme-button-background);
           }
 
           &.color-button:hover {
-            color: $red-dark-ink;
-            background-color: $red-dark-background;
-            border-color: $red;
+            color: map-get($theme, next-button-ink);
+            background-color: map-get($theme, next-button-background);
+            border-color: map-get($theme, next-button-ink);
           }
         }
       }
 
       a, form button {
-        color: $purple-dark-ink;
-        background: $purple-dark-dark;
+        color: map-get($theme, form-button-hover-color);
+        border-color: map-get($theme, form-button-hover-color);
+        background: map-get($theme, form-button-background);
 
         &:hover {
-          color: $purple-dark-dark;
-          background: $purple-dark-ink;
-        }
-      }
-      #form-container form {
-        color: $purple-dark-dark;
-        input:focus{
-          border-bottom-color: $purple;
+          color: map-get($theme, form-button-hover-color);
+          background: map-get($theme, form-button-hover-background);
         }
       }
     }
   }
+
+  &.light {
+    &.red {
+      $theme: $red-light;
+
+      color: map-get($theme, ink);
+
+      &.grad {
+        background: map-get($theme, background-grad);
+      }
+
+      &.no-grad {
+        background: map-get($theme, background);
+      }
+
+      header {
+        button {
+          color: map-get($theme, header-button-color);
+          border-color: map-get($theme, header-button-color);
+          background: map-get($theme, header-button-background);
+
+          &.theme-button:hover {
+            color: map-get($theme, theme-button-ink);
+            background-color: map-get($theme, theme-button-background);
+          }
+
+          &.color-button:hover {
+            color: map-get($theme, next-button-ink);
+            background-color: map-get($theme, next-button-background);
+            border-color: map-get($theme, next-button-ink);
+          }
+        }
+      }
+
+      a, form button {
+        color: map-get($theme, form-button-hover-color);
+        border-color: map-get($theme, form-button-hover-color);
+        background: map-get($theme, form-button-background);
+
+        &:hover {
+          color: map-get($theme, form-button-hover-color);
+          background: map-get($theme, form-button-hover-background);
+        }
+      }
+    }
+
+    &.orange {
+      $theme: $orange-light;
+
+      color: map-get($theme, ink);
+
+      &.grad {
+        background: map-get($theme, background-grad);
+      }
+
+      &.no-grad {
+        background: map-get($theme, background);
+      }
+
+      header {
+        button {
+          color: map-get($theme, header-button-color);
+          border-color: map-get($theme, header-button-color);
+          background: map-get($theme, header-button-background);
+
+          &.theme-button:hover {
+            color: map-get($theme, theme-button-ink);
+            background-color: map-get($theme, theme-button-background);
+          }
+
+          &.color-button:hover {
+            color: map-get($theme, next-button-ink);
+            background-color: map-get($theme, next-button-background);
+            border-color: map-get($theme, next-button-ink);
+          }
+        }
+      }
+
+      a, form button {
+        color: map-get($theme, form-button-hover-color);
+        border-color: map-get($theme, form-button-hover-color);
+        background: map-get($theme, form-button-background);
+
+        &:hover {
+          color: map-get($theme, form-button-hover-color);
+          background: map-get($theme, form-button-hover-background);
+        }
+      }
+    }
+
+    &.yellow {
+      $theme: $yellow-light;
+
+      color: map-get($theme, ink);
+
+      &.grad {
+        background: map-get($theme, background-grad);
+      }
+
+      &.no-grad {
+        background: map-get($theme, background);
+      }
+
+      header {
+        button {
+          color: map-get($theme, header-button-color);
+          border-color: map-get($theme, header-button-color);
+          background: map-get($theme, header-button-background);
+
+          &.theme-button:hover {
+            color: map-get($theme, theme-button-ink);
+            background-color: map-get($theme, theme-button-background);
+          }
+
+          &.color-button:hover {
+            color: map-get($theme, next-button-ink);
+            background-color: map-get($theme, next-button-background);
+            border-color: map-get($theme, next-button-ink);
+          }
+        }
+      }
+
+      a, form button {
+        color: map-get($theme, form-button-hover-color);
+        border-color: map-get($theme, form-button-hover-color);
+        background: map-get($theme, form-button-background);
+
+        &:hover {
+          color: map-get($theme, form-button-hover-color);
+          background: map-get($theme, form-button-hover-background);
+        }
+      }
+    }
+
+    &.green {
+      $theme: $green-light;
+
+      color: map-get($theme, ink);
+
+      &.grad {
+        background: map-get($theme, background-grad);
+      }
+
+      &.no-grad {
+        background: map-get($theme, background);
+      }
+
+      header {
+        button {
+          color: map-get($theme, header-button-color);
+          border-color: map-get($theme, header-button-color);
+          background: map-get($theme, header-button-background);
+
+          &.theme-button:hover {
+            color: map-get($theme, theme-button-ink);
+            background-color: map-get($theme, theme-button-background);
+          }
+
+          &.color-button:hover {
+            color: map-get($theme, next-button-ink);
+            background-color: map-get($theme, next-button-background);
+            border-color: map-get($theme, next-button-ink);
+          }
+        }
+      }
+
+      a, form button {
+        color: map-get($theme, form-button-hover-color);
+        border-color: map-get($theme, form-button-hover-color);
+        background: map-get($theme, form-button-background);
+
+        &:hover {
+          color: map-get($theme, form-button-hover-color);
+          background: map-get($theme, form-button-hover-background);
+        }
+      }
+    }
+
+    &.blue {
+      $theme: $blue-light;
+
+      color: map-get($theme, ink);
+
+      &.grad {
+        background: map-get($theme, background-grad);
+      }
+
+      &.no-grad {
+        background: map-get($theme, background);
+      }
+
+      header {
+        button {
+          color: map-get($theme, header-button-color);
+          border-color: map-get($theme, header-button-color);
+          background: map-get($theme, header-button-background);
+
+          &.theme-button:hover {
+            color: map-get($theme, theme-button-ink);
+            background-color: map-get($theme, theme-button-background);
+          }
+
+          &.color-button:hover {
+            color: map-get($theme, next-button-ink);
+            background-color: map-get($theme, next-button-background);
+            border-color: map-get($theme, next-button-ink);
+          }
+        }
+      }
+
+      a, form button {
+        color: map-get($theme, form-button-hover-color);
+        border-color: map-get($theme, form-button-hover-color);
+        background: map-get($theme, form-button-background);
+
+        &:hover {
+          color: map-get($theme, form-button-hover-color);
+          background: map-get($theme, form-button-hover-background);
+        }
+      }
+    }
+
+    &.purple {
+      $theme: $purple-light;
+
+      color: map-get($theme, ink);
+
+      &.grad {
+        background: map-get($theme, background-grad);
+      }
+
+      &.no-grad {
+        background: map-get($theme, background);
+      }
+
+      header {
+        button {
+          color: map-get($theme, header-button-color);
+          border-color: map-get($theme, header-button-color);
+          background: map-get($theme, header-button-background);
+
+          &.theme-button:hover {
+            color: map-get($theme, theme-button-ink);
+            background-color: map-get($theme, theme-button-background);
+          }
+
+          &.color-button:hover {
+            color: map-get($theme, next-button-ink);
+            background-color: map-get($theme, next-button-background);
+            border-color: map-get($theme, next-button-ink);
+          }
+        }
+      }
+
+      a, form button {
+        color: map-get($theme, form-button-hover-color);
+        border-color: map-get($theme, form-button-hover-color);
+        background: map-get($theme, form-button-background);
+
+        &:hover {
+          color: map-get($theme, form-button-hover-color);
+          background: map-get($theme, form-button-hover-background);
+        }
+      }
+    }
+  }
+
 }

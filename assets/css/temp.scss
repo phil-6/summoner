@@ -1,0 +1,839 @@
+// color template
+
+/*
+ "ink: ;
+ -background: ;
+ -background-grad: ;
+ -heading-ink: ;
+ -header-button-background: ;
+ -header-button-color: ;
+ -header-button-hover-background: ;
+ -header-button-hover-color: ;
+ -form-button-color: ;
+ -form-button-background: ;
+ -form-button-hover-color: ;
+ -form-button-hover-background: ;
+
+*/
+// red
+$red: #DC042A;
+$red-light-2: #F9B3BF;
+$red-light-1: #EF5671;
+$red-dark-1: #9C001C;
+$red-dark-2: #42000C;
+
+$red-secondary-1-0: #EB9304;
+$red-secondary-1-1: #FFE4B7;
+$red-secondary-1-2: #FFC15C;
+$red-secondary-1-3: #A66700;
+$red-secondary-1-4: #472C00;
+
+$red-secondary-2-0: #590E9E;
+$red-secondary-2-1: #C3A5DF;
+$red-secondary-2-2: #7B46AC;
+$red-secondary-2-3: #3D0670;
+$red-secondary-2-4: #190130;
+
+$red-complement-0: #3FCA04;
+$red-complement-1: #C2F1AE;
+$red-complement-2: #79DB4F;
+$red-complement-3: #2B8F00;
+$red-complement-4: #123D00;
+
+
+
+$red-light-ink: $red-dark-1;
+$red-light-background: $red-secondary-1-1;
+$red-light-background-grad: linear-gradient(185deg, $red-secondary-1-1, $red-light-2, $red-secondary-2-1);
+
+
+//orange
+$orange: #FF6C00;
+$orange-light-2: #FFE9D9;
+$orange-light-1: #FFA767;
+$orange-dark-1: #AA4800;
+$orange-dark-2: #361700;
+
+$orange-secondary-1-0: #1047A9;
+$orange-secondary-1-1: #CEDAEE;
+$orange-secondary-1-2: #5376B5;
+$orange-secondary-1-3: #072D71;
+$orange-secondary-1-4: #010D24;
+
+$orange-secondary-2-0: #1DD300;
+$orange-secondary-2-1: #D7F6D2;
+$orange-secondary-2-2: #69D957;
+$orange-secondary-2-3: #138C00;
+$orange-secondary-2-4: #062D00;
+
+$orange-complement-0: #009E8E;
+$orange-complement-1: #C9ECE8;
+$orange-complement-2: #45ABA1;
+$orange-complement-3: #00695E;
+$orange-complement-4: #00221E;
+//dark orange
+
+
+$orange-dark-heading-ink: $orange;
+$orange-dark-ink: $orange-secondary-1-1;
+$orange-dark-background: $orange-secondary-1-4;
+$orange-dark-background-grad: linear-gradient(170deg, $orange-secondary-1-4, $orange-dark-2);
+
+$orange-dark-button-background: $orange-secondary-1-0;
+$orange-dark-button-ink: $orange;
+$orange-dark-button-hover-background: $orange-secondary-1-3;
+$orange-dark-button-hover-ink: $orange;
+
+$red-dark-next-background: $orange;
+$red-dark-next-ink: $orange-dark-background;
+//light orange
+
+$orange-light-heading-ink: $orange-dark-2;
+$orange-light-ink: $orange-secondary-1-4;
+$orange-light-background: $orange-light-2;
+$orange-light-background-grad: linear-gradient(182deg, $orange-secondary-1-1, $orange-light-2, $orange-light-2);
+
+$orange-light-button-background: $orange;
+$orange-light-button-ink: $orange-light-2;
+$orange-light-button-hover-background: $orange;
+$orange-light-button-hover-ink: $orange-secondary-1-0;
+
+//yellow
+$yellow: #FADE0A;
+$yellow-light-2: #FFF6B5;
+$yellow-light-1: #FFEB58;
+$yellow-dark-1: #9F8C00;
+$yellow-dark-2: #181500;
+
+$yellow-secondary-1-0: #D80959;
+$yellow-secondary-1-1: #F9B1CD;
+$yellow-secondary-1-2: #E54F89;
+$yellow-secondary-1-3: #8A0035;
+$yellow-secondary-1-4: #140008;
+
+$yellow-secondary-2-0: #0E6F9E;
+$yellow-secondary-2-1: #ACD9EE;
+$yellow-secondary-2-2: #4693B8;
+$yellow-secondary-2-3: #054565;
+$yellow-secondary-2-4: #000A0F;
+
+$yellow-complement-0: #4D16AA;
+$yellow-complement-1: #C8B1F0;
+$yellow-complement-2: #794FC2;
+$yellow-complement-3: #2E096D;
+$yellow-complement-4: #060010;
+
+//dark yellow
+$yellow-dark-heading-ink: $yellow;
+$yellow-dark-ink: $yellow-secondary-2-1;
+$yellow-dark-background: $yellow-secondary-2-4;
+$yellow-dark-background-grad: linear-gradient(180deg, $yellow-secondary-2-4, $yellow-secondary-2-4, $yellow-dark-2 80%, $yellow);
+
+$yellow-dark-button-background: $yellow-secondary-2-0;
+$yellow-dark-button-ink: $yellow;
+$yellow-dark-button-hover-background: $yellow-secondary-2-3;
+$yellow-dark-button-hover-ink: $yellow;
+//light yellow
+
+$yellow-light-heading-ink: $yellow-dark-2;
+$yellow-light-ink: $yellow-secondary-1-4;
+$yellow-light-background: $yellow-light-2;
+$yellow-light-background-grad: linear-gradient(180deg, $yellow-secondary-2-1, $yellow-secondary-1-1, $yellow-light-2, $yellow-light-2, $yellow-light-1);
+
+$yellow-light-button-background: $yellow;
+$yellow-light-button-ink: $yellow-complement-0;
+$yellow-light-button-hover-background: $yellow;
+$yellow-light-button-hover-ink: $yellow-secondary-1-0;
+
+//green
+
+$green: #4AB944;
+$green-light-2: #D7FCD5;
+$green-light-1: #85E181;
+$green-dark-1: #21851C;
+$green-dark-2: #032D01;
+
+$green-secondary-1-0: #425E99;
+$green-secondary-1-1: #D7E2F9;
+$green-secondary-1-2: #7D95CA;
+$green-secondary-1-3: #20396E;
+$green-secondary-1-4: #050F25;
+
+$green-complement-0: #E25357;
+$green-complement-1: #FFD7D8;
+$green-complement-2: #FE9194;
+$green-complement-3: #A32225;
+$green-complement-4: #370103;
+
+//dark green
+$green-dark-ink: $green-secondary-1-1;
+$green-dark-background: $green-dark-2;
+$green-dark-background-grad: linear-gradient(160deg, $green-dark-2, $green-dark-1);
+$green-dark-ink-hover: $green;
+$green-dark-background-hover: $green-secondary-1-0;
+
+//light green
+$green-light-ink: $green-secondary-1-3;
+$green-light-white: #edf5e1;
+$green-light-background: #5cdb95;
+$green-light-background-grad: linear-gradient(160deg, $green-light-background, $green-light-1);
+
+//dark blue
+//light blue
+
+$dark-blue: #0a2540;
+$light-blue: #00d4ff;
+$blue-light-background-grad: linear-gradient(to bottom, $light-blue 60%, $dark-blue);
+$blue-dark-background-grad: linear-gradient(to bottom, $dark-blue 60%, $light-blue);
+
+//purple
+$purple: #3E0ECB;
+$purple-light-2: #F5F3FB;
+$purple-light-1: #7453D7;
+$purple-dark-1: #210575;
+$purple-dark-2: #0E0137;
+
+$purple-secondary-1-0: #9FF300;
+$purple-secondary-1-1: #FBFEF5;
+$purple-secondary-1-2: #BCF64C;
+$purple-secondary-1-3: #689E00;
+$purple-secondary-1-4: #314B00;
+
+$purple-secondary-2-0: #FF7600;
+$purple-secondary-2-1: #FFFAF6;
+$purple-secondary-2-2: #FFA04F;
+$purple-secondary-2-3: #AA4F00;
+$purple-secondary-2-4: #502500;
+
+$purple-complement-0: #FFD500;
+$purple-complement-1: #FFFEF6;
+$purple-complement-2: #FFE24F;
+$purple-complement-3: #AA8E00;
+$purple-complement-4: #504300;
+
+//dark purple
+$purple-dark-ink: $purple-light-2;
+$purple-dark-background: $purple-dark-2;
+$purple-dark-background-grad: linear-gradient(to bottom, $purple-dark-2, $purple-secondary-2-3);
+$purple-dark-dark: #0c0032;
+$purple-dark-black: #282828;
+//light purple
+$purple-light-ink: $purple-dark-1;
+$purple-light-background: $purple-light-2;
+$purple-light-background-grad: linear-gradient(to bottom, $purple-light-2, $purple-complement-1);
+$purple-light-button: $purple-dark-1;
+$purple-light-button-ink: $purple-complement-2;
+$purple-light-button-hover: $purple-secondary-2-2;
+//8506A9
+
+
+//dark red
+$red-dark: (
+        ink: $red-light-2,
+        background: $red-dark-2,
+        background-grad: linear-gradient(185deg, $red-secondary-1-4, $red-dark-2, $red-secondary-2-4),
+        heading-ink: $red,
+        header-button-background: none,
+        header-button-color: $red-secondary-1-0,
+        header-button-hover-background: $red-secondary-2-4,
+        header-button-hover-color:$red-secondary-1-0,
+        form-button-color:$red-secondary-1-0,
+        form-button-background:$red-dark-2,
+        form-button-hover-color:$red-secondary-1-0,
+        form-button-hover-background:$red-secondary-2-2,
+        next-ink: $orange,
+        next-background:$orange-dark-background,
+);
+
+//light red
+$red-light: (
+        ink: $red-dark-1,
+        background: $red-secondary-1-1,
+        background-grad: linear-gradient(185deg, $red-secondary-1-1, $red-light-2, $red-secondary-2-1),
+        heading-ink: $red,
+        header-button-background: none,
+        header-button-color: $red-secondary-1-0,
+        header-button-hover-background:$red-dark-1,
+        header-button-hover-color:$red-secondary-1-1,
+        form-button-color:$red-dark-1,
+        form-button-background:none,
+        form-button-hover-color:$red-dark-2,
+        form-button-hover-background:$red-secondary-2-0,
+        next-ink:$orange,
+        next-background:$orange-light-background,
+);
+
+
+//$themes: (
+//        light: (
+//                purple: (
+//                        ink: $purple-dark-1,
+//                        background: $purple-light-2,
+//                        background-grad: linear-gradient(to bottom, $purple-light-2, $purple-complement-1),
+//                        button: $purple-dark-1,
+//                        button-ink: $purple-complement-2,
+//                        button-hover-background: $purple-secondary-2-2,
+//                        button-hover-background-ink: $purple-complement-2,
+//                )
+//        ),
+//        dark: (
+//                purple: (
+//                        ink: $purple-light-2,
+//                        background: $purple-dark-2,
+//                        background-grad: linear-gradient(to bottom, $purple-dark-2, $purple-secondary-2-3),
+//                        button: $purple-dark-1,
+//                        button-ink: $purple-complement-2,
+//                        button-hover-background: $purple-secondary-2-2,
+//                        button-hover-background-ink: $purple-complement-2,
+//                )
+//        )
+//);
+
+
+//** Themes **//
+body {
+  &.light {
+    &.red {
+      $theme: $red-light;
+
+      color: map-get($theme, ink);
+      &.grad {
+        background: map-get($theme, background-grad);
+      }
+
+      &.no-grad {
+        background: map-get($theme, background);
+      }
+
+      header {
+        button {
+          color: map-get($theme, header-button-color);
+          border-color: map-get($theme, header-button-color);
+          background: map-get($theme, header-button-background);
+
+          &.theme-button:hover {
+            color: map-get($theme, header-button-hover-color);
+            background-color: map-get($theme, header-button-hover-background);
+          }
+
+          &.color-button:hover {
+            color: map-get($theme, next-ink);
+            background-color: map-get($theme, next-background);
+            border-color: map-get($theme, next-ink);
+          }
+        }
+      }
+
+      a, form button {
+        color: map-get($theme, form-button-hover-color);
+        border-color: map-get($theme, form-button-hover-color);
+        background: map-get($theme, form-button-background);
+
+        &:hover {
+          color: map-get($theme, form-button-hover-color);
+          background: map-get($theme, form-button-hover-background);
+        }
+      }
+    }
+
+    &.orange {
+      color: $orange-light-ink;
+
+      &.grad {
+        background: $orange-light-background-grad;
+      }
+
+      &.no-grad {
+        background: $orange-light-background;
+      }
+
+      header {
+        button {
+          color: $orange-light-ink;
+          border-color: $orange-light-ink;
+          background: none;
+
+          &.theme-button:hover {
+            color: $orange-dark-ink;
+            background-color: $orange-dark-background;
+          }
+
+          &.color-button:hover {
+            color: $yellow-light-ink;
+            background-color: $yellow;
+            border-color: $yellow-light-ink;
+          }
+        }
+      }
+
+      h1, h2 {
+        color: $orange-light-heading-ink;
+      }
+
+      a, form button {
+        color: $orange-light-ink;
+        border-color: $orange-light-ink;
+        background: none;
+        font-weight: 500;
+
+        &:hover {
+          color: $orange-light-button-hover-ink;
+          background: $orange-light-button-hover-background;
+        }
+      }
+    }
+
+    &.yellow {
+      color: $yellow-light-ink;
+
+      &.grad {
+        background: $yellow-light-background-grad;
+      }
+
+      &.no-grad {
+        background: $yellow-light-background;
+      }
+
+      header {
+        button {
+          color: $yellow-light-ink;
+          border-color: $yellow-light-ink;
+          background: none;
+
+          &.theme-button:hover {
+            color: $yellow-dark-ink;
+            background-color: $yellow-dark-background;
+          }
+
+          &.color-button:hover {
+            color: $green-light-ink;
+            background-color: $green;
+            border-color: $green-light-ink;
+          }
+        }
+      }
+
+      h1, h2 {
+        color: $yellow-light-heading-ink;
+      }
+
+      a, form button {
+        color: $yellow-light-button-ink;
+        background: $yellow-light-button-background;
+        font-weight: 500;
+        background: none;
+
+        &:hover {
+          color: $yellow-light-button-hover-ink;
+          background: $yellow-light-button-hover-background;
+        }
+      }
+    }
+
+    &.green {
+      color: $green-light-ink;
+
+      &.grad {
+        background: $green-light-background-grad;
+      }
+
+      &.no-grad {
+        background: $green-light-background;
+      }
+
+      header {
+        button {
+          color: $green-light-ink;
+          border-color: $green-light-ink;
+          background: none;
+
+          &.theme-button:hover {
+            color: $green-dark-ink;
+            background-color: $green-dark-background;
+          }
+
+          &.color-button:hover {
+            color: $dark-blue;
+            background-color: $light-blue;
+            border-color: $dark-blue;
+          }
+        }
+      }
+
+      a, form button {
+        color: $green-light-ink;
+        background: $green-light-background;
+        border-color: $green-light-ink;
+        background: none;
+
+        &:hover {
+          color: $green-light-background;
+          background: $green-light-ink;
+        }
+      }
+    }
+
+    &.blue {
+      color: $dark-blue;
+
+      &.grad {
+        background: $blue-light-background-grad;
+      }
+
+      &.no-grad {
+        background: $light-blue;
+      }
+
+      header {
+        button {
+          color: $dark-blue;
+          border-color: $dark-blue;
+          background: none;
+
+          &.theme-button:hover {
+            color: $light-blue;
+            background-color: $dark-blue;
+          }
+
+          &.color-button:hover {
+            color: $purple-light-2;
+            background-color: $purple;
+            border-color: $purple-light-ink;
+          }
+        }
+      }
+
+      a, form button {
+        color: $dark-blue;
+        border-color: $dark-blue;
+        background: none;
+
+        &:hover {
+          background-color: $dark-blue;
+          color: $light-blue;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &.purple {
+      color: $purple-light-ink;
+
+      &.grad {
+        background: $purple-light-background-grad;
+      }
+
+      &.no-grad {
+        background: $purple-light-background;
+      }
+
+      header {
+        button {
+          color: $purple-light-ink;
+          border-color: $purple-light-ink;
+          background: none;
+
+          &.theme-button:hover {
+            color: $purple-dark-ink;
+            background-color: $purple-dark-background;
+          }
+
+          &.color-button:hover {
+            color: $red-light-2;
+            background-color: $red-dark-1;
+            border-color: $red-light-ink;
+          }
+        }
+      }
+
+      a, form button {
+        color: $purple-light-button-ink;
+        background: $purple-light-button;
+
+        &:hover {
+          background: $purple-light-button-hover;
+          color: $purple-light-button;
+        }
+      }
+    }
+
+  }
+
+  //dark mode
+  &.dark {
+    &.red {
+      $theme: $red-dark;
+
+      color: map-get($theme, ink);
+      &.grad {
+        background: map-get($theme, background-grad);
+      }
+
+      &.no-grad {
+        background: map-get($theme, background);
+      }
+
+      header {
+        button {
+          color: map-get($theme, header-button-color);
+          border-color: map-get($theme, header-button-color);
+          background: map-get($theme, header-button-background);
+
+          &.theme-button:hover {
+            color: map-get($theme, header-button-hover-color);
+            background-color: map-get($theme, header-button-hover-background);
+          }
+
+          &.color-button:hover {
+            color: map-get($theme, next-ink);
+            background-color: map-get($theme, next-background);
+            border-color: map-get($theme, next-ink);
+          }
+        }
+      }
+
+      a, form button {
+        color: map-get($theme, form-button-hover-color);
+        border-color: map-get($theme, form-button-hover-color);
+        background: map-get($theme, form-button-background);
+
+        &:hover {
+          color: map-get($theme, form-button-hover-color);
+          background: map-get($theme, form-button-hover-background);
+        }
+      }
+
+    }
+
+    &.orange {
+      color: $orange-dark-ink;
+
+      &.grad {
+        background: $orange-dark-background-grad;
+      }
+
+      &.no-grad {
+        background: $orange-dark-background;
+      }
+
+      header {
+        button {
+          color: $orange-dark-ink;
+          border-color: $orange-dark-ink;
+          background: none;
+
+          &.theme-button:hover {
+            color: $orange-light-ink;
+            background-color: $orange-light-background;
+          }
+
+          &.color-button:hover {
+            color: $yellow;
+            background-color: $yellow-dark-background;
+            border-color: $yellow;
+          }
+        }
+      }
+
+      h1, h2 {
+        color: $orange-dark-heading-ink;
+      }
+
+      a, form button {
+        color: $orange-dark-button-ink;
+        background: $orange-dark-button-background;
+        font-weight: 600;
+
+        &:hover {
+          color: $orange-dark-button-hover-ink;
+          background: $orange-dark-button-hover-background;
+        }
+      }
+    }
+
+    &.yellow {
+      color: $yellow-dark-ink;
+
+      &.grad {
+        background: $yellow-dark-background-grad;
+      }
+
+      &.no-grad {
+        background: $yellow-dark-background;
+      }
+
+      header {
+        button {
+          color: $yellow-dark-ink;
+          border-color: $yellow-dark-ink;
+          background: none;
+
+          &.theme-button:hover {
+            color: $yellow-light-ink;
+            background-color: $yellow-light-background;
+            border-color: $yellow-light-ink;
+          }
+
+          &.color-button:hover {
+            color: $green;
+            background-color: $green-dark-2;
+            border-color: $green;
+          }
+        }
+      }
+
+      h1, h2 {
+        color: $yellow-dark-heading-ink;
+      }
+
+      a, form button {
+        color: $yellow-dark-button-ink;
+        background: $yellow-dark-button-background;
+        font-weight: 500;
+
+        &:hover {
+          color: $yellow-dark-button-hover-ink;
+          background: $yellow-dark-button-hover-background;
+        }
+      }
+    }
+
+    &.green {
+      color: $green-dark-ink;
+
+      &.grad {
+        background: $green-dark-background-grad;
+      }
+
+      &.no-grad {
+        background: $green-dark-background;
+      }
+
+      header {
+        button {
+          color: $green-dark-ink;
+          border-color: $green-dark-ink;
+          background: none;
+
+          &.theme-button:hover {
+            color: $green-light-ink;
+            background-color: $green-light-background;
+          }
+
+          &.color-button:hover {
+            color: $light-blue;
+            background-color: $dark-blue;
+            border-color: $light-blue;
+          }
+        }
+
+      }
+
+      a, form button {
+        color: $green-dark-ink;
+        background: $green-dark-background;
+
+        &:hover {
+          color: $green-dark-background-hover;
+          background: $green-dark-ink-hover;
+        }
+      }
+    }
+
+    &.blue {
+      color: $light-blue;
+
+      &.grad {
+        background: $blue-dark-background-grad;
+      }
+
+      &.no-grad {
+        background: $dark-blue;
+      }
+
+      header {
+        button {
+          color: $light-blue;
+          border-color: $light-blue;
+          background: none;
+
+          &.theme-button:hover {
+            color: $dark-blue;
+            background-color: $light-blue;
+          }
+
+          &.color-button:hover {
+            color: $purple-light-1;
+            background-color: $purple-dark-background;
+            border-color: $purple-light-1;
+          }
+        }
+
+      }
+
+
+      a, form button {
+        color: $light-blue;
+        border-color: $light-blue;
+        background: none;
+
+        &:hover {
+          background-color: $light-blue;
+          color: $dark-blue;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &.purple {
+      color: $purple-dark-ink;
+
+      &.grad {
+        background: $purple-dark-background-grad;
+      }
+
+      &.no-grad {
+        background: $purple-dark-background;
+      }
+
+      header {
+        button {
+
+          color: $purple-dark-ink;
+          border-color: $purple-dark-ink;
+          background: none;
+
+          &.theme-button:hover {
+            color: $purple-light-ink;
+            background-color: $purple-light-background;
+          }
+
+          &.color-button:hover {
+            //color: $red-dark-ink;
+            //background-color: $red-dark-background;
+            border-color: $red;
+          }
+        }
+      }
+
+      a, form button {
+        color: $purple-dark-ink;
+        background: $purple-dark-dark;
+
+        &:hover {
+          color: $purple-dark-dark;
+          background: $purple-dark-ink;
+        }
+      }
+
+      #form-container form {
+        color: $purple-dark-dark;
+
+        input:focus {
+          border-bottom-color: $purple;
+        }
+      }
+    }
+  }
+
+}
