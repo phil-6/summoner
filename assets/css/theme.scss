@@ -23,35 +23,35 @@ body {
             h1, h2 {
               color: map-get($color-themes, $theme, $color, heading-ink);
             }
+          }
 
-            button, a {
-              color: map-get($color-themes, $theme, $color, header-button-color);
-              border-color: map-get($color-themes, $theme, $color, header-button-color);
+          button, a {
+            color: map-get($color-themes, $theme, $color, header-button-color);
+            border-color: map-get($color-themes, $theme, $color, header-button-color);
+
+            &:hover {
+              color: map-get($color-themes, $theme, $color, text-link-hover-ink);
+            }
+
+            &.btn {
+              background: map-get($color-themes, $theme, $color, header-button-background);
 
               &:hover {
-                color: map-get($color-themes, $theme, $color, text-link-hover-ink);
+                color: map-get($color-themes, $theme, $color, header-button-hover-color);
+                border-color: map-get($color-themes, $theme, $color, header-button-hover-color);
+                background: map-get($color-themes, $theme, $color, header-button-hover-background);
               }
+            }
 
-              &.btn {
-                background: map-get($color-themes, $theme, $color, header-button-background);
+            &.theme-button:hover {
+              color: map-get($color-themes, $theme, $color, theme-button-ink);
+              background-color: map-get($color-themes, $theme, $color, theme-button-background);
+            }
 
-                &:hover {
-                  color: map-get($color-themes, $theme, $color, header-button-hover-color);
-                  border-color: map-get($color-themes, $theme, $color, header-button-hover-color);
-                  background: map-get($color-themes, $theme, $color, header-button-hover-background);
-                }
-              }
-
-              &.theme-button:hover {
-                color: map-get($color-themes, $theme, $color, theme-button-ink);
-                background-color: map-get($color-themes, $theme, $color, theme-button-background);
-              }
-
-              &.color-button:hover {
-                color: map-get($color-themes, $theme, $color, next-button-ink);
-                background-color: map-get($color-themes, $theme, $color, next-button-background);
-                border-color: map-get($color-themes, $theme, $color, next-button-ink);
-              }
+            &.color-button:hover {
+              color: map-get($color-themes, $theme, $color, next-button-ink);
+              background-color: map-get($color-themes, $theme, $color, next-button-background);
+              border-color: map-get($color-themes, $theme, $color, next-button-ink);
             }
           }
 
