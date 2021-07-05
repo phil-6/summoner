@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:wght@300;400;500;800&display=swap"
+          rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/30fa2950fc.js"></script>
+
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
+    <title>The Summoner</title>
+</head>
+<body class="dark purple grad">
+<header>
+    <nav>
+        <div class="justify-start">
+            <button class="btn theme-button" id="theme-toggle">Theme</button>
+            <button class="btn color-button" id="color-switch">Colour</button>
+            <button class="btn grad-button" id="grad-toggle">Toggle Gradient</button>
+        </div>
+        <div class="center">
+            <a class="btn home-link " href="/">Home <i class="fas fa-home"></i></a>
+        </div>
+        <div class="justify-end">
+            <a class="btn blog-link" href="#">Blog <i class="fas fa-align-justify"></i></a>
+        </div>
+    </nav>
+    <h1>The Summoner</h1>
+    <h2>Share your location</h2>
+    <p class="subheading">Share your location with someone or request someone to share their location with you.</p>
+    <p class="small">This is a lightweight serverless page built with privacy in mind. It is powered by the <a
+            href="https://www.netlify.com/">Netlify</a> and <a href="https://www.twilio.com/">Twilio</a> platforms. We
+        do not store your or track your data or location, the only person who can see your location is the person you
+        are sharing it with.</p>
+
+</header>
+<main>
+    <section class="form text-center">
+        <div id="form-container">
+            <div class="hide" id="form-error-message">
+                <i class="fas fa-exclamation-circle fa-4x"></i>
+                <h2>Somethings wrong!</h2>
+                <p>Check the red boxes below!</p>
+            </div>
+            <form data-netlify="true" id="summon-form" method="POST" name="summon-form">
+                <div id="summoner-container" class="form-group floating-label">
+                    <input id="summoner" name="summoner" placeholder="Who are you?"
+                           required type="text">
+                    <label for="summoner">Who are you?</label>
+                </div>
+                <div id="summonee-container" class="form-group floating-label">
+                    <input id="summonee" name="summonee"
+                           placeholder="Who do you want to summon?"
+                           required type="text">
+                    <label for="summonee">Who do you want to summon?</label>
+                </div>
+                <div id="number-container" class="form-group floating-label">
+                    <input id="number" name="phone"
+                           placeholder="What's their number? (Eg 07123123123)" required type="number">
+                    <label for="number" id="number-label"> What's their number? (Eg 07123123123)</label>
+                </div>
+                <div class="form-row hide">
+                    <div class="form-group col-sm-6  floating-label">
+                        <input id="userLat"
+                               name="lat"
+                               pattern="^(\+|-)?(?:90(?:(?:\.0{1,6})?)|(?:[0-9]|[1-8][0-9])(?:(?:\.[0-9]{1,16})?))$"
+                               placeholder="Latitude E.g. 51.605411" type="text">
+                        <label for="userLat"> Latitude</label>
+                    </div>
+                    <div class="form-group col-sm-6  floating-label">
+                        <input id="userLng"
+                               name="lng"
+                               pattern="^(\+|-)?(?:180(?:(?:\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\.[0-9]{1,16})?))$"
+                               placeholder="Longitude E.g. -3.983570" type="text">
+                        <label for="userLng"> Longitude</label>
+                    </div>
+                </div>
+                <h2 id="form-prefilled" class="hide">
+                </h2>
+                <button class="btn" id="summon-button" type="submit">Summon Them!</button>
+            </form>
+        </div>
+
+        <div class="hide" id="loading-message">
+            <i class="far fa-compass fa-spin fa-9x"></i>
+            <h1>Loading...</h1>
+        </div>
+
+        <div class="hide" id="success-message">
+            <i class="fas fa-route fa-9x"></i>
+            <h1>Success!</h1>
+            <h2><span id="success-content"></span></h2>
+        </div>
+
+        <div class="hide" id="location-error">
+            <i class="fas fa-exclamation-triangle fa-9x"></i>
+            <h1>Failure!</h1>
+            <h2>We can't get your location.</h2>
+            <p>Try refreshing the page and enabling location services. If it still not working, drop us an <a
+                    href="mailto:thesummoner@purpleriver.dev?Subject=The%20Summoner%20is%20Broken!">email.</a></p>
+        </div>
+
+        <div class="hide" id="general-error">
+            <i class="fas fa-exclamation-triangle fa-9x"></i>
+            <h1>Failure!</h1>
+            <h2>Something's gone wrong.</h2>
+            <p>Try refreshing the page and enabling location services. If it still not working, drop us an <a
+                    href="mailto:thesummoner@purpleriver.dev?Subject=The%20Summoner%20is%20Broken!">email.</a></p>
+        </div>
+
+    </section>
+</main>
+<script src="assets/js/themeToggle.js"></script>
+<script src="assets/js/get-user-location.js"></script>
+<script src="assets/js/summon.js"></script>
+</body>
+</html>

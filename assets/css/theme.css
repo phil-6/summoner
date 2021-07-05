@@ -1,0 +1,614 @@
+body.dark.red {
+  color: #F9B3BF;
+}
+body.dark.red.grad {
+  background: linear-gradient(185deg, #472C00, #42000C, #0E0137);
+}
+body.dark.red.no-grad {
+  background: #42000C;
+}
+body.dark.red header h1, body.dark.red header h2 {
+  color: #DC042A;
+}
+body.dark.red button, body.dark.red a {
+  color: #EB9304;
+  border-color: #EB9304;
+}
+body.dark.red button:hover, body.dark.red a:hover {
+  color: #7453D7;
+}
+body.dark.red button.btn, body.dark.red a.btn {
+  background: none;
+}
+body.dark.red button.btn:hover, body.dark.red a.btn:hover {
+  color: #EB9304;
+  border-color: #EB9304;
+  background: #0E0137;
+}
+body.dark.red button.theme-button:hover, body.dark.red a.theme-button:hover {
+  color: #9C001C;
+  background-color: #FFE4B7;
+}
+body.dark.red button.color-button:hover, body.dark.red a.color-button:hover {
+  color: #FF6C00;
+  background-color: #010A1B;
+  border-color: #FF6C00;
+}
+body.dark.red #form-container form label {
+  color: #42000C;
+}
+body.dark.red #form-container form input:focus {
+  border-bottom-color: #9C001C;
+}
+body.dark.red #form-container form button {
+  color: #EB9304;
+  border-color: #EB9304;
+  background: #42000C;
+}
+body.dark.red #form-container form button:hover {
+  color: #F9B3BF;
+  background: #0E0137;
+}
+body.dark.orange {
+  color: #C2D2EF;
+}
+body.dark.orange.grad {
+  background: linear-gradient(178deg, #082C6C -20%, #010A1B 10%, #291100 90%, #A34500 120%);
+}
+body.dark.orange.no-grad {
+  background: #010A1B;
+}
+body.dark.orange header h1, body.dark.orange header h2 {
+  color: #FF6C00;
+}
+body.dark.orange button, body.dark.orange a {
+  color: #A34500;
+  border-color: #A34500;
+}
+body.dark.orange button:hover, body.dark.orange a:hover {
+  color: #FFE0CA;
+}
+body.dark.orange button.btn, body.dark.orange a.btn {
+  background: none;
+}
+body.dark.orange button.btn:hover, body.dark.orange a.btn:hover {
+  color: #FF6C00;
+  border-color: #FF6C00;
+  background: #010A1B;
+}
+body.dark.orange button.theme-button:hover, body.dark.orange a.theme-button:hover {
+  color: #010A1B;
+  background-color: #FFE0CA;
+}
+body.dark.orange button.color-button:hover, body.dark.orange a.color-button:hover {
+  color: #140008;
+  background-color: #FADE0A;
+  border-color: #140008;
+}
+body.dark.orange #form-container form label {
+  color: #010A1B;
+}
+body.dark.orange #form-container form input:focus {
+  border-bottom-color: #FF6C00;
+}
+body.dark.orange #form-container form button {
+  color: #FF6C00;
+  border-color: #FF6C00;
+  background: #010A1B;
+}
+body.dark.orange #form-container form button:hover {
+  color: #FFE0CA;
+  background: #082C6C;
+}
+body.dark.yellow {
+  color: #ACD9EE;
+}
+body.dark.yellow.grad {
+  background: linear-gradient(180deg, #000A0F, #181500 25%, #FADE0A 115%);
+}
+body.dark.yellow.no-grad {
+  background: #000A0F;
+}
+body.dark.yellow header h1, body.dark.yellow header h2 {
+  color: #FADE0A;
+}
+body.dark.yellow button, body.dark.yellow a {
+  color: #FADE0A;
+  border-color: #FADE0A;
+}
+body.dark.yellow button:hover, body.dark.yellow a:hover {
+  color: #FFF6B5;
+}
+body.dark.yellow button.btn, body.dark.yellow a.btn {
+  background: none;
+}
+body.dark.yellow button.btn:hover, body.dark.yellow a.btn:hover {
+  color: #FADE0A;
+  border-color: #FADE0A;
+  background: #054565;
+}
+body.dark.yellow button.theme-button:hover, body.dark.yellow a.theme-button:hover {
+  color: #140008;
+  background-color: #FFF6B5;
+}
+body.dark.yellow button.color-button:hover, body.dark.yellow a.color-button:hover {
+  color: #050F25;
+  background-color: #4AB944;
+  border-color: #050F25;
+}
+body.dark.yellow #form-container form label {
+  color: #140008;
+}
+body.dark.yellow #form-container form input:focus {
+  border-bottom-color: #FADE0A;
+}
+body.dark.yellow #form-container form button {
+  color: #FADE0A;
+  border-color: #FADE0A;
+  background: #0E6F9E;
+}
+body.dark.yellow #form-container form button:hover {
+  color: #0E6F9E;
+  background: #FADE0A;
+}
+body.dark.green {
+  color: #FFD7D8;
+}
+body.dark.green.grad {
+  background: linear-gradient(120deg, #050F25, #032D01 76%, #21851C 120%);
+}
+body.dark.green.no-grad {
+  background: #032D01;
+}
+body.dark.green header h1, body.dark.green header h2 {
+  color: #21851C;
+}
+body.dark.green button, body.dark.green a {
+  color: #21851C;
+  border-color: #21851C;
+}
+body.dark.green button:hover, body.dark.green a:hover {
+  color: #FE9194;
+}
+body.dark.green button.btn, body.dark.green a.btn {
+  background: none;
+}
+body.dark.green button.btn:hover, body.dark.green a.btn:hover {
+  color: #20396E;
+  border-color: #20396E;
+  background: #4AB944;
+}
+body.dark.green button.theme-button:hover, body.dark.green a.theme-button:hover {
+  color: #032D01;
+  background-color: #5cdb95;
+}
+body.dark.green button.color-button:hover, body.dark.green a.color-button:hover {
+  color: #00d4ff;
+  background-color: #0a2540;
+  border-color: #00d4ff;
+}
+body.dark.green #form-container form label {
+  color: #050F25;
+}
+body.dark.green #form-container form input:focus {
+  border-bottom-color: #4AB944;
+}
+body.dark.green #form-container form button {
+  color: #4AB944;
+  border-color: #4AB944;
+  background: #032D01;
+}
+body.dark.green #form-container form button:hover {
+  color: #4AB944;
+  background: #20396E;
+}
+body.dark.blue {
+  color: #00d4ff;
+}
+body.dark.blue.grad {
+  background: linear-gradient(to bottom, #0a2540 70%, #00d4ff 120%);
+}
+body.dark.blue.no-grad {
+  background: #0a2540;
+}
+body.dark.blue header h1, body.dark.blue header h2 {
+  color: #00d4ff;
+}
+body.dark.blue button, body.dark.blue a {
+  color: #00d4ff;
+  border-color: #00d4ff;
+}
+body.dark.blue button:hover, body.dark.blue a:hover {
+  color: #4AB944;
+}
+body.dark.blue button.btn, body.dark.blue a.btn {
+  background: none;
+}
+body.dark.blue button.btn:hover, body.dark.blue a.btn:hover {
+  color: #0a2540;
+  border-color: #0a2540;
+  background: #00d4ff;
+}
+body.dark.blue button.theme-button:hover, body.dark.blue a.theme-button:hover {
+  color: #0a2540;
+  background-color: #00d4ff;
+}
+body.dark.blue button.color-button:hover, body.dark.blue a.color-button:hover {
+  color: #5cdb95;
+  background-color: #3E0ECB;
+  border-color: #5cdb95;
+}
+body.dark.blue #form-container form label {
+  color: #0a2540;
+}
+body.dark.blue #form-container form input:focus {
+  border-bottom-color: #00d4ff;
+}
+body.dark.blue #form-container form button {
+  color: #0a2540;
+  border-color: #0a2540;
+  background: #00d4ff;
+}
+body.dark.blue #form-container form button:hover {
+  color: #0a2540;
+  background: #4AB944;
+}
+body.dark.purple {
+  color: #F5F3FB;
+}
+body.dark.purple.grad {
+  background: linear-gradient(to bottom, #0E0137, #A34500);
+}
+body.dark.purple.no-grad {
+  background: #0E0137;
+}
+body.dark.purple header h1, body.dark.purple header h2 {
+  color: #7453D7;
+}
+body.dark.purple button, body.dark.purple a {
+  color: #F5F3FB;
+  border-color: #F5F3FB;
+}
+body.dark.purple button:hover, body.dark.purple a:hover {
+  color: #7453D7;
+}
+body.dark.purple button.btn, body.dark.purple a.btn {
+  background: none;
+}
+body.dark.purple button.btn:hover, body.dark.purple a.btn:hover {
+  color: #FFA059;
+  border-color: #FFA059;
+  background: #3E0ECB;
+}
+body.dark.purple button.theme-button:hover, body.dark.purple a.theme-button:hover {
+  color: #F5F3FB;
+  background-color: #7453D7;
+}
+body.dark.purple button.color-button:hover, body.dark.purple a.color-button:hover {
+  color: #F9B3BF;
+  background-color: #42000C;
+  border-color: #F9B3BF;
+}
+body.dark.purple #form-container form label {
+  color: #210575;
+}
+body.dark.purple #form-container form input:focus {
+  border-bottom-color: #7453D7;
+}
+body.dark.purple #form-container form button {
+  color: #FFA059;
+  border-color: #FFA059;
+  background: #210575;
+}
+body.dark.purple #form-container form button:hover {
+  color: #FFE0CA;
+  background: #3E0ECB;
+}
+body.light.red {
+  color: #9C001C;
+}
+body.light.red.grad {
+  background: linear-gradient(185deg, #FFE4B7, #F9B3BF, #7453D7);
+}
+body.light.red.no-grad {
+  background: #F9B3BF;
+}
+body.light.red header h1, body.light.red header h2 {
+  color: #DC042A;
+}
+body.light.red button, body.light.red a {
+  color: #A66700;
+  border-color: #A66700;
+}
+body.light.red button:hover, body.light.red a:hover {
+  color: #42000C;
+}
+body.light.red button.btn, body.light.red a.btn {
+  background: none;
+}
+body.light.red button.btn:hover, body.light.red a.btn:hover {
+  color: #FFE4B7;
+  border-color: #FFE4B7;
+  background: #9C001C;
+}
+body.light.red button.theme-button:hover, body.light.red a.theme-button:hover {
+  color: #F9B3BF;
+  background-color: #42000C;
+}
+body.light.red button.color-button:hover, body.light.red a.color-button:hover {
+  color: #FF6C00;
+  background-color: #FFE0CA;
+  border-color: #FF6C00;
+}
+body.light.red #form-container form label {
+  color: #42000C;
+}
+body.light.red #form-container form input:focus {
+  border-bottom-color: #EF5671;
+}
+body.light.red #form-container form button {
+  color: #9C001C;
+  border-color: #9C001C;
+  background: #F9B3BF;
+}
+body.light.red #form-container form button:hover {
+  color: #F9B3BF;
+  background: #7453D7;
+}
+body.light.orange {
+  color: #010A1B;
+}
+body.light.orange.grad {
+  background: linear-gradient(182deg, #C2D2EF, #FFE0CA, #FFE0CA, #BCEDE8);
+}
+body.light.orange.no-grad {
+  background: #FFE0CA;
+}
+body.light.orange header h1, body.light.orange header h2 {
+  color: #A34500;
+}
+body.light.orange button, body.light.orange a {
+  color: #4E75BC;
+  border-color: #4E75BC;
+}
+body.light.orange button:hover, body.light.orange a:hover {
+  color: #291100;
+}
+body.light.orange button.btn, body.light.orange a.btn {
+  background: none;
+}
+body.light.orange button.btn:hover, body.light.orange a.btn:hover {
+  color: #FFE0CA;
+  border-color: #FFE0CA;
+  background: #4E75BC;
+}
+body.light.orange button.theme-button:hover, body.light.orange a.theme-button:hover {
+  color: #C2D2EF;
+  background-color: #A34500;
+}
+body.light.orange button.color-button:hover, body.light.orange a.color-button:hover {
+  color: #140008;
+  background-color: #FADE0A;
+  border-color: #140008;
+}
+body.light.orange #form-container form label {
+  color: #291100;
+}
+body.light.orange #form-container form input:focus {
+  border-bottom-color: #FF6C00;
+}
+body.light.orange #form-container form button {
+  color: #FF6C00;
+  border-color: #FF6C00;
+  background: none;
+}
+body.light.orange #form-container form button:hover {
+  color: #1047A9;
+  background: #FF6C00;
+}
+body.light.yellow {
+  color: #140008;
+}
+body.light.yellow.grad {
+  background: linear-gradient(180deg, #ACD9EE, #F9B1CD, #FFF6B5, #FFF6B5, #FFEB58);
+}
+body.light.yellow.no-grad {
+  background: #FFF6B5;
+}
+body.light.yellow header h1, body.light.yellow header h2 {
+  color: #181500;
+}
+body.light.yellow button, body.light.yellow a {
+  color: #0E6F9E;
+  border-color: #0E6F9E;
+}
+body.light.yellow button:hover, body.light.yellow a:hover {
+  color: #181500;
+}
+body.light.yellow button.btn, body.light.yellow a.btn {
+  background: #F9B1CD;
+}
+body.light.yellow button.btn:hover, body.light.yellow a.btn:hover {
+  color: #054565;
+  border-color: #054565;
+  background: #FADE0A;
+}
+body.light.yellow button.theme-button:hover, body.light.yellow a.theme-button:hover {
+  color: #FFF6B5;
+  background-color: #000A0F;
+}
+body.light.yellow button.color-button:hover, body.light.yellow a.color-button:hover {
+  color: #20396E;
+  background-color: #5cdb95;
+  border-color: #20396E;
+}
+body.light.yellow #form-container form label {
+  color: #181500;
+}
+body.light.yellow #form-container form input:focus {
+  border-bottom-color: #FADE0A;
+}
+body.light.yellow #form-container form button {
+  color: #FADE0A;
+  border-color: #FADE0A;
+  background: #0E6F9E;
+}
+body.light.yellow #form-container form button:hover {
+  color: #054565;
+  background: #FADE0A;
+}
+body.light.green {
+  color: #032D01;
+}
+body.light.green.grad {
+  background: linear-gradient(200deg, #5cdb95, #D7FCD5);
+}
+body.light.green.no-grad {
+  background: #5cdb95;
+}
+body.light.green header h1, body.light.green header h2 {
+  color: #21851C;
+}
+body.light.green button, body.light.green a {
+  color: #032D01;
+  border-color: #032D01;
+}
+body.light.green button:hover, body.light.green a:hover {
+  color: #21851C;
+}
+body.light.green button.btn, body.light.green a.btn {
+  background: none;
+}
+body.light.green button.btn:hover, body.light.green a.btn:hover {
+  color: #20396E;
+  border-color: #20396E;
+  background: #4AB944;
+}
+body.light.green button.theme-button:hover, body.light.green a.theme-button:hover {
+  color: #D7FCD5;
+  background-color: #032D01;
+}
+body.light.green button.color-button:hover, body.light.green a.color-button:hover {
+  color: #0a2540;
+  background-color: #00d4ff;
+  border-color: #0a2540;
+}
+body.light.green #form-container form label {
+  color: #050F25;
+}
+body.light.green #form-container form input:focus {
+  border-bottom-color: #4AB944;
+}
+body.light.green #form-container form button {
+  color: #5cdb95;
+  border-color: #5cdb95;
+  background: #032D01;
+}
+body.light.green #form-container form button:hover {
+  color: #425E99;
+  background: #4AB944;
+}
+body.light.blue {
+  color: #0a2540;
+}
+body.light.blue.grad {
+  background: linear-gradient(to bottom, #00d4ff 60%, #0a2540 120%);
+}
+body.light.blue.no-grad {
+  background: #00d4ff;
+}
+body.light.blue header h1, body.light.blue header h2 {
+  color: #0a2540;
+}
+body.light.blue button, body.light.blue a {
+  color: #0a2540;
+  border-color: #0a2540;
+}
+body.light.blue button:hover, body.light.blue a:hover {
+  color: #4AB944;
+}
+body.light.blue button.btn, body.light.blue a.btn {
+  background: none;
+}
+body.light.blue button.btn:hover, body.light.blue a.btn:hover {
+  color: #00d4ff;
+  border-color: #00d4ff;
+  background: #0a2540;
+}
+body.light.blue button.theme-button:hover, body.light.blue a.theme-button:hover {
+  color: #00d4ff;
+  background-color: #0a2540;
+}
+body.light.blue button.color-button:hover, body.light.blue a.color-button:hover {
+  color: #3E0ECB;
+  background-color: #F5F3FB;
+  border-color: #3E0ECB;
+}
+body.light.blue #form-container form label {
+  color: #0a2540;
+}
+body.light.blue #form-container form input:focus {
+  border-bottom-color: #0a2540;
+}
+body.light.blue #form-container form button {
+  color: #00d4ff;
+  border-color: #00d4ff;
+  background: #0a2540;
+}
+body.light.blue #form-container form button:hover {
+  color: #0a2540;
+  background: #4AB944;
+}
+body.light.purple {
+  color: #210575;
+}
+body.light.purple.grad {
+  background: linear-gradient(to bottom, #3E0ECB -40%, #F5F3FB, #F5F3FB, #210575 125%);
+}
+body.light.purple.no-grad {
+  background: #F5F3FB;
+}
+body.light.purple header h1, body.light.purple header h2 {
+  color: #210575;
+}
+body.light.purple button, body.light.purple a {
+  color: #210575;
+  border-color: #210575;
+}
+body.light.purple button:hover, body.light.purple a:hover {
+  color: #3E0ECB;
+}
+body.light.purple button.btn, body.light.purple a.btn {
+  background: none;
+}
+body.light.purple button.btn:hover, body.light.purple a.btn:hover {
+  color: #FFE0CA;
+  border-color: #FFE0CA;
+  background: #3E0ECB;
+}
+body.light.purple button.theme-button:hover, body.light.purple a.theme-button:hover {
+  color: #F5F3FB;
+  background-color: #0E0137;
+}
+body.light.purple button.color-button:hover, body.light.purple a.color-button:hover {
+  color: #9C001C;
+  background-color: #FFE4B7;
+  border-color: #9C001C;
+}
+body.light.purple #form-container form label {
+  color: #3E0ECB;
+}
+body.light.purple #form-container form input:focus {
+  border-bottom-color: #3E0ECB;
+}
+body.light.purple #form-container form button {
+  color: #7453D7;
+  border-color: #7453D7;
+  background: #F5F3FB;
+}
+body.light.purple #form-container form button:hover {
+  color: #F5F3FB;
+  background: #3E0ECB;
+}
+
+/*# sourceMappingURL=theme.css.map */

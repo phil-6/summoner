@@ -1,7 +1,6 @@
-
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
-        userPos = {
+        let userPos = {
             lat: position.coords.latitude,
             lng: position.coords.longitude
         };
@@ -11,7 +10,7 @@ if (navigator.geolocation) {
         document.getElementById("userLng").value = userPos.lng;
 
     }, function() {
-            handleLocationError(true );
+        handleLocationError(true );
     });
 } else {
     // Browser doesn't support Geolocation
@@ -20,10 +19,9 @@ if (navigator.geolocation) {
 }
 
 function handleLocationError(browserHasGeolocation) {
-    document.getElementById("location-error").classList.remove("d-none");
-    document.getElementById("form-container").classList.add("d-none");
+    document.getElementById("location-error").classList.remove("hide");
+    document.getElementById("form-container").classList.add("hide");
     console.log(browserHasGeolocation ?
         'Error: The Geolocation service failed.' :
         'Error: Your browser doesn\'t support geolocation.');
 }
-

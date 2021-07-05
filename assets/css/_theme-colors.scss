@@ -1,0 +1,371 @@
+// red
+$red: #DC042A;
+$red-light-2: #F9B3BF;
+$red-light-1: #EF5671;
+$red-dark-1: #9C001C;
+$red-dark-2: #42000C;
+
+$red-secondary-1-0: #EB9304;
+$red-secondary-1-1: #FFE4B7;
+$red-secondary-1-2: #FFC15C;
+$red-secondary-1-3: #A66700;
+$red-secondary-1-4: #472C00;
+
+//orange
+$orange: #FF6C00;
+$orange-light-2: #FFE0CA;
+$orange-light-1: #FFA059;
+$orange-dark-1:  #A34500;
+$orange-dark-2:  #291100;
+
+$orange-secondary-1-0: #1047A9;
+$orange-secondary-1-1: #C2D2EF;
+$orange-secondary-1-2: #4E75BC;
+$orange-secondary-1-3: #082C6C;
+$orange-secondary-1-4: #010A1B;
+
+$orange-complement-0: #009E8E;
+$orange-complement-1: #BCEDE8;
+
+//yellow
+$yellow: #FADE0A;
+$yellow-light-2: #FFF6B5;
+$yellow-light-1: #FFEB58;
+$yellow-dark-1: #9F8C00;
+$yellow-dark-2: #181500;
+
+$yellow-secondary-1-0: #D80959;
+$yellow-secondary-1-1: #F9B1CD;
+$yellow-secondary-1-2: #E54F89;
+$yellow-secondary-1-3: #8A0035;
+$yellow-secondary-1-4: #140008;
+
+$yellow-secondary-2-0: #0E6F9E;
+$yellow-secondary-2-1: #ACD9EE;
+$yellow-secondary-2-2: #4693B8;
+$yellow-secondary-2-3: #054565;
+$yellow-secondary-2-4: #000A0F;
+
+//green
+$green: #4AB944;
+$green-light-2: #D7FCD5;
+$green-light-1: #5cdb95;
+$green-dark-1: #21851C;
+$green-dark-2: #032D01;
+
+$green-secondary-1-0: #425E99;
+$green-secondary-1-1: #D7E2F9;
+$green-secondary-1-2: #7D95CA;
+$green-secondary-1-3: #20396E;
+$green-secondary-1-4: #050F25;
+
+$green-complement-0: #E25357;
+$green-complement-1: #FFD7D8;
+$green-complement-2: #FE9194;
+
+//blue
+$dark-blue: #0a2540;
+$light-blue: #00d4ff;
+
+//purple
+$purple: #3E0ECB;
+$purple-light-2: #F5F3FB;
+$purple-light-1: #7453D7;
+$purple-dark-1: #210575;
+$purple-dark-2: #0E0137;
+
+
+$color-themes: (
+        "dark": (
+                "red": (
+                        ink: $red-light-2,
+                        background: $red-dark-2,
+                        background-grad: linear-gradient(185deg, $red-secondary-1-4, $red-dark-2, $purple-dark-2),
+                        heading-ink: $red,
+
+                        header-button-color: $red-secondary-1-0,
+                        header-button-background: none,
+                        header-button-hover-color:$red-secondary-1-0,
+                        header-button-hover-background: $purple-dark-2,
+
+                        form-label-ink: $red-dark-2,
+                        form-border-color: $red-dark-1,
+                        form-button-color:$red-secondary-1-0,
+                        form-button-background:$red-dark-2,
+                        form-button-hover-color:$red-light-2,
+                        form-button-hover-background:$purple-dark-2,
+
+                        text-link-hover-ink: $purple-light-1,
+                        theme-button-ink: $red-dark-1,
+                        theme-button-background: $red-secondary-1-1,
+                        next-button-ink: $orange,
+                        next-button-background:$orange-secondary-1-4,
+                ),
+                "orange":(
+                        ink: $orange-secondary-1-1,
+                        background: $orange-secondary-1-4,
+                        background-grad: linear-gradient(178deg, $orange-secondary-1-3 -20%,$orange-secondary-1-4 10%, $orange-dark-2 90%, $orange-dark-1 120%),
+                        heading-ink: $orange,
+
+                        header-button-color: $orange-dark-1,
+                        header-button-background: none,
+                        header-button-hover-color:$orange,
+                        header-button-hover-background: $orange-secondary-1-4,
+
+                        form-label-ink: $orange-secondary-1-4,
+                        form-border-color: $orange,
+                        form-button-color:$orange,
+                        form-button-background:$orange-secondary-1-4,
+                        form-button-hover-color:$orange-light-2,
+                        form-button-hover-background:$orange-secondary-1-3,
+
+                        text-link-hover-ink: $orange-light-2,
+                        theme-button-ink: $orange-secondary-1-4,
+                        theme-button-background: $orange-light-2,
+                        next-button-ink: $yellow-secondary-1-4,
+                        next-button-background: $yellow,
+                ),
+                "yellow":(
+                        ink: $yellow-secondary-2-1,
+                        background: $yellow-secondary-2-4,
+                        background-grad: linear-gradient(180deg, $yellow-secondary-2-4, $yellow-dark-2 25%, $yellow 115%),
+                        heading-ink: $yellow,
+
+                        header-button-color: $yellow,
+                        header-button-background: none,
+                        header-button-hover-color:$yellow,
+                        header-button-hover-background: $yellow-secondary-2-3,
+
+                        form-label-ink: $yellow-secondary-1-4,
+                        form-border-color: $yellow,
+                        form-button-color:$yellow,
+                        form-button-background:$yellow-secondary-2-0,
+                        form-button-hover-color:$yellow-secondary-2-0,
+                        form-button-hover-background:$yellow,
+
+                        text-link-hover-ink: $yellow-light-2,
+                        theme-button-ink: $yellow-secondary-1-4,
+                        theme-button-background: $yellow-light-2,
+                        next-button-ink: $green-secondary-1-4,
+                        next-button-background: $green
+                ),
+                "green":(
+                        ink: $green-complement-1,
+                        background: $green-dark-2,
+                        background-grad: linear-gradient(120deg, $green-secondary-1-4 , $green-dark-2 76%, $green-dark-1 120%),
+                        heading-ink: $green-dark-1,
+
+                        header-button-color: $green-dark-1,
+                        header-button-background: none,
+                        header-button-hover-color:$green-secondary-1-3,
+                        header-button-hover-background: $green,
+
+                        form-label-ink: $green-secondary-1-4,
+                        form-border-color: $green,
+                        form-button-color:$green,
+                        form-button-background: $green-dark-2,
+                        form-button-hover-color:$green,
+                        form-button-hover-background:$green-secondary-1-3,
+
+                        text-link-hover-ink: $green-complement-2,
+                        theme-button-ink: $green-dark-2,
+                        theme-button-background: $green-light-1,
+                        next-button-ink: $light-blue,
+                        next-button-background: $dark-blue,
+                ),
+                "blue":(
+                        ink: $light-blue,
+                        background: $dark-blue,
+                        background-grad: linear-gradient(to bottom, $dark-blue 70%, $light-blue 120%),
+                        heading-ink: $light-blue,
+
+                        header-button-color: $light-blue,
+                        header-button-background: none,
+                        header-button-hover-color:$dark-blue,
+                        header-button-hover-background: $light-blue,
+
+                        form-label-ink: $dark-blue,
+                        form-border-color: $light-blue,
+                        form-button-color:$dark-blue,
+                        form-button-background:$light-blue,
+                        form-button-hover-color:$dark-blue,
+                        form-button-hover-background:$green,
+
+                        text-link-hover-ink: $green,
+                        theme-button-ink: $dark-blue,
+                        theme-button-background: $light-blue,
+                        next-button-ink: $green-light-1,
+                        next-button-background: $purple,
+                ),
+                "purple":(
+                        ink: $purple-light-2,
+                        background: $purple-dark-2,
+                        background-grad: linear-gradient(to bottom, $purple-dark-2, $orange-dark-1),
+                        heading-ink: $purple-light-1,
+
+                        header-button-color: $purple-light-2,
+                        header-button-background: none,
+                        header-button-hover-color:$orange-light-1,
+                        header-button-hover-background: $purple,
+
+                        form-label-ink: $purple-dark-1,
+                        form-border-color: $purple-light-1,
+                        form-button-color:$orange-light-1,
+                        form-button-background:$purple-dark-1,
+                        form-button-hover-color:$orange-light-2,
+                        form-button-hover-background:$purple,
+
+                        text-link-hover-ink: $purple-light-1,
+                        theme-button-ink: $purple-light-2,
+                        theme-button-background: $purple-light-1,
+                        next-button-ink: $red-light-2,
+                        next-button-background: $red-dark-2,
+                ),
+        ),
+        "light": (
+                "red": (
+                        ink: $red-dark-1,
+                        background: $red-light-2,
+                        background-grad: linear-gradient(185deg, $red-secondary-1-1, $red-light-2, $purple-light-1),
+                        heading-ink: $red,
+
+                        header-button-color: $red-secondary-1-3,
+                        header-button-background: none,
+                        header-button-hover-color:$red-secondary-1-1,
+                        header-button-hover-background:$red-dark-1,
+
+                        form-label-ink: $red-dark-2,
+                        form-border-color: $red-light-1,
+                        form-button-color: $red-dark-1,
+                        form-button-background: $red-light-2,
+                        form-button-hover-color: $red-light-2,
+                        form-button-hover-background: $purple-light-1,
+
+                        text-link-hover-ink: $red-dark-2,
+                        theme-button-ink: $red-light-2,
+                        theme-button-background: $red-dark-2,
+                        next-button-ink:$orange,
+                        next-button-background:$orange-light-2,
+                ),
+                "orange":(
+                        ink: $orange-secondary-1-4,
+                        background: $orange-light-2,
+                        background-grad: linear-gradient(182deg, $orange-secondary-1-1, $orange-light-2, $orange-light-2, $orange-complement-1),
+                        heading-ink: $orange-dark-1,
+
+                        header-button-color: $orange-secondary-1-2,
+                        header-button-background: none,
+                        header-button-hover-color:$orange-light-2,
+                        header-button-hover-background: $orange-secondary-1-2,
+
+                        form-label-ink: $orange-dark-2,
+                        form-border-color: $orange,
+                        form-button-color:$orange,
+                        form-button-background:none,
+                        form-button-hover-color:$orange-secondary-1-0,
+                        form-button-hover-background:$orange,
+
+                        text-link-hover-ink: $orange-dark-2,
+                        theme-button-ink: $orange-secondary-1-1,
+                        theme-button-background: $orange-dark-1,
+                        next-button-ink: $yellow-secondary-1-4,
+                        next-button-background: $yellow,
+                ),
+                "yellow":(
+                        ink: $yellow-secondary-1-4,
+                        background: $yellow-light-2,
+                        background-grad: linear-gradient(180deg, $yellow-secondary-2-1, $yellow-secondary-1-1, $yellow-light-2, $yellow-light-2, $yellow-light-1),
+                        heading-ink: $yellow-dark-2,
+
+                        header-button-color: $yellow-secondary-2-0,
+                        header-button-background: $yellow-secondary-1-1,
+                        header-button-hover-color:$yellow-secondary-2-3,
+                        header-button-hover-background: $yellow,
+
+                        form-label-ink: $yellow-dark-2,
+                        form-border-color: $yellow,
+                        form-button-color:$yellow,
+                        form-button-background:$yellow-secondary-2-0,
+                        form-button-hover-color:$yellow-secondary-2-3,
+                        form-button-hover-background:$yellow,
+
+                        text-link-hover-ink: $yellow-dark-2,
+                        theme-button-ink: $yellow-light-2,
+                        theme-button-background: $yellow-secondary-2-4,
+                        next-button-ink: $green-secondary-1-3,
+                        next-button-background: $green-light-1,
+                ),
+                "green":(
+                        ink: $green-dark-2,
+                        background: $green-light-1,
+                        background-grad: linear-gradient(200deg, $green-light-1, $green-light-2),
+                        heading-ink: $green-dark-1,
+
+                        header-button-color: $green-dark-2,
+                        header-button-background: none,
+                        header-button-hover-color:$green-secondary-1-3,
+                        header-button-hover-background: $green,
+
+                        form-label-ink: $green-secondary-1-4,
+                        form-border-color: $green,
+                        form-button-color:$green-light-1,
+                        form-button-background:$green-dark-2,
+                        form-button-hover-color:$green-secondary-1-0,
+                        form-button-hover-background:$green,
+
+                        text-link-hover-ink: $green-dark-1,
+                        theme-button-ink: $green-light-2,
+                        theme-button-background: $green-dark-2,
+                        next-button-ink: $dark-blue,
+                        next-button-background: $light-blue,
+                ),
+                "blue":(
+                        ink: $dark-blue,
+                        background: $light-blue,
+                        background-grad: linear-gradient(to bottom, $light-blue 60%, $dark-blue 120%),
+                        heading-ink: $dark-blue,
+
+                        header-button-color: $dark-blue,
+                        header-button-background: none,
+                        header-button-hover-color:$light-blue,
+                        header-button-hover-background: $dark-blue,
+
+                        form-label-ink: $dark-blue,
+                        form-border-color: $dark-blue,
+                        form-button-color:$light-blue,
+                        form-button-background:$dark-blue,
+                        form-button-hover-color: $dark-blue,
+                        form-button-hover-background:$green,
+
+                        text-link-hover-ink: $green,
+                        theme-button-ink: $light-blue,
+                        theme-button-background: $dark-blue,
+                        next-button-ink: $purple,
+                        next-button-background: $purple-light-2,
+                ),
+                "purple":(
+                        ink: $purple-dark-1,
+                        background: $purple-light-2,
+                        background-grad: linear-gradient(to bottom, $purple -40%, $purple-light-2,$purple-light-2, $purple-dark-1 125%),
+                        heading-ink: $purple-dark-1,
+
+                        header-button-color: $purple-dark-1,
+                        header-button-background: none,
+                        header-button-hover-color:$orange-light-2,
+                        header-button-hover-background: $purple,
+
+                        form-label-ink: $purple,
+                        form-border-color: $purple,
+                        form-button-color:$purple-light-1,
+                        form-button-background:$purple-light-2,
+                        form-button-hover-color:$purple-light-2,
+                        form-button-hover-background:$purple,
+
+                        text-link-hover-ink: $purple,
+                        theme-button-ink: $purple-light-2,
+                        theme-button-background: $purple-dark-2,
+                        next-button-ink: $red-dark-1,
+                        next-button-background: $red-secondary-1-1,
+                ),
+        )
+);

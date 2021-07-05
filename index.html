@@ -1,175 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-GB">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"
-          content="width=device-width,
-          initial-scale=1,
-          maximum-scale=1,
-          user-scalable=no">
-    <meta name="description" content="Summon anyone to your location via text message.">
-    <meta name="author" content="Phil Reynolds">
-    <meta name="theme-color" content="#ee6600">
-    <meta name="google-site-verification" content="y1H-pQBxDutTnS9s_CvHFFI1Mzq83kf5cWaBx2XgCus" />
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16"/>
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/>
-    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96"/>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
-    <title>Summoner</title>
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:wght@300;400;500;800&display=swap"
+          rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/30fa2950fc.js"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129108408-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-129108408-2');
-    </script>
-
-    <!--  Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!--  Bootstrap JS -->
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"-->
-    <!--integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"-->
-    <!--crossorigin="anonymous"></script>-->
-    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"-->
-    <!--integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"-->
-    <!--crossorigin="anonymous"></script>-->
-
-    <!--jQuery-->
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-
-    <!--  Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
-    <!-- Font Family-->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Krub:400,700|" rel="stylesheet">
-
-    <!-- StyleSheet -->
-    <link rel="stylesheet" href="main.css">
-    <noscript>
-        <link rel="stylesheet" href="noscript.css"/>
-    </noscript>
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
+    <title>The Summoner</title>
 </head>
-<body id="overboot" class="is-preload">
-
-<!-- Header -->
-<header class="masthead">
-    <section class="container text-center">
-            <!-- Title -->
-            <h1 class="text-uppercase row">
-                The Summoner
-            </h1>
-            <!--<h2 id="location"></h2>-->
-
-
-
-            <div id="form-container" class="vs-form">
-                <div id="form-error-message" class="d-none">
-                    <i class="fas fa-exclamation-circle fa-4x"></i>
-                    <h2>Somethings wrong!</h2>
-                    <p>Check the red boxes below!</p>
-                </div>
-                <form id="summon-form" name="summon-form"> <!--method="post" action="https://czanhrxz97.execute-api.eu-west-1.amazonaws.com/default/summoner"-->
-                    <div class="form-group floating-label">
-                        <input class="form-control" placeholder="Who are you?" type="text" id="summoner" name="summoner-name" required>
-                        <label for="summoner"> Who are you?</label>
-                    </div>
-                    <div class="form-group floating-label">
-                        <input class="form-control" placeholder="Who do you want to summon?" type="text" id="summonee" name="summonee-name" required>
-                        <label for="summonee"> Who do you want to summon?</label>
-                    </div>
-                    <div class="form-group floating-label">
-                        <input class="form-control" placeholder="What's their number? (Eg 447123123123)" type="number" id="number" name="summonee-number" required>
-                        <label id="number-label" for="number"> What's their number? (Eg 447123123123)</label>
-                    </div>
-                    <div class="form-row d-none">
-                        <div class="form-group col-sm-6  floating-label">
-                            <input id="userLat" class="form-control" pattern="^(\+|-)?(?:90(?:(?:\.0{1,6})?)|(?:[0-9]|[1-8][0-9])(?:(?:\.[0-9]{1,16})?))$" placeholder="Latitude E.g. 51.605411" type="text" name="lat">
-                            <label for="userLat"> Latitude</label>
-                        </div>
-                        <div class="form-group col-sm-6  floating-label">
-                            <input id="userLng" class="form-control" pattern="^(\+|-)?(?:180(?:(?:\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\.[0-9]{1,16})?))$" placeholder="Longitude E.g. -3.983570" type="text" name="lng" >
-                            <label for="userLng"> Longitude</label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                    </div>
-                </form>
-                <button id="summon-button" class="btn btn-danger" onclick="summonThem()">Summon Them!</button>
-                <!--<button class="btn btn-secondary" onclick="testSummon()">test button</button>-->
-            </div>
-
-        <div id="loading-message" class="d-none">
-            <i class="far fa-compass fa-spin fa-9x"></i>
-            <h1>Loading...</h1>
+<body class="dark purple grad">
+<header>
+    <nav>
+        <div class="justify-start">
+            <button class="btn theme-button" id="theme-toggle">Theme</button>
+            <button class="btn color-button" id="color-switch">Colour</button>
+            <button class="btn grad-button" id="grad-toggle">Toggle Gradient</button>
         </div>
-
-        <div id="success-message" class="d-none">
-            <i class="fas fa-route fa-9x"></i>
-            <h1>Success!</h1>
-            <h2><span id="success-content"></span></h2>
+        <div class="center">
         </div>
-
-        <div id="location-error" class="d-none">
-            <i class="fas fa-exclamation-triangle fa-9x"></i>
-            <h1>Failure!</h1>
-            <h2>We can't get your location.</h2>
-            <p>Try refreshing the page and enabling location services. If it still not working, drop us an <a href="mailto:thesummoner@elasticparsley.uk?Subject=The%20Summoner%20is%20Broken!">email.</a></p>
+        <div class="justify-end">
         </div>
-
-        <div id="general-error" class="d-none">
-            <i class="fas fa-exclamation-triangle fa-9x"></i>
-            <h1>Failure!</h1>
-            <h2>Something's gone wrong.</h2>
-            <p>Try refreshing the page and enabling location services. If it still not working, drop us an <a href="mailto:thesummoner@elasticparsley.uk?Subject=The%20Summoner%20is%20Broken!">email.</a></p>
-        </div>
-
-
-
-    </section>
-
+    </nav>
+    <h1>The Summoner</h1>
+    <p class="subheading">Share your location with someone or request someone to share their location with you.</p>
+    <p class="small">This is a lightweight serverless page built with privacy in mind. It is powered by the <a
+            href="https://www.netlify.com/">Netlify</a> and <a href="https://www.twilio.com/">Twilio</a> platforms. We
+        do not store your or track your data or location, the only person who can see your location is the person you
+        are sharing it with.</p>
 </header>
-<div id="footer" class="footer invisible">
-    <p class="text-center">Just so you know, no information is stored at all. The summoner is an entirely serverless app powered by AWS.</p>
-    <br />
-    <div class="row mx-auto justify-content-center">
-        <div class="col-md-4">
-            Built by: <br />
-            Elastic Parsley <br />
-            <a href="https://elasticparsley.uk">
-                <img src="favicon-96x96.png">
-            </a>
-        </div>
-        <div class="col-md-4">
-            Powered by: <br />
-            Mobilise Cloud <br />
-            <a href="https://mobilise.cloud">
-                <img src="Mobilise_Logo.png" height="96px">
-            </a>
-        </div>
-    </div>
-</div>
 
-<!-- Scripts -->
-<script>
-    if ('addEventListener' in window) {
-        window.addEventListener('load', function () {
-            document.body.classList.remove("is-preload");
-            document.getElementById("footer").classList.remove("invisible");
-            // document.body.classList.add("is-main");
-        });
-        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-    }
-</script>
-<script src="get-user-location.js"></script>
-<script src="summon.js"></script>
+<main>
+    <div class="center choice">
+        <h2>What do you want to do?</h2>
+        <a class="btn" href="find">Find Someone</a>
+        <a class="btn" href="share">Share Your Location</a>
+    </div>
+
+</main>
+
+<script src="assets/js/themeToggle.js"></script>
 </body>
 </html>
