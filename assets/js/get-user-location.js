@@ -9,9 +9,6 @@ if (navigator.geolocation) {
         document.getElementById("userLat").value = userPos.lat;
         document.getElementById("userLng").value = userPos.lng;
 
-        document.getElementById("testLat").value = userPos.lat;
-        document.getElementById("testLng").value = userPos.lng;
-
     }, function() {
         handleLocationError(true );
     });
