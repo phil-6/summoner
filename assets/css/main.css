@@ -12,12 +12,12 @@ body header nav {
   justify-items: center;
   width: 100%;
 }
-body header nav button, body header nav a {
+body header nav button, body header nav .btn {
   border-radius: 0.6rem;
   padding: 0.6rem;
   font-size: 0.8rem;
 }
-body header nav a {
+body header nav .btn {
   text-decoration: none;
   border: 2px solid;
   color: unset;

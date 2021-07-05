@@ -18,13 +18,13 @@ body {
       justify-items: center;
       width: 100%;
 
-      button, a {
+      button, .btn {
         border-radius: 0.6rem;
         padding: 0.6rem;
         font-size: 0.8rem;
       }
 
-      a {
+      .btn {
         text-decoration: none;
         border: 2px solid;
         color: unset;
