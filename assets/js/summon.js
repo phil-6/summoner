@@ -88,15 +88,18 @@ function getURLValues(){
     console.log(summonee_number)
 
     if (summonee){
-        document.getElementById("summonee").setAttribute(value, summonee);
+        document.getElementById("summonee").value = summonee;
+        document.getElementById("summonee").setAttribute("value", summonee);
         document.querySelector('#summonee-container').classList.add("hide");
     }
     if (summoner){
-        document.getElementById("summoner").setAttribute(value, summoner);
+        document.getElementById("summoner").value = summoner;
+        document.getElementById("summoner").setAttribute("value", summoner);
         document.querySelector('#summoner-container').classList.add("hide");
     }
     if (summonee_number){
-        document.getElementById("number").setAttribute(value, summonee_number);
+        document.getElementById("number").value = summonee_number;
+        document.getElementById("number").setAttribute("value", summonee_number);
         document.querySelector('#number-container').classList.add("hide");
     }
 
