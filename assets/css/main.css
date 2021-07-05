@@ -1,6 +1,7 @@
 body {
-  min-height: 100vh;
+  height: 100vh;
   font-family: "Montserrat", Verdana, Geneva, sans-serif;
+  margin: 0;
 }
 body .center {
   text-align: center;
@@ -34,6 +35,9 @@ body header nav .justify-end {
   text-align: right;
   width: 30vw;
 }
+body header button, body header a {
+  font-weight: 500;
+}
 body header h1 {
   font-family: "Carter One", Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   font-size: 4rem;
@@ -49,6 +53,7 @@ body header .subheading {
 }
 body header .small {
   font-size: 0.8rem;
+  text-align: center;
 }
 body main .choice a {
   text-decoration: none;
@@ -70,6 +75,7 @@ body main #form-container form button {
   padding: 1rem;
   border: 2px solid;
   border-radius: 1.1rem;
+  font-weight: 600;
 }
 body main #form-container form label {
   display: inline-block;

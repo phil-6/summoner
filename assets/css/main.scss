@@ -3,8 +3,9 @@ $subheading-font: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 $body-font: 'Montserrat', Verdana, Geneva, sans-serif;
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   font-family: $body-font;
+  margin: 0;
 
   .center {
     text-align: center;
@@ -38,15 +39,15 @@ body {
       .center {
         text-align: center;
         width: 30vw;
-
       }
 
       .justify-end {
         text-align: right;
         width: 30vw;
-
-
       }
+    }
+    button, a {
+      font-weight: 500;
     }
 
     h1 {
@@ -66,7 +67,8 @@ body {
     }
 
     .small {
-      font-size: 0.8rem
+      font-size: 0.8rem;
+      text-align:center;
     }
 
   }
@@ -101,6 +103,7 @@ body {
           padding: 1rem;
           border: 2px solid;
           border-radius: 1.1rem;
+          font-weight: 600;
         }
 
         label {

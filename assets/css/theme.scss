@@ -20,15 +20,26 @@ body {
           }
 
           header {
+            h1, h2 {
+              color: map-get($color-themes, $theme, $color, heading-ink);
+            }
+
             button, a {
               color: map-get($color-themes, $theme, $color, header-button-color);
               border-color: map-get($color-themes, $theme, $color, header-button-color);
-              background: map-get($color-themes, $theme, $color, header-button-background);
 
               &:hover {
-                color: map-get($color-themes, $theme, $color, header-button-hover-color);
-                border-color: map-get($color-themes, $theme, $color, header-button-hover-color);
-                background: map-get($color-themes, $theme, $color, header-button-hover-background);
+                color: map-get($color-themes, $theme, $color, text-link-hover-ink);
+              }
+
+              &.btn {
+                background: map-get($color-themes, $theme, $color, header-button-background);
+
+                &:hover {
+                  color: map-get($color-themes, $theme, $color, header-button-hover-color);
+                  border-color: map-get($color-themes, $theme, $color, header-button-hover-color);
+                  background: map-get($color-themes, $theme, $color, header-button-hover-background);
+                }
               }
 
               &.theme-button:hover {
@@ -44,14 +55,24 @@ body {
             }
           }
 
-          form button {
-            color: map-get($color-themes, $theme, $color, form-button-color);
-            border-color: map-get($color-themes, $theme, $color, form-button-color);
-            background: map-get($color-themes, $theme, $color, form-button-background);
+          #form-container form {
+            label {
+              color: map-get($color-themes, $theme, $color, form-label-ink);
+            }
 
-            &:hover {
-              color: map-get($color-themes, $theme, $color, form-button-hover-color);
-              background: map-get($color-themes, $theme, $color, form-button-hover-background);
+            input:focus {
+              border-bottom-color: map-get($color-themes, $theme, $color, form-border-color);
+            }
+
+            button {
+              color: map-get($color-themes, $theme, $color, form-button-color);
+              border-color: map-get($color-themes, $theme, $color, form-button-color);
+              background: map-get($color-themes, $theme, $color, form-button-background);
+
+              &:hover {
+                color: map-get($color-themes, $theme, $color, form-button-hover-color);
+                background: map-get($color-themes, $theme, $color, form-button-hover-background);
+              }
             }
           }
         }
