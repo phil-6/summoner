@@ -45,40 +45,27 @@
                 <h2>Somethings wrong!</h2>
                 <p>Check the red boxes below!</p>
             </div>
-            <form data-netlify="true" id="summon-form" method="POST" name="summon-form">
-                <div id="summoner-container" class="form-group floating-label">
+            <form data-netlify="true" id="find-form" method="POST" name="find-form">
+                <div class="form-group floating-label">
                     <input id="summoner" name="summoner" placeholder="Who are you?"
                            required type="text">
                     <label for="summoner">Who are you?</label>
                 </div>
-                <div id="summonee-container" class="form-group floating-label">
+                <div class="form-group floating-label">
+                    <input id="summoner_number" name="summoner_phone"
+                           placeholder="What's your number? (Eg 07123123123)" required type="number">
+                    <label for="summoner_number" id="summoner_number-label"> What's your number? (Eg 07123123123)</label>
+                </div>
+                <div class="form-group floating-label">
                     <input id="summonee" name="summonee"
-                           placeholder="Who do you want to summon?"
+                           placeholder="Who do you want to find?"
                            required type="text">
                     <label for="summonee">Who do you want to summon?</label>
                 </div>
-                <div id="number-container" class="form-group floating-label">
-                    <input id="number" name="phone"
+                <div class="form-group floating-label">
+                    <input id="summonee_number" name="phone"
                            placeholder="What's their number? (Eg 07123123123)" required type="number">
-                    <label for="number" id="number-label"> What's their number? (Eg 07123123123)</label>
-                </div>
-                <div class="form-row hide">
-                    <div class="form-group col-sm-6  floating-label">
-                        <input id="userLat"
-                               name="lat"
-                               pattern="^(\+|-)?(?:90(?:(?:\.0{1,6})?)|(?:[0-9]|[1-8][0-9])(?:(?:\.[0-9]{1,16})?))$"
-                               placeholder="Latitude E.g. 51.605411" type="text">
-                        <label for="userLat"> Latitude</label>
-                    </div>
-                    <div class="form-group col-sm-6  floating-label">
-                        <input id="userLng"
-                               name="lng"
-                               pattern="^(\+|-)?(?:180(?:(?:\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\.[0-9]{1,16})?))$"
-                               placeholder="Longitude E.g. -3.983570" type="text">
-                        <label for="userLng"> Longitude</label>
-                    </div>
-                </div>
-                <div id="form-prefilled" class="form-group hide">
+                    <label for="summonee_number" id="summonee_number-label"> What's their number? (Eg 07123123123)</label>
                 </div>
                 <button class="btn" id="summon-button" type="submit">Summon Them!</button>
             </form>
@@ -114,7 +101,6 @@
     </section>
 </main>
 <script src="assets/js/themeToggle.js"></script>
-<script src="assets/js/get-user-location.js"></script>
-<script src="assets/js/summon.js"></script>
+<script src="assets/js/find.js"></script>
 </body>
 </html>

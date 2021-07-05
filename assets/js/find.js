@@ -17,20 +17,21 @@ function formValidation(){
     }else{
         document.getElementById("summonee").classList.remove("form-error");
     }
-    if (!phoneregex.test(document.getElementById("number").value)){
-        document.getElementById("number").focus();
-        document.getElementById("number").classList.add("form-error");
+    if (!phoneregex.test(document.getElementById("summoner_number").value)){
+        document.getElementById("summoner_number").focus();
+        document.getElementById("summoner_number").classList.add("form-error");
         document.getElementById("form-error-message").classList.remove("hide");
         validForm = false;
     }else{
-        document.getElementById("number").classList.remove("form-error");
+        document.getElementById("summoner_number").classList.remove("form-error");
     }
-    if ((document.getElementById("userLat").value === "")||(document.getElementById("userLng").value === "")){
-        document.getElementById("location-error").classList.remove("hide");
-        document.getElementById("form-container").classList.add("hide");
-        // document.body.classList.remove("is-main");
-        // document.body.classList.add("is-failure");
+    if (!phoneregex.test(document.getElementById("summonee_number").value)){
+        document.getElementById("summonee_number").focus();
+        document.getElementById("summonee_number").classList.add("form-error");
+        document.getElementById("form-error-message").classList.remove("hide");
         validForm = false;
+    }else{
+        document.getElementById("summonee_number").classList.remove("form-error");
     }
     if (validForm === true){
         // document.getElementById("form-error-message").classList.add("d-none");
@@ -40,14 +41,14 @@ function formValidation(){
     }
 }
 
-const summonForm = document.querySelector("#summon-form")
+const findForm = document.querySelector("#find-form")
 // The Twilio Way
 // Source: https://www.twilio.com/blog/a-how-to-send-text-messages-from-your-static-site-using-netlify-twilio-and-serverless-functions
-summonForm.addEventListener('submit', async event => {
+findForm.addEventListener('submit', async event => {
     event.preventDefault();
 
     // disable button to prevent multiple submissions
-    summonForm.querySelector('button').disabled = true;
+    findForm.querySelector('button').disabled = true;
 
     // make the request to submit the form
     if (formValidation()) {
@@ -58,7 +59,7 @@ summonForm.addEventListener('submit', async event => {
                     'Content-type': 'application/x-www-form-urlencoded; charset=UTF-8'
                 },
                 // parse and submit all included form data
-                body: new URLSearchParams(new FormData(summonForm)).toString()
+                body: new URLSearchParams(new FormData(findForm)).toString()
             });
 
             // if it was successful show success message
@@ -73,34 +74,7 @@ summonForm.addEventListener('submit', async event => {
             console.error(e);
         }
     } else {
-        summonForm.querySelector('button').disabled = false;
+        findForm.querySelector('button').disabled = false;
     }
 });
 
-function getURLValues(){
-    const queryString = window.location.search
-    const urlParams = new URLSearchParams(queryString)
-    const summonee = urlParams.get('summoner')
-    const summoner = urlParams.get('summonee')
-    const summonee_number = urlParams.get('summoner_num')
-
-    if (summonee){
-        document.getElementById(summonee).value = summonee;
-        document.querySelector('#summonee-container').classList.add("hide");
-    }
-    if (summoner){
-        document.getElementById(summoner).value = summoner;
-        document.querySelector('#summoner-container').classList.add("hide");
-    }
-    if (summonee_number){
-        document.getElementById(number).value = summonee_number;
-        document.querySelector('#number-container').classList.add("hide");
-    }
-
-    if (summonee && summoner && summonee_number){
-        document.querySelector('#number-container').classList.remove("hide");
-        document.querySelector('#number-container').innerHTML = `Hi ${summoner}. ${summonee} has requested that you share your number with them. Click the button below if you want to do that.`
-    }
-}
-
-getURLValues()

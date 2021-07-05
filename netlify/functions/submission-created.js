@@ -9,8 +9,14 @@ exports.handler = (event, context, callback) => {
     const body = JSON.parse(event.body)
     let data = body.payload.data
     let phone = data.phone.replace('0', '+44')
+    let messageContent = `Something's gone wrong, please contact summoner@purpleriver.dev. ID: ${body.payload.id}`
 
-    let messageContent = `Hi ${data.summonee}. ${data.summoner} has shared their location with you. You can get to them here: https://www.google.com/maps/dir/?api=1&destination=${data.lat},${data.lng}`
+    if (body.payload.form_name === "summon-form") {
+        messageContent = `Hi ${data.summonee}. ${data.summoner} has shared their location with you. You can find them here: https://www.google.com/maps/dir/?api=1&destination=${data.lat},${data.lng}`
+    } else if (body.payload.form_name === "find-form") {
+        messageContent = `Hi ${data.summonee}. ${data.summoner} wants to know your location. 
+        You can share your location with them by following this link: https://summoner.purpleriver.dev/share?summoner=${data.summoner}&summoner_num=${data.summoner_number}&summonee=${data.summonee}`
+    }
 
     const sms = {
         to: phone,
