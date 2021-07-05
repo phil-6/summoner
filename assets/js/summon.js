@@ -85,15 +85,15 @@ function getURLValues(){
     const summonee_number = urlParams.get('summoner_num')
 
     if (summonee){
-        document.getElementById(summonee).value = summonee;
+        document.getElementById("summonee").value = summonee;
         document.querySelector('#summonee-container').classList.add("hide");
     }
     if (summoner){
-        document.getElementById(summoner).value = summoner;
+        document.getElementById("summoner").value = summoner;
         document.querySelector('#summoner-container').classList.add("hide");
     }
     if (summonee_number){
-        document.getElementById(number).value = summonee_number;
+        document.getElementById("number").value = summonee_number;
         document.querySelector('#number-container').classList.add("hide");
     }
 
