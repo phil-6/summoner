@@ -104,8 +104,8 @@ function getURLValues(){
     }
 
     if (summonee && summoner && summonee_number){
-        document.querySelector('#number-container').classList.remove("hide");
-        document.querySelector('#number-container').innerHTML = `Hi ${summoner}. ${summonee} has requested that you share your number with them. Click the button below if you want to do that.`
+        document.querySelector('#form-prefilled').classList.remove("hide");
+        document.querySelector('#form-prefilled').innerHTML = `Hi ${summoner}. ${summonee} has requested that you share your number with them. Click the button below if you want to do that.`
     }
 }
 

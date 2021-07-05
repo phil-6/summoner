@@ -10,6 +10,7 @@ exports.handler = (event, context, callback) => {
     let data = body.payload.data
     let phone = data.phone.replace('0', '+44')
     let messageContent = `Something's gone wrong, please contact summoner@purpleriver.dev. ID: ${body.payload.id}`
+    console.log(data)
 
     if (body.payload.form_name === "summon-form") {
         messageContent = `Hi ${data.summonee}. ${data.summoner} has shared their location with you. You can find them here: https://www.google.com/maps/dir/?api=1&destination=${data.lat},${data.lng}`
