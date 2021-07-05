@@ -80,20 +80,23 @@ summonForm.addEventListener('submit', async event => {
 function getURLValues(){
     const queryString = window.location.search
     const urlParams = new URLSearchParams(queryString)
+    console.log(urlParams)
     const summonee = urlParams.get('summoner')
     const summoner = urlParams.get('summonee')
     const summonee_number = urlParams.get('summoner_num')
+    console.log(summonee)
+    console.log(summonee_number)
 
     if (summonee){
-        document.getElementById("summonee").value = summonee;
+        document.getElementById("summonee").setAttribute(value, summonee);
         document.querySelector('#summonee-container').classList.add("hide");
     }
     if (summoner){
-        document.getElementById("summoner").value = summoner;
+        document.getElementById("summoner").setAttribute(value, summoner);
         document.querySelector('#summoner-container').classList.add("hide");
     }
     if (summonee_number){
-        document.getElementById("number").value = summonee_number;
+        document.getElementById("number").setAttribute(value, summonee_number);
         document.querySelector('#number-container').classList.add("hide");
     }
 
