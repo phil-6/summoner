@@ -86,7 +86,7 @@ themeBtn.addEventListener("click", function () {
         currentTheme = "dark";
         setTheme()
     }
-    console.log(currentTheme, currentColor)
+    console.log(currentTheme, currentColor, currentGrad)
     localStorage.setItem("theme", currentTheme);
 });
 
@@ -99,8 +99,6 @@ themeBtn.addEventListener("mouseover", function () {
         themeBtn.innerHTML = "Change Theme";
     }
 });
-
-
 
 themeBtn.addEventListener("mouseleave", function () {
     if (currentTheme === "light") {
@@ -175,11 +173,11 @@ colorBtn.addEventListener("mouseout", function () {
 });
 
 gradBtn.addEventListener("click", function () {
-    if (currentGrad === "grad") {
-        currentGrad = "no-grad"
+    if (currentGrad === "no-grad") {
+        currentGrad = "grad"
         setGrad()
     } else {
-        currentGrad = "grad";
+        currentGrad = "no-grad";
         setGrad()
     }
     console.log(currentTheme, currentColor, currentGrad)
