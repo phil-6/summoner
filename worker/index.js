@@ -1,3 +1,4 @@
+
 async function sendText(body) {
     const accountSid = TWILIO_ACCOUNT_SID
     const authToken = TWILIO_AUTH_TOKEN
@@ -62,7 +63,7 @@ function simpleResponse(response) {
     return new Response(JSON.stringify(resp), {
         headers: {
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "https://summoner*"
+            "Access-Control-Allow-Origin": "*"
         }, status: response.status
     })
 }

@@ -52,7 +52,7 @@ summonForm.addEventListener('submit', async event => {
     if (formValidation()) {
         try {
             console.log(new URLSearchParams(new FormData(summonForm)).toString())
-            const response = await fetch('https://summoner.pr-dev.workers.dev/', {
+            const response = await fetch('https://summoner.pr-dev.workers.dev', {
                 method: 'post',
                 headers: {
                     'Content-type': 'application/x-www-form-urlencoded; charset=UTF-8'
