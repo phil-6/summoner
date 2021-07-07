@@ -1,8 +1,8 @@
-name = "worker"
+name = "summoner"
 type = 'javascript'
 account_id = 'c24eb64376f3660e011fe4fc2dbb6cc0'
 route = ''
 zone_id = ''
 usage_model = ''
 workers_dev = true
-target_type = "webpack"
+target_type = "javascript"

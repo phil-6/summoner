@@ -52,14 +52,19 @@ async function handleRequest(request) {
     // await readRequestBody(request)
     // const retBody = `Success! Message Sent.`
     const response = await readRequestBody(request)
-    console.log (response)
+    console.log(response)
 
     return (simpleResponse(response))
 }
 
 function simpleResponse(response) {
     let resp = {message: response.statusText, status: response.status}
-    return new Response(JSON.stringify(resp), {headers: {"Content-Type": "application/json", "Access-Control-Allow-Origin": "*"}, status: response.status})
+    return new Response(JSON.stringify(resp), {
+        headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*"
+        }, status: response.status
+    })
 }
 
 addEventListener("fetch", event => {
@@ -69,7 +74,10 @@ addEventListener("fetch", event => {
     if (request.method === "POST") {
         return event.respondWith(handleRequest(request))
     } else {
-        return event.respondWith(simpleResponse(405, "Look at what you've done now."))
+        let message = "Look at what you've done now."
+        let statusCode = 405
+        let resp = {message: message, status: statusCode}
+        return new Response(JSON.stringify(resp), {headers: {"Content-Type": "application/json"}, status: statusCode})
     }
 
 })
