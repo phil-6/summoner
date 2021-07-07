@@ -41,8 +41,7 @@ function formValidation(){
 }
 
 const summonForm = document.querySelector("#summon-form")
-// The Twilio Way
-// Source: https://www.twilio.com/blog/a-how-to-send-text-messages-from-your-static-site-using-netlify-twilio-and-serverless-functions
+
 summonForm.addEventListener('submit', async event => {
     event.preventDefault();
 
@@ -52,7 +51,8 @@ summonForm.addEventListener('submit', async event => {
     // make the request to submit the form
     if (formValidation()) {
         try {
-            const response = await fetch('/', {
+            console.log(new URLSearchParams(new FormData(summonForm)).toString())
+            const response = await fetch('https://summoner.pr-dev.workers.dev/', {
                 method: 'post',
                 headers: {
                     'Content-type': 'application/x-www-form-urlencoded; charset=UTF-8'
@@ -68,9 +68,13 @@ summonForm.addEventListener('submit', async event => {
             } else {
                 document.querySelector('#loading-message').classList.add("hide");
                 document.querySelector('#general-error').classList.remove("hide");
+                document.querySelector('#response-message').innerHTML = response.message
             }
         } catch (e) {
             console.error(e);
+            document.querySelector('#loading-message').classList.add("hide");
+            document.querySelector('#general-error').classList.remove("hide");
+            document.querySelector('#response-message').innerHTML = e
         }
     } else {
         summonForm.querySelector('button').disabled = false;
@@ -80,7 +84,6 @@ summonForm.addEventListener('submit', async event => {
 function getURLValues(){
     const queryString = window.location.search
     const urlParams = new URLSearchParams(queryString)
-    console.log(urlParams)
     const summonee = urlParams.get('summoner')
     const summoner = urlParams.get('summonee')
     const summonee_number = urlParams.get('summoner_num')
