@@ -69,7 +69,7 @@ addEventListener("fetch", event => {
     if (request.method === "POST") {
         return event.respondWith(handleRequest(request))
     } else {
-        return event.respondWith(simpleResponse(405, "Look at what you've done."))
+        return event.respondWith(simpleResponse(405, "Look at what you've done now."))
     }
 
 })
