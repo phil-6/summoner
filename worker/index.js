@@ -29,12 +29,12 @@ async function sendText(body) {
 
     let result = await fetch(endpoint, request)
     result = await result.json()
-    console.log(result)
     return new Response(JSON.stringify(result), request)
 }
 
 async function readRequestBody(request) {
     const {headers} = request
+
     const contentType = headers.get("content-type") || ""
     if (contentType.includes("form")) {
         const formData = await request.formData()
@@ -44,41 +44,32 @@ async function readRequestBody(request) {
         }
         return (sendText(body))
     }
-    // else {
-    //     return ()
-    // }
 }
 
 async function handleRequest(request) {
-    // await readRequestBody(request)
-    // const retBody = `Success! Message Sent.`
     const response = await readRequestBody(request)
     console.log(response)
-
-    return (simpleResponse(response))
+    return (simpleResponse(response.statusText, response.status))
 }
 
-function simpleResponse(response) {
-    let resp = {message: response.statusText, status: response.status}
+function simpleResponse(message, statusCode) {
+    let resp = {message: message, status: statusCode}
     return new Response(JSON.stringify(resp), {
         headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*"
-        }, status: response.status
+            "Content-Type": "application/json"
+        }, status: statusCode
     })
 }
 
 addEventListener("fetch", event => {
     const {request} = event
-    const {url} = request
 
     if (request.method === "POST") {
+        console.log(request)
         return event.respondWith(handleRequest(request))
     } else {
         let message = "Look at what you've done."
         let statusCode = 405
-        let resp = {message: message, status: statusCode}
-        return new Response(JSON.stringify(resp), {headers: {"Content-Type": "application/json"}, status: statusCode})
+        return event.respondWith(simpleResponse(message, statusCode))
     }
-
 })
