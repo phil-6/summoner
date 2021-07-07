@@ -62,7 +62,7 @@ function simpleResponse(response) {
     return new Response(JSON.stringify(resp), {
         headers: {
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*"
+            "Access-Control-Allow-Origin": "https://summoner*"
         }, status: response.status
     })
 }
