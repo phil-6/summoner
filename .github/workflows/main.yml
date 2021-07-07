@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - master
+      - main
       - cloudflare
 
 jobs:
@@ -12,8 +12,8 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@v2
-      - name: Publish
+      - name: Publish app
         uses: cloudflare/wrangler-action@1.3.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          workingDirectory: 'worker'
+          workingDirectory: 'worker/'
