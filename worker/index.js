@@ -56,7 +56,8 @@ function simpleResponse(message, statusCode) {
     let resp = {message: message, status: statusCode}
     return new Response(JSON.stringify(resp), {
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*"
         }, status: statusCode
     })
 }
