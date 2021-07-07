@@ -74,7 +74,7 @@ addEventListener("fetch", event => {
     if (request.method === "POST") {
         return event.respondWith(handleRequest(request))
     } else {
-        let message = "Look at what you've done now."
+        let message = "Look at what you've done."
         let statusCode = 405
         let resp = {message: message, status: statusCode}
         return new Response(JSON.stringify(resp), {headers: {"Content-Type": "application/json"}, status: statusCode})
