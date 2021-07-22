@@ -1,4 +1,3 @@
-
 async function sendText(body) {
     const accountSid = TWILIO_ACCOUNT_SID
     const authToken = TWILIO_AUTH_TOKEN
@@ -32,26 +31,6 @@ async function sendText(body) {
     return new Response(JSON.stringify(result), request)
 }
 
-async function readRequestBody(request) {
-    const {headers} = request
-
-    const contentType = headers.get("content-type") || ""
-    if (contentType.includes("form")) {
-        const formData = await request.formData()
-        const body = {}
-        for (const entry of formData.entries()) {
-            body[entry[0]] = entry[1]
-        }
-        return (sendText(body))
-    }
-}
-
-async function handleRequest(request) {
-    const response = await readRequestBody(request)
-    console.log(response)
-    return (simpleResponse(response.statusText, response.status))
-}
-
 function simpleResponse(message, statusCode) {
     let resp = {message: message, status: statusCode}
     return new Response(JSON.stringify(resp), {
@@ -62,6 +41,31 @@ function simpleResponse(message, statusCode) {
     })
 }
 
+function error(event){
+    let message = "Look at what you've done."
+    let statusCode = 405
+    return event.respondWith(simpleResponse(message, statusCode))
+}
+
+async function handleRequest(request) {
+
+    const {headers} = request
+    const contentType = headers.get("content-type") || ""
+
+    if (contentType.includes("form")) {
+        const formData = await request.formData()
+        const body = {}
+        for (const entry of formData.entries()) {
+            body[entry[0]] = entry[1]
+        }
+        const response = await sendText(body)
+        console.log(response)
+        return (simpleResponse(response.statusText, response.status))
+    } else {
+        error(request)
+    }
+}
+
 addEventListener("fetch", event => {
     const {request} = event
 
@@ -69,8 +73,6 @@ addEventListener("fetch", event => {
         console.log(request)
         return event.respondWith(handleRequest(request))
     } else {
-        let message = "Look at what you've done."
-        let statusCode = 405
-        return event.respondWith(simpleResponse(message, statusCode))
+        error(event)
     }
 })
