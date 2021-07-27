@@ -18,11 +18,9 @@ body {
           &.no-grad {
             background: map-get($color-themes, $theme, $color, background);
           }
-
-          header {
-            h1, h2 {
-              color: map-get($color-themes, $theme, $color, heading-ink);
-            }
+          
+          h1, h2 {
+            color: map-get($color-themes, $theme, $color, heading-ink);
           }
 
           button, a {

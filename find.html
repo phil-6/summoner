@@ -13,91 +13,99 @@
     <link href="assets/css/theme.css" rel="stylesheet">
     <title>The Summoner</title>
 </head>
-<body class="dark purple grad">
-<header>
-    <nav>
-        <div class="justify-start">
-            <button class="btn theme-button" id="theme-toggle">Theme</button>
-            <button class="btn color-button" id="color-switch">Colour</button>
-            <button class="btn grad-button" id="grad-toggle">Toggle Gradient</button>
-        </div>
-        <div class="center">
-            <a class="btn home-link " href="/">Home <i class="fas fa-home"></i></a>
-        </div>
-        <div class="justify-end">
-            <a class="btn blog-link" href="#">Blog <i class="fas fa-align-justify"></i></a>
-        </div>
-    </nav>
-    <h1>The Summoner</h1>
-    <h2>Find Someone's Location</h2>
-    <p class="subheading">Request someone share their location with you.</p>
-    <p class="small">This is a lightweight serverless page built with privacy in mind. It is powered by the <a
-            href="https://www.cloudflare.com/en-gb/">Cloudflare</a> and <a href="https://www.twilio.com/">Twilio</a> platforms. We
-        do not track your data or location, the only person who can see your location is the person you
-        are sharing it with. your data is only processed for the explicit purpose of carrying out the function of the
-        application. Is it not stored for longer than required. It is only a proof of concept and may stop working at
-        any time without notice.</p>
+<body class="dark orange grad">
+<nav>
+    <div class="theme">
+        <button class="btn theme-button" id="theme-toggle">Theme</button>
+        <button class="btn color-button" id="color-switch">Colour</button>
+        <button class="btn grad-button" id="grad-toggle">Toggle Gradient</button>
+    </div>
+    <div class="center">
+        <a class="btn home-link " href="/">Home <i class="fas fa-home"></i></a>
+    </div>
+    <div class="justify-end">
+        <a class="btn blog-link" href="#">Blog <i class="fas fa-align-justify"></i></a>
+    </div>
+</nav>
 
-</header>
 <main>
-    <section class="form text-center">
-        <div id="form-container">
-            <div class="hide" id="form-error-message">
-                <i class="fas fa-exclamation-circle fa-4x"></i>
-                <h2>Somethings wrong!</h2>
-                <p>Check the red boxes below!</p>
+    <section>
+
+        <h1>The Summoner</h1>
+        <h2>Find Someone's Location</h2>
+        <p class="subheading">Request someone share their location with you.</p>
+        <p class="small">This is a lightweight serverless page built with privacy in mind. It is powered by the <a
+                href="https://www.cloudflare.com/en-gb/">Cloudflare</a> and <a href="https://www.twilio.com/">Twilio</a>
+            platforms. We
+            do not track your data or location, the only person who can see your location is the person you
+            are sharing it with. your data is only processed for the explicit purpose of carrying out the function of
+            the
+            application. Is it not stored for longer than required. It is only a proof of concept and may stop working
+            at
+            any time without notice.</p>
+
+
+        <div class="form text-center">
+            <div id="form-container">
+                <div class="hide" id="form-error-message">
+                    <i class="fas fa-exclamation-circle fa-4x"></i>
+                    <h2>Somethings wrong!</h2>
+                    <p>Check the red boxes below!</p>
+                </div>
+                <form data-netlify="true" id="find-form" method="POST" name="find-form">
+                    <div class="form-group floating-label">
+                        <input id="summoner" name="summoner" placeholder="Who are you?"
+                               required type="text">
+                        <label for="summoner">Who are you?</label>
+                    </div>
+                    <div class="form-group floating-label">
+                        <input id="summoner_number" name="summoner_phone"
+                               placeholder="What's your number? (Eg 07123123123)" required type="number">
+                        <label for="summoner_number" id="summoner_number-label"> What's your number? (Eg
+                            07123123123)</label>
+                    </div>
+                    <div class="form-group floating-label">
+                        <input id="summonee" name="summonee"
+                               placeholder="Who do you want to find?"
+                               required type="text">
+                        <label for="summonee">Who do you want to summon?</label>
+                    </div>
+                    <div class="form-group floating-label">
+                        <input id="summonee_number" name="phone"
+                               placeholder="What's their number? (Eg 07123123123)" required type="number">
+                        <label for="summonee_number" id="summonee_number-label"> What's their number? (Eg
+                            07123123123)</label>
+                    </div>
+                    <button class="btn" id="summon-button" type="submit">Summon Them!</button>
+                </form>
             </div>
-            <form data-netlify="true" id="find-form" method="POST" name="find-form">
-                <div class="form-group floating-label">
-                    <input id="summoner" name="summoner" placeholder="Who are you?"
-                           required type="text">
-                    <label for="summoner">Who are you?</label>
-                </div>
-                <div class="form-group floating-label">
-                    <input id="summoner_number" name="summoner_phone"
-                           placeholder="What's your number? (Eg 07123123123)" required type="number">
-                    <label for="summoner_number" id="summoner_number-label"> What's your number? (Eg 07123123123)</label>
-                </div>
-                <div class="form-group floating-label">
-                    <input id="summonee" name="summonee"
-                           placeholder="Who do you want to find?"
-                           required type="text">
-                    <label for="summonee">Who do you want to summon?</label>
-                </div>
-                <div class="form-group floating-label">
-                    <input id="summonee_number" name="phone"
-                           placeholder="What's their number? (Eg 07123123123)" required type="number">
-                    <label for="summonee_number" id="summonee_number-label"> What's their number? (Eg 07123123123)</label>
-                </div>
-                <button class="btn" id="summon-button" type="submit">Summon Them!</button>
-            </form>
-        </div>
 
-        <div class="hide" id="loading-message">
-            <i class="far fa-compass fa-spin fa-9x"></i>
-            <h1>Loading...</h1>
-        </div>
+            <div class="hide" id="loading-message">
+                <i class="far fa-compass fa-spin fa-9x"></i>
+                <h1>Loading...</h1>
+            </div>
 
-        <div class="hide" id="success-message">
-            <i class="fas fa-route fa-9x"></i>
-            <h1>Success!</h1>
-            <h2><span id="success-content"></span></h2>
-        </div>
+            <div class="hide" id="success-message">
+                <i class="fas fa-route fa-9x"></i>
+                <h1>Success!</h1>
+                <h2><span id="success-content"></span></h2>
+            </div>
 
-        <div class="hide" id="location-error">
-            <i class="fas fa-exclamation-triangle fa-9x"></i>
-            <h1>Failure!</h1>
-            <h2>We can't get your location.</h2>
-            <p>Try refreshing the page and enabling location services. If it still not working, drop us an <a
-                    href="mailto:thesummoner@purpleriver.dev?Subject=The%20Summoner%20is%20Broken!">email.</a></p>
-        </div>
+            <div class="hide" id="location-error">
+                <i class="fas fa-exclamation-triangle fa-9x"></i>
+                <h1>Failure!</h1>
+                <h2>We can't get your location.</h2>
+                <p>Try refreshing the page and enabling location services. If it still not working, drop us an <a
+                        href="mailto:thesummoner@purpleriver.dev?Subject=The%20Summoner%20is%20Broken!">email.</a></p>
+            </div>
 
-        <div class="hide" id="general-error">
-            <i class="fas fa-exclamation-triangle fa-9x"></i>
-            <h1>Failure!</h1>
-            <h2>Something's gone wrong.</h2>
-            <p>Try refreshing the page and enabling location services. If it still not working, drop us an <a
-                    href="mailto:thesummoner@purpleriver.dev?Subject=The%20Summoner%20is%20Broken!">email.</a></p>
+            <div class="hide" id="general-error">
+                <i class="fas fa-exclamation-triangle fa-9x"></i>
+                <h1>Failure!</h1>
+                <h2>Something's gone wrong.</h2>
+                <p>Try refreshing the page and enabling location services. If it still not working, drop us an <a
+                        href="mailto:thesummoner@purpleriver.dev?Subject=The%20Summoner%20is%20Broken!">email.</a></p>
+            </div>
         </div>
 
     </section>

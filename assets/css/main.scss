@@ -1,59 +1,137 @@
+/* *** Variables *** */
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
 $heading-font: 'Carter One', Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 $subheading-font: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 $body-font: 'Montserrat', Verdana, Geneva, sans-serif;
 
+html {
+  scroll-behavior: smooth;
+
+}
+
 body {
-  height: 100vh;
+  //height: 100vh;
   font-family: $body-font;
   margin: 0;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-size: cover;
 
   .center {
     text-align: center;
   }
+}
 
-  header {
-    nav {
-      display: inline-flex;
-      align-items: center;
-      justify-content: space-evenly;
-      justify-items: center;
-      width: 100%;
 
-      button, .btn {
-        border-radius: 0.6rem;
-        padding: 0.6rem;
-        font-size: 0.8rem;
-      }
+nav {
+  position: fixed;
+  text-align: center;
+  margin: auto;
+  width: 100%;
 
-      .btn {
-        text-decoration: none;
-        border: 2px solid;
-        color: unset;
-      }
+  button, .btn {
+    border-radius: 0.6rem;
+    padding: 0.6rem;
+    margin: 0.2rem 0;
+    font-size: 0.8rem;
+  }
 
-      .justify-start {
-        text-align: left;
-        width: 30vw;
-      }
+  .btn {
+    text-decoration: none;
+    border: 2px solid;
+    color: unset;
+  }
 
-      .center {
-        text-align: center;
-        width: 30vw;
-      }
+  .center, .justify-end {
+    display: inline-block;
+    margin: 0.5rem 0;
+  }
 
-      .justify-end {
-        text-align: right;
-        width: 30vw;
-      }
+
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    .theme {
+      align-self: start;
+      text-align: left;
+      width: 30vw;
     }
+    .center {
+      text-align: center;
+      width: 30vw;
+    }
+    .justify-end {
+      text-align: right;
+      width: 30vw;
+    }
+  }
+}
+
+main {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  section {
+    @media (min-width: $breakpoint-md) {
+      margin-top: -200px;
+    }
+
     button, a {
       font-weight: 500;
     }
 
+    .choice {
+      p {
+        display: inline-block;
+        margin: 1rem 0.2rem;
+        padding-bottom: 1rem;
+        @media (min-width: $breakpoint-sm) {
+          padding-bottom: 1rem;
+        }
+
+        a {
+          text-decoration: none;
+          padding: 1rem;
+          border: 1px solid;
+          border-radius: 1.1rem;
+        }
+      }
+    }
+
     h1 {
-      font-family: $heading-font;
-      font-size: 4rem;
       text-align: center;
+      font-family: $heading-font;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      max-width: 100%;
+      margin-bottom: 2rem;
+      padding-top: 2rem;
+      @media (min-width: $breakpoint-md) {
+        font-size: 4rem;
+        line-height: 4rem;
+        padding-top: 0;
+
+      }
+      @media (min-width: $breakpoint-lg) {
+        font-size: 6rem;
+        line-height: 6.5rem;
+      }
+    }
+
+    @media (max-width: $breakpoint-md){
+      h2, .subheading {
+        margin: 0;
+      }
     }
 
     h2 {
@@ -68,23 +146,15 @@ body {
 
     .small {
       font-size: 0.8rem;
-      text-align:center;
+      text-align: center;
     }
 
-  }
+    .text-center {
+      text-align: center;
+    }
 
-  main {
-    .choice {
-      a {
-        text-decoration: none;
-        padding: 1rem;
-        border: 1px solid;
-        border-radius: 1.1rem;
-
-        &:hover {
-
-        }
-      }
+    .hide {
+      display: none;
     }
 
     #form-container {
@@ -177,7 +247,7 @@ body {
             transition: all 0.3s ease;
             @media (min-width: 480px) {
               left: 80px;
-              
+
             }
           }
 
@@ -201,14 +271,6 @@ body {
         }
       }
     }
-
-    .text-center {
-      text-align: center;
-    }
-
-  }
-
-  .hide {
-    display: none;
   }
 }
+

@@ -1,33 +1,33 @@
 body.dark.red {
-  color: #F9B3BF;
+  color: #fff5f4;
 }
 body.dark.red.grad {
-  background: linear-gradient(185deg, #472C00, #42000C, #0E0137);
+  background: linear-gradient(185deg, #2B1E00, #2B0700, #120300, #0E0137);
 }
 body.dark.red.no-grad {
-  background: #42000C;
+  background: #120300;
 }
-body.dark.red header h1, body.dark.red header h2 {
-  color: #DC042A;
+body.dark.red h1, body.dark.red h2 {
+  color: #FF2800;
 }
 body.dark.red button, body.dark.red a {
-  color: #EB9304;
-  border-color: #EB9304;
+  color: #FFB400;
+  border-color: #FFB400;
 }
 body.dark.red button:hover, body.dark.red a:hover {
-  color: #7453D7;
+  color: #FF2800;
 }
 body.dark.red button.btn, body.dark.red a.btn {
   background: none;
 }
 body.dark.red button.btn:hover, body.dark.red a.btn:hover {
-  color: #EB9304;
-  border-color: #EB9304;
-  background: #0E0137;
+  color: #FFB400;
+  border-color: #FFB400;
+  background: #16001C;
 }
 body.dark.red button.theme-button:hover, body.dark.red a.theme-button:hover {
-  color: #9C001C;
-  background-color: #FFE4B7;
+  color: #A31900;
+  background-color: #FFF1D0;
 }
 body.dark.red button.color-button:hover, body.dark.red a.color-button:hover {
   color: #FF6C00;
@@ -35,35 +35,35 @@ body.dark.red button.color-button:hover, body.dark.red a.color-button:hover {
   border-color: #FF6C00;
 }
 body.dark.red #form-container form label {
-  color: #42000C;
+  color: #2B0700;
 }
 body.dark.red #form-container form input:focus {
-  border-bottom-color: #9C001C;
+  border-bottom-color: #A31900;
 }
 body.dark.red #form-container form button {
-  color: #EB9304;
-  border-color: #EB9304;
-  background: #42000C;
+  color: #FFB400;
+  border-color: #FFB400;
+  background: #2B0700;
 }
 body.dark.red #form-container form button:hover {
-  color: #F9B3BF;
+  color: #FFD7D0;
   background: #0E0137;
 }
 body.dark.orange {
   color: #C2D2EF;
 }
 body.dark.orange.grad {
-  background: linear-gradient(178deg, #082C6C -20%, #010A1B 10%, #291100 90%, #A34500 120%);
+  background: linear-gradient(172deg, #082C6C -20%, #010A1B 10%, #010A1B 60%, #A34500 130%);
 }
 body.dark.orange.no-grad {
   background: #010A1B;
 }
-body.dark.orange header h1, body.dark.orange header h2 {
+body.dark.orange h1, body.dark.orange h2 {
   color: #FF6C00;
 }
 body.dark.orange button, body.dark.orange a {
-  color: #A34500;
-  border-color: #A34500;
+  color: #FF6C00;
+  border-color: #FF6C00;
 }
 body.dark.orange button:hover, body.dark.orange a:hover {
   color: #FFE0CA;
@@ -74,7 +74,7 @@ body.dark.orange button.btn, body.dark.orange a.btn {
 body.dark.orange button.btn:hover, body.dark.orange a.btn:hover {
   color: #FF6C00;
   border-color: #FF6C00;
-  background: #010A1B;
+  background: #082C6C;
 }
 body.dark.orange button.theme-button:hover, body.dark.orange a.theme-button:hover {
   color: #010A1B;
@@ -104,12 +104,12 @@ body.dark.yellow {
   color: #ACD9EE;
 }
 body.dark.yellow.grad {
-  background: linear-gradient(180deg, #000A0F, #181500 25%, #FADE0A 115%);
+  background: linear-gradient(182deg, #181500, #000A0F 80%, #FADE0A 160%);
 }
 body.dark.yellow.no-grad {
   background: #000A0F;
 }
-body.dark.yellow header h1, body.dark.yellow header h2 {
+body.dark.yellow h1, body.dark.yellow h2 {
   color: #FADE0A;
 }
 body.dark.yellow button, body.dark.yellow a {
@@ -117,7 +117,7 @@ body.dark.yellow button, body.dark.yellow a {
   border-color: #FADE0A;
 }
 body.dark.yellow button:hover, body.dark.yellow a:hover {
-  color: #FFF6B5;
+  color: #0E6F9E;
 }
 body.dark.yellow button.btn, body.dark.yellow a.btn {
   background: none;
@@ -160,7 +160,7 @@ body.dark.green.grad {
 body.dark.green.no-grad {
   background: #032D01;
 }
-body.dark.green header h1, body.dark.green header h2 {
+body.dark.green h1, body.dark.green h2 {
   color: #21851C;
 }
 body.dark.green button, body.dark.green a {
@@ -168,7 +168,7 @@ body.dark.green button, body.dark.green a {
   border-color: #21851C;
 }
 body.dark.green button:hover, body.dark.green a:hover {
-  color: #FE9194;
+  color: #7D95CA;
 }
 body.dark.green button.btn, body.dark.green a.btn {
   background: none;
@@ -211,7 +211,7 @@ body.dark.blue.grad {
 body.dark.blue.no-grad {
   background: #0a2540;
 }
-body.dark.blue header h1, body.dark.blue header h2 {
+body.dark.blue h1, body.dark.blue h2 {
   color: #00d4ff;
 }
 body.dark.blue button, body.dark.blue a {
@@ -262,7 +262,7 @@ body.dark.purple.grad {
 body.dark.purple.no-grad {
   background: #0E0137;
 }
-body.dark.purple header h1, body.dark.purple header h2 {
+body.dark.purple h1, body.dark.purple h2 {
   color: #7453D7;
 }
 body.dark.purple button, body.dark.purple a {
@@ -285,9 +285,9 @@ body.dark.purple button.theme-button:hover, body.dark.purple a.theme-button:hove
   background-color: #7453D7;
 }
 body.dark.purple button.color-button:hover, body.dark.purple a.color-button:hover {
-  color: #F9B3BF;
-  background-color: #42000C;
-  border-color: #F9B3BF;
+  color: #FFD7D0;
+  background-color: #2B0700;
+  border-color: #FFD7D0;
 }
 body.dark.purple #form-container form label {
   color: #210575;
@@ -305,35 +305,35 @@ body.dark.purple #form-container form button:hover {
   background: #3E0ECB;
 }
 body.light.red {
-  color: #9C001C;
+  color: #A31900;
 }
 body.light.red.grad {
-  background: linear-gradient(185deg, #FFE4B7, #F9B3BF, #7453D7);
+  background: linear-gradient(185deg, #FFF1D0, #FFD7D0, #7453D7);
 }
 body.light.red.no-grad {
-  background: #F9B3BF;
+  background: #fff5f4;
 }
-body.light.red header h1, body.light.red header h2 {
-  color: #DC042A;
+body.light.red h1, body.light.red h2 {
+  color: #FF2800;
 }
 body.light.red button, body.light.red a {
-  color: #A66700;
-  border-color: #A66700;
+  color: #55036C;
+  border-color: #55036C;
 }
 body.light.red button:hover, body.light.red a:hover {
-  color: #42000C;
+  color: #2B0700;
 }
 body.light.red button.btn, body.light.red a.btn {
   background: none;
 }
 body.light.red button.btn:hover, body.light.red a.btn:hover {
-  color: #FFE4B7;
-  border-color: #FFE4B7;
-  background: #9C001C;
+  color: #E6C4EF;
+  border-color: #E6C4EF;
+  background: #A31900;
 }
 body.light.red button.theme-button:hover, body.light.red a.theme-button:hover {
-  color: #F9B3BF;
-  background-color: #42000C;
+  color: #FFD7D0;
+  background-color: #2B0700;
 }
 body.light.red button.color-button:hover, body.light.red a.color-button:hover {
   color: #FF6C00;
@@ -341,38 +341,38 @@ body.light.red button.color-button:hover, body.light.red a.color-button:hover {
   border-color: #FF6C00;
 }
 body.light.red #form-container form label {
-  color: #42000C;
+  color: #2B0700;
 }
 body.light.red #form-container form input:focus {
-  border-bottom-color: #EF5671;
+  border-bottom-color: #FF745B;
 }
 body.light.red #form-container form button {
-  color: #9C001C;
-  border-color: #9C001C;
-  background: #F9B3BF;
+  color: #A31900;
+  border-color: #A31900;
+  background: #FFD7D0;
 }
 body.light.red #form-container form button:hover {
-  color: #F9B3BF;
+  color: #FFD7D0;
   background: #7453D7;
 }
 body.light.orange {
   color: #010A1B;
 }
 body.light.orange.grad {
-  background: linear-gradient(182deg, #C2D2EF, #FFE0CA, #FFE0CA, #BCEDE8);
+  background: linear-gradient(184deg, #C2D2EF, #FFE0CA, #FFE0CA, #BCEDE8);
 }
 body.light.orange.no-grad {
-  background: #FFE0CA;
+  background: #fff2e9;
 }
-body.light.orange header h1, body.light.orange header h2 {
-  color: #A34500;
+body.light.orange h1, body.light.orange h2 {
+  color: #FF6C00;
 }
 body.light.orange button, body.light.orange a {
   color: #4E75BC;
   border-color: #4E75BC;
 }
 body.light.orange button:hover, body.light.orange a:hover {
-  color: #291100;
+  color: #A34500;
 }
 body.light.orange button.btn, body.light.orange a.btn {
   background: none;
@@ -415,7 +415,7 @@ body.light.yellow.grad {
 body.light.yellow.no-grad {
   background: #FFF6B5;
 }
-body.light.yellow header h1, body.light.yellow header h2 {
+body.light.yellow h1, body.light.yellow h2 {
   color: #181500;
 }
 body.light.yellow button, body.light.yellow a {
@@ -461,13 +461,13 @@ body.light.green {
   color: #032D01;
 }
 body.light.green.grad {
-  background: linear-gradient(200deg, #5cdb95, #D7FCD5);
+  background: linear-gradient(200deg, #FFD7D8 -20%, #D7FCD5, #5cdb95 90%, #D7E2F9 120%);
 }
 body.light.green.no-grad {
-  background: #5cdb95;
+  background: #D7FCD5;
 }
-body.light.green header h1, body.light.green header h2 {
-  color: #21851C;
+body.light.green h1, body.light.green h2 {
+  color: #4AB944;
 }
 body.light.green button, body.light.green a {
   color: #032D01;
@@ -517,7 +517,7 @@ body.light.blue.grad {
 body.light.blue.no-grad {
   background: #00d4ff;
 }
-body.light.blue header h1, body.light.blue header h2 {
+body.light.blue h1, body.light.blue h2 {
   color: #0a2540;
 }
 body.light.blue button, body.light.blue a {
@@ -560,15 +560,15 @@ body.light.blue #form-container form button:hover {
   background: #4AB944;
 }
 body.light.purple {
-  color: #210575;
+  color: #0E0137;
 }
 body.light.purple.grad {
-  background: linear-gradient(to bottom, #3E0ECB -40%, #F5F3FB, #F5F3FB, #210575 125%);
+  background: linear-gradient(100deg, #3E0ECB -40%, #F5F3FB, #F5F3FB, #210575 125%);
 }
 body.light.purple.no-grad {
   background: #F5F3FB;
 }
-body.light.purple header h1, body.light.purple header h2 {
+body.light.purple h1, body.light.purple h2 {
   color: #210575;
 }
 body.light.purple button, body.light.purple a {
@@ -591,9 +591,9 @@ body.light.purple button.theme-button:hover, body.light.purple a.theme-button:ho
   background-color: #0E0137;
 }
 body.light.purple button.color-button:hover, body.light.purple a.color-button:hover {
-  color: #9C001C;
-  background-color: #FFE4B7;
-  border-color: #9C001C;
+  color: #A31900;
+  background-color: #FFF1D0;
+  border-color: #A31900;
 }
 body.light.purple #form-container form label {
   color: #3E0ECB;

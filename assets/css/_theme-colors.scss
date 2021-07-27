@@ -1,15 +1,23 @@
 // red
-$red: #DC042A;
-$red-light-2: #F9B3BF;
-$red-light-1: #EF5671;
-$red-dark-1: #9C001C;
-$red-dark-2: #42000C;
+$red: #FF2800;
+$red-light-2: #FFD7D0;
+$red-light-1: #FF745B;
+$red-dark-1: #A31900;
+$red-dark-2: #2B0700;
+$red-light-3: lighten($red-light-2, 7%);
+$red-dark-3: darken($red-dark-2, 5%);
 
-$red-secondary-1-0: #EB9304;
-$red-secondary-1-1: #FFE4B7;
-$red-secondary-1-2: #FFC15C;
-$red-secondary-1-3: #A66700;
-$red-secondary-1-4: #472C00;
+$red-secondary-1-0: #FFB400;
+$red-secondary-1-1: #FFF1D0;
+$red-secondary-1-2: #FFCF5B;
+$red-secondary-1-3: #A37300;
+$red-secondary-1-4: #2B1E00;
+
+$red-secondary-2-0: #8506A9;
+$red-secondary-2-1: #E6C4EF;
+$red-secondary-2-2: #A146BB;
+$red-secondary-2-3: #55036C;
+$red-secondary-2-4: #16001C;
 
 //orange
 $orange: #FF6C00;
@@ -17,6 +25,7 @@ $orange-light-2: #FFE0CA;
 $orange-light-1: #FFA059;
 $orange-dark-1:  #A34500;
 $orange-dark-2:  #291100;
+$orange-light-3: lighten($orange-light-2, 6%);
 
 $orange-secondary-1-0: #1047A9;
 $orange-secondary-1-1: #C2D2EF;
@@ -75,18 +84,19 @@ $purple-dark-1: #210575;
 $purple-dark-2: #0E0137;
 
 
+
 $color-themes: (
         "dark": (
                 "red": (
-                        ink: $red-light-2,
-                        background: $red-dark-2,
-                        background-grad: linear-gradient(185deg, $red-secondary-1-4, $red-dark-2, $purple-dark-2),
+                        ink: $red-light-3,
+                        background: $red-dark-3,
+                        background-grad: linear-gradient(185deg, $red-secondary-1-4, $red-dark-2, $red-dark-3, $purple-dark-2),
                         heading-ink: $red,
 
                         header-button-color: $red-secondary-1-0,
                         header-button-background: none,
                         header-button-hover-color:$red-secondary-1-0,
-                        header-button-hover-background: $purple-dark-2,
+                        header-button-hover-background: $red-secondary-2-4,
 
                         form-label-ink: $red-dark-2,
                         form-border-color: $red-dark-1,
@@ -95,7 +105,7 @@ $color-themes: (
                         form-button-hover-color:$red-light-2,
                         form-button-hover-background:$purple-dark-2,
 
-                        text-link-hover-ink: $purple-light-1,
+                        text-link-hover-ink: $red,
                         theme-button-ink: $red-dark-1,
                         theme-button-background: $red-secondary-1-1,
                         next-button-ink: $orange,
@@ -104,13 +114,13 @@ $color-themes: (
                 "orange":(
                         ink: $orange-secondary-1-1,
                         background: $orange-secondary-1-4,
-                        background-grad: linear-gradient(178deg, $orange-secondary-1-3 -20%,$orange-secondary-1-4 10%, $orange-dark-2 90%, $orange-dark-1 120%),
+                        background-grad: linear-gradient(172deg, $orange-secondary-1-3 -20%,$orange-secondary-1-4 10%,  $orange-secondary-1-4 60%, $orange-dark-1 130%),
                         heading-ink: $orange,
 
-                        header-button-color: $orange-dark-1,
+                        header-button-color: $orange,
                         header-button-background: none,
                         header-button-hover-color:$orange,
-                        header-button-hover-background: $orange-secondary-1-4,
+                        header-button-hover-background: $orange-secondary-1-3,
 
                         form-label-ink: $orange-secondary-1-4,
                         form-border-color: $orange,
@@ -128,7 +138,7 @@ $color-themes: (
                 "yellow":(
                         ink: $yellow-secondary-2-1,
                         background: $yellow-secondary-2-4,
-                        background-grad: linear-gradient(180deg, $yellow-secondary-2-4, $yellow-dark-2 25%, $yellow 115%),
+                        background-grad: linear-gradient(182deg, $yellow-dark-2, $yellow-secondary-2-4 80%, $yellow 160%),
                         heading-ink: $yellow,
 
                         header-button-color: $yellow,
@@ -143,7 +153,7 @@ $color-themes: (
                         form-button-hover-color:$yellow-secondary-2-0,
                         form-button-hover-background:$yellow,
 
-                        text-link-hover-ink: $yellow-light-2,
+                        text-link-hover-ink: $yellow-secondary-2-0,
                         theme-button-ink: $yellow-secondary-1-4,
                         theme-button-background: $yellow-light-2,
                         next-button-ink: $green-secondary-1-4,
@@ -167,7 +177,7 @@ $color-themes: (
                         form-button-hover-color:$green,
                         form-button-hover-background:$green-secondary-1-3,
 
-                        text-link-hover-ink: $green-complement-2,
+                        text-link-hover-ink: $green-secondary-1-2,
                         theme-button-ink: $green-dark-2,
                         theme-button-background: $green-light-1,
                         next-button-ink: $light-blue,
@@ -225,13 +235,13 @@ $color-themes: (
         "light": (
                 "red": (
                         ink: $red-dark-1,
-                        background: $red-light-2,
+                        background: $red-light-3,
                         background-grad: linear-gradient(185deg, $red-secondary-1-1, $red-light-2, $purple-light-1),
                         heading-ink: $red,
 
-                        header-button-color: $red-secondary-1-3,
+                        header-button-color: $red-secondary-2-3,
                         header-button-background: none,
-                        header-button-hover-color:$red-secondary-1-1,
+                        header-button-hover-color:$red-secondary-2-1,
                         header-button-hover-background:$red-dark-1,
 
                         form-label-ink: $red-dark-2,
@@ -249,9 +259,9 @@ $color-themes: (
                 ),
                 "orange":(
                         ink: $orange-secondary-1-4,
-                        background: $orange-light-2,
-                        background-grad: linear-gradient(182deg, $orange-secondary-1-1, $orange-light-2, $orange-light-2, $orange-complement-1),
-                        heading-ink: $orange-dark-1,
+                        background: $orange-light-3,
+                        background-grad: linear-gradient(184deg, $orange-secondary-1-1, $orange-light-2, $orange-light-2, $orange-complement-1),
+                        heading-ink: $orange,
 
                         header-button-color: $orange-secondary-1-2,
                         header-button-background: none,
@@ -265,7 +275,7 @@ $color-themes: (
                         form-button-hover-color:$orange-secondary-1-0,
                         form-button-hover-background:$orange,
 
-                        text-link-hover-ink: $orange-dark-2,
+                        text-link-hover-ink: $orange-dark-1,
                         theme-button-ink: $orange-secondary-1-1,
                         theme-button-background: $orange-dark-1,
                         next-button-ink: $yellow-secondary-1-4,
@@ -297,9 +307,9 @@ $color-themes: (
                 ),
                 "green":(
                         ink: $green-dark-2,
-                        background: $green-light-1,
-                        background-grad: linear-gradient(200deg, $green-light-1, $green-light-2),
-                        heading-ink: $green-dark-1,
+                        background: $green-light-2,
+                        background-grad: linear-gradient(200deg, $green-complement-1 -20%,  $green-light-2, $green-light-1 90%, $green-secondary-1-1 120%),
+                        heading-ink: $green,
 
                         header-button-color: $green-dark-2,
                         header-button-background: none,
@@ -344,9 +354,9 @@ $color-themes: (
                         next-button-background: $purple-light-2,
                 ),
                 "purple":(
-                        ink: $purple-dark-1,
+                        ink: $purple-dark-2,
                         background: $purple-light-2,
-                        background-grad: linear-gradient(to bottom, $purple -40%, $purple-light-2,$purple-light-2, $purple-dark-1 125%),
+                        background-grad: linear-gradient(100deg, $purple -40%, $purple-light-2, $purple-light-2, $purple-dark-1 125%),
                         heading-ink: $purple-dark-1,
 
                         header-button-color: $purple-dark-1,
