@@ -25,6 +25,7 @@ nav button, nav .btn {
   padding: 0.6rem;
   margin: 0.2rem 0;
   font-size: 0.8rem;
+  text-transform: capitalize;
 }
 nav .btn {
   text-decoration: none;
