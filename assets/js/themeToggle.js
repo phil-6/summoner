@@ -92,7 +92,6 @@ themeBtn.addEventListener("mouseleave", function () {
 
 colorBtn.addEventListener("click", function () {
     currentColor = nextColor()
-    console.log(currentColor)
     setColor(currentColor)
 });
 
